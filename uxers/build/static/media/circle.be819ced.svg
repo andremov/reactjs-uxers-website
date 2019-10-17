@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.68 62.37">
+    <defs>
+        <style>
+            .cls-1{
+            fill:none;
+            stroke:#000;
+            stroke-miterlimit:10;
+            stroke-width:5px;
+            }
+        </style>
+    </defs>
+    <title>Asset 1-SVG</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="cls-1" d="M31.34,2.5A28.69,28.69,0,1,0,60.18,31.19,28.68,28.68,0,0,0,31.34,2.5Z"/>
+        </g>
+    </g>
+</svg>
