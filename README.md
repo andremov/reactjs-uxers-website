@@ -3,15 +3,19 @@
 
 Proyecto final de Paola Rueda.
 
-<div style="display: flex; flex-direction: row; width: 400px; justify-content: space-evenly; align-items: center;">
-  <div style="text-align: center">
-    <h3>Diseñadora</h3>
-    <img src="markdown/pao_rueda.jpg" title="Paola Rueda" style="border-radius: 50%" width="150"/>
-    <h5>Paola Rueda</h5>
-  </div>
-  <div style="text-align: center">
-    <h3>Desarrollador</h3>
-    <img src="markdown/andy_mov.jpg" title="Andres Movilla" style="border-radius: 50%" width="150"/>
-    <h5>Andrés Movilla</h5>
-  </div>
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <img src="markdown/pao_rueda.jpg" width="100px;" alt="Michael Salaverry"/> <br />
+      <b> Paola Rueda </b> <br />
+      <sub> <b>Diseñadora</b> </sub>
+      <br />
+    </td>
+      <td align="center">
+        <img src="markdown/andy_mov.jpg" width="100px;" alt="Michael Salaverry"/> <br />
+        <b> Andres Movilla </b> <br />
+        <sub> <b>Desarrollador</b> </sub>
+        <br />
+      </td>
+   </tr>
+ </table>
