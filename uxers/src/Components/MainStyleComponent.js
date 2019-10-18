@@ -1,16 +1,16 @@
 import React, {Component, Fragment} from 'react';
-import "../Style/Form.scss";
+import "../Style/Estilo.scss";
 import {LogoComponent} from "./LogoComponent";
 import {HamburgerButton} from "./HamburgerButton";
 import {MenuComponent} from "./MenuComponent";
 import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
-import foto1 from "../assets/foto5.png";
-import foto2 from "../assets/foto6.jpg";
-import foto3 from "../assets/foto7.jpg";
-import foto4 from "../assets/foto8.jpg";
-import foto5 from "../assets/foto9.jpg";
-import foto6 from "../assets/foto10.jpg";
+import foto1 from "../assets/foto11.png";
+import foto2 from "../assets/foto12.jpg";
+import foto3 from "../assets/foto13.jpg";
+import foto4 from "../assets/foto14.jpg";
+import foto5 from "../assets/foto15.jpg";
+import foto6 from "../assets/foto16.jpg";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Link} from "react-router-dom";
 import {Footer} from "./Footer";
@@ -87,7 +87,7 @@ export class MainStyleComponent extends Component {
 
     getPage01() {
         return (
-            <div className='blue-bkg form-screen-1'>
+            <div className='orange-bkg style-screen-1'>
                 <div className='half-left img'>
                     <img src={foto1} alt='Fotito toda chevere'/>
                 </div>
