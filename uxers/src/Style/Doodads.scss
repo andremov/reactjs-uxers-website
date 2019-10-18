@@ -32,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
   .dot {
     width: 20px;
     height: 20px;
@@ -46,7 +46,11 @@
     }
 
     &.sel {
-      background-color: #f15a29
+      background-color: #f15a29;
+
+      &.switched {
+        background-color: #00b1cb;
+      }
     }
   }
 }

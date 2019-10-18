@@ -73,7 +73,7 @@ export class MainFormComponent extends Component {
                                         :
                                         ''
                         }
-                        <PagingComponent dark={screen === 2 || screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                        <PagingComponent colorSwitch={false} dark={screen === 2 || screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
                     </Fragment>
                 }
                 <NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>
