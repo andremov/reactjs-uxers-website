@@ -54,7 +54,7 @@ export class MainStartComponent extends Component {
                     <MenuComponent currentNav={1}/>
                     :
                         <Fragment>
-                            <div className='purple-bkg'>
+                            <div className='start-screen purple-bkg'>
                                 <div className='screen-index'>
                                     <span>{'0'+screen}</span>
                                 </div>
