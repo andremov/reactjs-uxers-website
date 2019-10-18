@@ -41,6 +41,10 @@
     margin-bottom: 5px;
     cursor: pointer;
 
+    &.dark {
+      background-color: #808285;
+    }
+
     &.sel {
       background-color: #f15a29
     }
@@ -82,6 +86,10 @@
   font-weight: bold;
   display: flex;
   justify-content: center;
+
+  &.colored {
+    color: #ed7931;
+  }
 
   .item {
     display: flex;

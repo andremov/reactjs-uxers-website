@@ -77,7 +77,7 @@ export class MainStartComponent extends Component {
                                     }
                                 </div>
                             </div>
-                            <PagingComponent currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                            <PagingComponent dark={false} currentPage={screen} maxPage={4} changePage={this.changePage}/>
                         </Fragment>
                 }
                 <NavDisplayComponent colored={false} currentScreen={screen} />
