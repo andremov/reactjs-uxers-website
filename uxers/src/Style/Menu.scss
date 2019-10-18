@@ -1,0 +1,49 @@
+.menu-bkg {
+  background-color: black;
+  background-image: url("../assets/menu-bkg.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  color: white;
+
+  .half {
+    width: 50%;
+
+    &.navtable {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .navitem {
+        display: flex;
+        flex-direction: row;
+
+        .index {
+          color: #808285;
+          font-size: 1.7em;
+          margin-top: 1vh;
+          font-weight: bold;
+        }
+
+        .name {
+          -webkit-text-fill-color: black;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: white;
+          font-weight: bold;
+          margin-left: 2vw;
+          font-size: 4em;
+
+          &.sel {
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 0;
+          }
+        }
+      }
+    }
+  }
+}

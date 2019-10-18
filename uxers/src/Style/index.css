@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/OpenSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/OpenSans-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/OpenSans-Italic.ttf") format("ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/fonts/OpenSans-BoldItalic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", serif;
+  font-size: 12px;
+}

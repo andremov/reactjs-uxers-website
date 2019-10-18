@@ -1,0 +1,54 @@
+
+.load {
+  background-color: #ed7931;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  .icon {
+    //width: 10%;
+    width: 100px;
+    margin: 0 auto;
+
+    stroke: white;
+    fill: none;
+    stroke-width: 5px;
+
+    stroke-dasharray: 450;
+    stroke-dashoffset: 0;
+    animation: icon-load 3s linear infinite;
+  }
+
+  .circle {
+    //width: 3.6%;
+    width: 36px;
+    margin: 5px auto;
+
+    stroke: white;
+    fill: none;
+    stroke-width: 5px;
+
+    stroke-dasharray: 90;
+    stroke-dashoffset: 0;
+    animation: circle-load 1s linear infinite;
+  }
+}
+
+@keyframes icon-load {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes circle-load {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 180;
+  }
+}
