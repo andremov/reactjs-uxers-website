@@ -2,15 +2,26 @@ import React, {Component} from 'react';
 
 export class NavDisplayComponent extends Component {
     state = {
-        data : -1
+        data : -1,
+        colored : false
     };
 
     componentDidUpdate() {
         this.updateNavItem(this.props.currentScreen);
+        this.updateColor(this.props.colored);
     }
 
     componentDidMount() {
         this.updateNavItem(this.props.currentScreen);
+        this.updateColor(this.props.colored);
+    }
+
+    updateColor(newState) {
+        if (this.state.colored !== newState) {
+            this.setState({
+                colored: newState
+            });
+        }
     }
 
     updateNavItem(newState) {
@@ -20,10 +31,11 @@ export class NavDisplayComponent extends Component {
             });
         }
     }
+
     render() {
-        const {data} = this.state;
+        const {data, colored} = this.state;
         return (
-            <div className='nav-display'>
+            <div className={'nav-display' + (colored? ' colored' : '')}>
                 <div className='item'>
                     <div className='current'>
                         {'0'+data}
