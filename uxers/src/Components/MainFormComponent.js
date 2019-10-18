@@ -1,16 +1,21 @@
 import React, {Component, Fragment} from 'react';
-import "../Style/Start.scss";
+import "../Style/Form.scss";
 import {LogoComponent} from "./LogoComponent";
 import {HamburgerButton} from "./HamburgerButton";
 import {MenuComponent} from "./MenuComponent";
 import {PagingComponent} from "./PagingComponent";
-import foto1 from "../assets/foto1.jpg";
-import foto2 from "../assets/foto2.jpg";
-import foto3 from "../assets/foto3.jpg";
-import foto4 from "../assets/foto4.jpg";
+import video from "../assets/fotovideo.png";
+import foto1 from "../assets/foto5.png";
+import foto2 from "../assets/foto6.jpg";
+import foto3 from "../assets/foto7.jpg";
+import foto4 from "../assets/foto8.jpg";
+import foto5 from "../assets/foto9.jpg";
+import foto6 from "../assets/foto10.jpg";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Link} from "react-router-dom";
 import {Footer} from "./Footer";
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
 
 export class MainFormComponent extends Component {
 
@@ -40,42 +45,40 @@ export class MainFormComponent extends Component {
 
         return (
             <Fragment>
-                <LogoComponent shortLogo={menuShown}/>
 
-                <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
+                {screen === 1 ?
+                    <Fragment>
+                        <LogoComponent shortLogo={menuShown}/>
+
+                        <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
+                    </Fragment>
+                    : ''
+                }
 
                 {
                     menuShown ?
                         <MenuComponent currentNav={2}/>
                         :
                         <Fragment>
-                        <div className='purple-bkg'>
-                            <div className='screen-index'>
-                                <span>{'0' + screen}</span>
-                            </div>
-
-                            <div className='content'>
-                                {screen === 1 ?
-                                    this.getPage01()
+                            {screen === 1 ?
+                                this.getPage01()
+                                :
+                                screen === 2 ?
+                                    this.getPage02()
                                     :
-                                    screen === 2 ?
-                                        this.getPage02()
+                                    screen === 3 ?
+                                        this.getPage03()
                                         :
-                                        screen === 3 ?
-                                            this.getPage03()
+                                        screen === 4 ?
+                                            this.getPage04()
                                             :
-                                            screen === 4 ?
-                                                this.getPage04()
-                                                :
-                                                ''}}
-                                </div>
-                            </div>
-                            <PagingComponent currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                                            ''}}
+                            <PagingComponent dark={screen === 2 || screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
                         </Fragment>
                 }
-                <NavDisplayComponent currentScreen={screen}/>
+                <NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>
 
-                <Footer currentNav={'Diseño Forma'}/>
+                <Footer currentNav={1}/>
 
             </Fragment>
         );
@@ -83,96 +86,126 @@ export class MainFormComponent extends Component {
 
     getPage01() {
         return (
-            <Fragment>
-                <div className='item title'>
-                    <span>Diseño web</span>
-                </div>
-
-                <div className='item img'>
+            <div className='blue-bkg form-screen-1'>
+                <div className='half-left img'>
                     <img src={foto1} alt='Fotito toda chevere'/>
                 </div>
 
-                <div className='item descrip'>
-                    <div className='title'>
-                        <span>habilidades</span>
-                        <span>mejora tus</span>
-                        <span>Aprende y</span>
+                <div className='half-right'>
+
+                    <div className='overbite'>
+                        <div className='line'>
+                            <div className='circle'>
+                            </div>
+                        </div>
+                        <div className='index'>
+                            02
+                        </div>
                     </div>
-                    <div className='subtitle'>
-                        <span>Te ayudamos a desarrollarte</span>
-                        <span>en la tecnología de tu</span>
-                        <span>preferencia.</span>
-                    </div>
-                    <div className='link'>
-                        <span>Explorar cursos</span>
-                    </div>
-                    <div className='bar'>
+
+                    <div className='title-block'>
+                        <div className='screen-name'>
+                            Diseño Forma
+                        </div>
+                        <div className='title'>
+                            <span>Empezando</span>
+                            <span>desde cero</span>
+                        </div>
+                        <div className='icons'>
+                            <img src={facebook} alt='facebook'/>
+                            <img src={instagram} alt='instagram'/>
+                        </div>
                     </div>
                 </div>
-            </Fragment>
+
+                <div className='video-pop-up'>
+                    <div className='top'>
+                        <div className='action'>
+                            <span>Ver</span>
+                            <span>video</span>
+                        </div>
+                        <div className='line'>
+                            <div className='circle'>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='img'>
+                        <img src={video} alt='Fotito toda chevere'/>
+                    </div>
+                </div>
+
+            </div>
         );
     }
 
     getPage02() {
         return (
-            <Fragment>
-                <div className='item descrip'>
-                    <div className='title pan-right'>
-                        <span>desde cero</span>
-                        <span>Empezando</span>
+            <div className='form-screen-2'>
+
+                <div className='screen-title'>
+                    <span>Diseño Forma</span>
+                </div>
+
+                <div className='half-left'>
+                    <div className='quarter'>
+                        <div className='title'>
+                            Entregables
+                        </div>
+                        <span>Archivos descargables</span>
+                        <span>Video</span>
                     </div>
-                    <div className='subtitle pan-right'>
-                        <span>Aprende a diseñar interfaces</span>
-                        <span>de usuario increíbles por ti</span>
-                        <span>mismo usando tácticas</span>
-                        <span>específicas.</span>
+
+                    <div className='quarter'>
+                        <div className='title'>
+                            Contenido
+                        </div>
+                        <span>Función</span>
+                        <span>Jerarquía</span>
+                        <span>Fondos</span>
+                        <span>Balance y contraste</span>
+                        <span>Diseño y espaciado</span>
+                        <span>Dimensionamiento</span>
+                        <span>Diseño de texto</span>
+                        <span>Fuentes</span>
                     </div>
-                    <div className='link pan-right'>
-                        <span>Explorar cursos</span>
+
+                </div>
+                <div className='half-right'>
+                    <div className='title'>
+                        <span>Comience con</span>
+                        <span>una función</span>
+                        <span>no con un diseño</span>
                     </div>
-                    <div className='bar pan-right'>
+                    <div className='subtitle'>
+                        <span>Cuando comienzas el diseño para una nueva idea</span>
+                        <span>de aplicación, ¿qué diseñas primero?</span>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    getPage03() {
+        return (
+            <div className='form-screen-3'>
+
+                <div className='screen-title'>
+                    <span>Diseño Forma</span>
+                </div>
+
+                <div className='text'>
+                    <div className='top'>
+                        Mira abajo
+                    </div>
+                    <div className='bottom'>
+                        Temas disponibles
                     </div>
                 </div>
 
                 <div className='item img'>
                     <img src={foto2} alt='Fotito toda chevere'/>
                 </div>
-
-                <div className='item title'>
-                    <Link to='/forma'>Diseño Forma</Link>
-                </div>
-            </Fragment>
-        );
-    }
-
-    getPage03() {
-        return (
-            <Fragment>
-                <div className='item title'>
-                    <span>Diseño Estilo</span>
-                </div>
-
-                <div className='item img'>
-                    <img src={foto3} alt='Fotito toda chevere'/>
-                </div>
-
-                <div className='item descrip'>
-                    <div className='title'>
-                        <span>diseñamos</span>
-                        <span>Con pasión</span>
-                    </div>
-                    <div className='subtitle'>
-                        <span>Te ayudamos a desarrollarte</span>
-                        <span>en la tecnología de tu</span>
-                        <span>preferencia.</span>
-                    </div>
-                    <div className='link'>
-                        <Link to='/estilo'>Explorar cursos</Link>
-                    </div>
-                    <div className='bar'>
-                    </div>
-                </div>
-            </Fragment>
+            </div>
         );
     }
 
@@ -198,7 +231,11 @@ export class MainFormComponent extends Component {
                 </div>
 
                 <div className='item img'>
+
+                    <img src={foto3} alt='Fotito toda chevere'/>
                     <img src={foto4} alt='Fotito toda chevere'/>
+                    <img src={foto5} alt='Fotito toda chevere'/>
+                    <img src={foto6} alt='Fotito toda chevere'/>
                 </div>
 
                 <div className='item title'>
