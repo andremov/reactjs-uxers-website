@@ -45,5 +45,39 @@
         }
       }
     }
+
+    &.info {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding-left: 15vh;
+      padding-top: 10vh;
+
+      .title {
+        font-size: 3em;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          margin: 0;
+          line-height: 0.9;
+          font-weight: bold;
+        }
+      }
+
+      .subtitle {
+        font-size: 1.5em;
+        margin-left: .1em;
+        margin-top: .5em;
+      }
+
+      .icons {
+        img {
+          width: 25px;
+          margin-top: 1em;
+          margin-right: 1em;
+        }
+      }
+    }
   }
 }

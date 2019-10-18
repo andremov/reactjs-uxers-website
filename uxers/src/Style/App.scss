@@ -17,18 +17,18 @@
 
 .logo {
   position: absolute;
-  width: 143px;
+  width: 140px;
   top: 5vh;
   left: 5vw;
 
   &.short {
-    width: 60px;
+    width: 40px;
   }
 }
 
 .burger-btn {
   position: absolute;
-  width: 143px;
+  width: 100px;
   top: 5vh;
   right: 5vw;
 
@@ -38,21 +38,21 @@
 
   .text {
     margin-right: 10px;
+    margin-top: 12px;
     font-size: 1.75em;
     font-weight: bold;
     color: #f1f2f2;
-    line-height: 3;
   }
 
   .icon {
     cursor: pointer;
-    width: 68px;
+    width: 50px;
   }
 }
 
 .segment {
   position: absolute;
-  top: 20vw;
+  top: 15vw;
 
   width: 100vw;
   height: 40vh;

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
 
 export class MenuComponent extends Component {
 
@@ -28,8 +30,22 @@ export class MenuComponent extends Component {
 
         return (
             <div className='segment main'>
-                <div className='half'>
+                <div className='half info'>
+                    <div className='title'>
+                        <span>UXers</span>
+                        <span>Design</span>
+                        <span>Web</span>
+                    </div>
 
+                    <div className='subtitle'>
+                        <span>yours to discover</span>
+                    </div>
+
+                    <div className='icons'>
+                        <img src={facebook} alt='facebook'/>
+                        <img src={instagram} alt='instagram'/>
+
+                    </div>
                 </div>
                 <div className='half navtable'>
 

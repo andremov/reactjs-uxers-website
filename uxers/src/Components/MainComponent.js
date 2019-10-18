@@ -6,7 +6,7 @@ import {MainProgrammingComponent} from "./Programming/MainProgrammingComponent";
 import {LoadComponent} from "./LoadComponent";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 
-export const VER_NUM = 'v1.1.0';
+export const VER_NUM = 'v1.1.2';
 
 export class MainComponent extends Component {
 
