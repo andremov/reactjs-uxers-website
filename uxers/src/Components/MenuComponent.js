@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import '../Style/Menu.scss'
+import {Link} from "react-router-dom";
 
 export class MenuComponent extends Component {
 
@@ -55,36 +56,36 @@ export class MenuComponent extends Component {
                             <div className='index'>
                                 01
                             </div>
-                            <div className={'name' + (currentNav === 1? ' sel' : '')}>
+                            <Link to='/' className={'name' + (currentNav === 1? ' sel' : '')}>
                                 Inicio
-                            </div>
+                            </Link>
                         </div>
 
                         <div className='navitem'>
                             <div className='index'>
                                 02
                             </div>
-                            <div className={'name' + (currentNav === 2? ' sel' : '')}>
+                            <Link to='/forma' className={'name' + (currentNav === 2? ' sel' : '')}>
                                 Forma
-                            </div>
+                            </Link>
                         </div>
 
                         <div className='navitem'>
                             <div className='index'>
                                 03
                             </div>
-                            <div className={'name' + (currentNav === 3? ' sel' : '')}>
+                            <Link to='/estilo' className={'name' + (currentNav === 3? ' sel' : '')}>
                                 Estilo
-                            </div>
+                            </Link>
                         </div>
 
                         <div className='navitem'>
                             <div className='index'>
                                 04
                             </div>
-                            <div className={'name' + (currentNav === 4? ' sel' : '')}>
+                            <Link to='/programacion' className={'name' + (currentNav === 4? ' sel' : '')}>
                                 Programación
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

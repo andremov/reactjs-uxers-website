@@ -9,6 +9,7 @@ import foto2 from "../../assets/foto2.jpg";
 import foto3 from "../../assets/foto3.jpg";
 import foto4 from "../../assets/foto4.jpg";
 import {NavDisplayComponent} from "../NavDisplayComponent";
+import {Link} from "react-router-dom";
 
 export class MainStartComponent extends Component {
 
@@ -44,7 +45,7 @@ export class MainStartComponent extends Component {
 
                 {
                     menuShown?
-                    <MenuComponent currentNav={1} />
+                    <MenuComponent currentNav={1}/>
                     :
                         <div className='purple-bkg'>
                             <div className='screen-index'>
@@ -133,7 +134,7 @@ export class MainStartComponent extends Component {
                 </div>
 
                 <div className='item title'>
-                    <span>Diseño Forma</span>
+                    <Link to='/forma'>Diseño Forma</Link>
                 </div>
             </Fragment>
         );
@@ -161,7 +162,7 @@ export class MainStartComponent extends Component {
                         <span>preferencia.</span>
                     </div>
                     <div className='link'>
-                        <span>Explorar cursos</span>
+                        <Link to='/estilo'>Explorar cursos</Link>
                     </div>
                     <div className='bar'>
                     </div>
@@ -185,7 +186,7 @@ export class MainStartComponent extends Component {
                         <span>datos y más.</span>
                     </div>
                     <div className='link pan-right'>
-                        <span>Explorar cursos</span>
+                        <Link to='/programacion'>Explorar cursos</Link>
                     </div>
                     <div className='bar pan-right'>
                     </div>

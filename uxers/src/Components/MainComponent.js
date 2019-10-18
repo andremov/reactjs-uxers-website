@@ -3,49 +3,36 @@ import {MainStartComponent} from "./Start/MainStartComponent";
 import {MainFormComponent} from "./FormDesign/MainFormComponent";
 import {MainStyleComponent} from "./StyleDesign/MainStyleComponent";
 import {MainProgrammingComponent} from "./Programming/MainProgrammingComponent";
+import {Route, BrowserRouter as Router} from "react-router-dom";
 import {LoadComponent} from "./LoadComponent";
 
 export const VER_NUM = 'v1.2.0';
 
 export class MainComponent extends Component {
 
-    state = {
-        screen: -1
-    };
-
-
-    constructor(props) {
-        super(props);
-        this.toStart = this.toStart.bind(this);
-    }
-
-    componentDidMount() {
-        setTimeout(this.toStart,1000);
-    }
-
-    toStart = () => {
-      this.setState({
-          screen : 0
-      })
-    };
-
     render() {
-        const {screen} = this.state;
-
         return (
             <Fragment>
                 <div className='version'>
                     {VER_NUM}
                 </div>
 
-                {
-                    screen === 0? <MainStartComponent /> :
-                        screen === 1? <MainFormComponent /> :
-                        screen === 2? <MainStyleComponent /> :
-                        screen === 3? <MainProgrammingComponent /> :
-                        <LoadComponent />
-                }
+                {/*<LoadComponent />*/}
 
+                <Router>
+                    <Route exact path='/' >
+                        <MainStartComponent />
+                    </Route>
+                    <Route path='/forma'>
+                        <MainFormComponent />
+                    </Route>
+                    <Route path='/estilo'>
+                        <MainStyleComponent />
+                    </Route>
+                    <Route path='/programacion'>
+                        <MainProgrammingComponent />
+                    </Route>
+                </Router>
 
             </Fragment>
         );
