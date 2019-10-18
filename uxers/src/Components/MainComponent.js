@@ -5,6 +5,7 @@ import {MainStyleComponent} from "./StyleDesign/MainStyleComponent";
 import {MainProgrammingComponent} from "./Programming/MainProgrammingComponent";
 import {Route, BrowserRouter as Router} from "react-router-dom";
 import {LoadComponent} from "./LoadComponent";
+import {VersionComponent} from "./VersionComponent";
 
 
 export class MainComponent extends Component {
@@ -30,6 +31,7 @@ export class MainComponent extends Component {
                     </Route>
                 </Router>
 
+                <VersionComponent />
             </Fragment>
         );
     }
