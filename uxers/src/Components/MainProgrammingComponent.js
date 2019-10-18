@@ -5,13 +5,12 @@ import {HamburgerButton} from "./HamburgerButton";
 import {MenuComponent} from "./MenuComponent";
 import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
-import foto1 from "../assets/foto11.png";
-import foto2 from "../assets/foto12.jpg";
-import foto3 from "../assets/foto13.jpg";
-import foto4 from "../assets/foto14.jpg";
-import foto5 from "../assets/foto15.jpg";
-import foto6 from "../assets/foto16.jpg";
-import foto7 from "../assets/foto17.jpg";
+import foto1 from "../assets/foto18.png";
+import foto2 from "../assets/foto19.jpg";
+import foto3 from "../assets/foto20.jpg";
+import foto4 from "../assets/foto21.jpg";
+import foto5 from "../assets/foto22.jpg";
+import foto6 from "../assets/foto23.jpg";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
@@ -57,7 +56,7 @@ export class MainProgrammingComponent extends Component {
 
                 {
                     menuShown ?
-                        <MenuComponent currentNav={3}/>
+                        <MenuComponent currentNav={4}/>
                         :
                         <Fragment>
                             {screen === 1 ?
@@ -79,7 +78,7 @@ export class MainProgrammingComponent extends Component {
                 }
                 <NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>
 
-                <Footer currentNav={1}/>
+                <Footer currentNav={3}/>
 
             </Fragment>
         );
@@ -100,17 +99,17 @@ export class MainProgrammingComponent extends Component {
                             </div>
                         </div>
                         <div className='index'>
-                            03
+                            04
                         </div>
                     </div>
 
                     <div className='title-block'>
                         <div className='screen-name'>
-                            Diseño Estilo
+                            Programación
                         </div>
                         <div className='title'>
-                            <span>Con pasión</span>
-                            <span>diseñamos</span>
+                            <span>Empezando</span>
+                            <span>desde cero</span>
                         </div>
                         <div className='icons'>
                             <img src={facebook} alt='facebook'/>
@@ -144,18 +143,38 @@ export class MainProgrammingComponent extends Component {
             <div className='prog-screen-2'>
 
                 <div className='screen-title'>
-                    <span>Diseño Estilo</span>
+                    <span>Programación</span>
                 </div>
 
                 <div className='half-left'>
-                    <div className='title'>
-                        <span>Comience con</span>
-                        <span>una función,</span>
-                        <span>no con un diseño</span>
+                    <div className='top'>
+                        <div className='title'>
+                            <span>Comience con</span>
+                            <span>una función,</span>
+                            <span>no con un diseño</span>
+                        </div>
+                        <div className='subtitle'>
+                            <span>Cuando comienzas el diseño para una nueva idea</span>
+                            <span>de aplicación, ¿qué diseñas primero?</span>
+                        </div>
                     </div>
-                    <div className='subtitle'>
-                        <span>Cuando comienzas el diseño para una nueva idea</span>
-                        <span>de aplicación, ¿qué diseñas primero?</span>
+
+                    <div className='bottom'>
+                        <div className='left'>
+                            <div className='title'>
+                                Contenido
+                            </div>
+                            <span>Función</span>
+                            <span>Jerarquía</span>
+                            <span>Fondos</span>
+                            <span>Balance y contraste</span>
+                        </div>
+                        <div className='right'>
+                            <span>Diseño y espaciado</span>
+                            <span>Dimensionamiento</span>
+                            <span>Diseño de texto</span>
+                            <span>Fuentes</span>
+                        </div>
                     </div>
                 </div>
 
@@ -170,31 +189,7 @@ export class MainProgrammingComponent extends Component {
             <div className='prog-screen-3 red-bkg'>
 
                 <div className='screen-title'>
-                    <span>Diseño Estilo</span>
-                </div>
-
-                <div className='half-left'>
-                    <div className='quarter'>
-                        <div className='title'>
-                            Entregables
-                        </div>
-                        <span>Archivos descargables</span>
-                        <span>Video</span>
-                    </div>
-
-                    <div className='quarter'>
-                        <div className='title'>
-                            Contenido
-                        </div>
-                        <span>Función</span>
-                        <span>Jerarquía</span>
-                        <span>Fondos</span>
-                        <span>Balance y contraste</span>
-                        <span>Diseño y espaciado</span>
-                        <span>Dimensionamiento</span>
-                        <span>Diseño de texto</span>
-                        <span>Fuentes</span>
-                    </div>
+                    <span>Programación</span>
                 </div>
 
                 {/*<div className='text'>*/}
@@ -209,6 +204,14 @@ export class MainProgrammingComponent extends Component {
                 <div className='img'>
                     <img src={foto3} alt='Fotito toda chevere'/>
                 </div>
+
+                <div className='half-right'>
+                    <div className='title'>
+                        Entregables
+                    </div>
+                    <span>Archivos descargables</span>
+                    <span>Video</span>
+                </div>
             </div>
         );
     }
@@ -218,18 +221,16 @@ export class MainProgrammingComponent extends Component {
             <div className='prog-screen-4'>
 
                 <div className='screen-title'>
-                    <span>Diseño Estilo</span>
+                    <span>Programación</span>
                 </div>
 
                 <div className='grid'>
-                    <img className='img-left' src={foto6} alt='Fotito toda chevere'/>
-                    <div className='right'>
-                        <img className='right-img-top' src={foto7} alt='Fotito toda chevere'/>
-                        <div className='bottom'>
-                            <img className='right-img-left' src={foto4} alt='Fotito toda chevere'/>
-                            <img className='right-img-right' src={foto5} alt='Fotito toda chevere'/>
-                        </div>
+                    <div className='left'>
+                        <img className='img-top' src={foto4} alt='Fotito toda chevere'/>
+                        <img className='img-bottom' src={foto5} alt='Fotito toda chevere'/>
                     </div>
+
+                    <img className='img-right' src={foto6} alt='Fotito toda chevere'/>
 
                 </div>
             </div>
