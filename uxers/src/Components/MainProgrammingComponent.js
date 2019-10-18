@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import "../Style/Estilo.scss";
+import "../Style/Program.scss";
 import {LogoComponent} from "./LogoComponent";
 import {HamburgerButton} from "./HamburgerButton";
 import {MenuComponent} from "./MenuComponent";
@@ -17,7 +17,7 @@ import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 
-export class MainStyleComponent extends Component {
+export class MainProgrammingComponent extends Component {
 
     state = {
         menuShown: false,
@@ -87,7 +87,7 @@ export class MainStyleComponent extends Component {
 
     getPage01() {
         return (
-            <div className='orange-bkg style-screen-1'>
+            <div className='red-bkg prog-screen-1'>
                 <div className='half-left img'>
                     <img src={foto1} alt='Fotito toda chevere'/>
                 </div>
@@ -141,7 +141,7 @@ export class MainStyleComponent extends Component {
 
     getPage02() {
         return (
-            <div className='style-screen-2'>
+            <div className='prog-screen-2'>
 
                 <div className='screen-title'>
                     <span>Diseño Estilo</span>
@@ -167,7 +167,7 @@ export class MainStyleComponent extends Component {
 
     getPage03() {
         return (
-            <div className='style-screen-3 orange-bkg'>
+            <div className='prog-screen-3 red-bkg'>
 
                 <div className='screen-title'>
                     <span>Diseño Estilo</span>
@@ -215,7 +215,7 @@ export class MainStyleComponent extends Component {
 
     getPage04() {
         return (
-            <div className='style-screen-4'>
+            <div className='prog-screen-4'>
 
                 <div className='screen-title'>
                     <span>Diseño Estilo</span>
