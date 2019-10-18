@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import "../../Style/Start.scss";
-import '../../Style/Menu.scss'
 import {LogoComponent} from "../LogoComponent";
 import {HamburgerButton} from "../HamburgerButton";
 import {MenuComponent} from "../MenuComponent";
+import {Start01Component} from "./Start01Component";
 
 export class MainStartComponent extends Component {
 
     state = {
-        menuShown : false
+        menuShown : false,
+        screen : 1
     };
 
     openBurger = () => {
@@ -19,23 +20,27 @@ export class MainStartComponent extends Component {
     };
 
     render() {
-        const {menuShown} = this.state;
+        const {menuShown, screen} = this.state;
 
         return (
             <div>
-                    <div className={'screen' + (menuShown? ' menu-bkg' : ' purple-bkg')}>
-                        <LogoComponent shortLogo={menuShown} />
+                <div className=''>
+                    <LogoComponent shortLogo={menuShown} />
 
-                        <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger} />
+                    <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger} />
 
-                        {
-                            menuShown?
-                            <MenuComponent currentNav={1} />
-                            :
-                            ''
-                        }
+                    {
+                        menuShown?
+                        <MenuComponent currentNav={1} />
+                        :
+                            screen === 1?
+                                <Start01Component />
+                                :
+                                ''
 
-                    </div>
+                    }
+
+                </div>
             </div>
         );
     }

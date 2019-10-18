@@ -4,9 +4,16 @@
   background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
 .main {
+
+  padding-top: 15vw;
+  width: 100vw;
+  height: 40vh;
+
   display: flex;
   flex-direction: row;
   color: white;
@@ -50,7 +57,7 @@
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
-      padding-left: 15vh;
+      padding-left: 15vw;
       padding-top: 10vh;
 
       .title {

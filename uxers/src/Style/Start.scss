@@ -1,5 +1,87 @@
-
-
 .purple-bkg {
   background-color: #490e67;
+  width: 100vw;
+  height: 100vh;
+}
+
+.screen-index {
+  width: 100vw;
+  padding-top: 15vh;
+  padding-bottom: 2.5vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+
+  -webkit-text-fill-color: #490e67;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  color: white;
+
+  .item {
+    &.title {
+      margin-left: 15vw;
+      margin-right: 3vw;
+      writing-mode: vertical-rl;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+
+      transform: rotate(180deg);
+    }
+
+    &.img {
+      img {
+        width: 40vw;
+      }
+    }
+
+    &.paging {
+      width: 20vw;
+    }
+
+    &.descrip {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        margin-left: -5vw;
+        margin-top: -1vw;
+        font-size: 8em;
+        font-weight: bold;
+        display: flex;
+        line-height: 1;
+        flex-direction: column;
+        margin-bottom: 5vh;
+      }
+
+      .subtitle {
+        margin-left: 2vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+   }
+
+      .link {
+        margin-left: 2vw;
+        margin-top: 2vh;
+        padding-bottom: 1vh;
+        color: deepskyblue;
+        font-size: 1.75em;
+      }
+
+      .bar {
+        margin-left: 2vw;
+        width: 25%;
+        border-style: solid;
+        border-width: 0;
+        border-bottom-color: deepskyblue;
+        border-bottom-width: 5px;
+      }
+    }
+  }
 }

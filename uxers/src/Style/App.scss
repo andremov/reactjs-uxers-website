@@ -26,6 +26,25 @@
   }
 }
 
+.paging {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f1f2f2;
+    margin-bottom: 2%;
+
+    &.sel {
+      background-color: #f15a29
+    }
+  }
+}
+
 .burger-btn {
   position: absolute;
   width: 100px;
@@ -64,6 +83,7 @@
   height: 10vh;
   bottom: 5vh;
   color: white;
+  font-weight: bold;
   display: flex;
   justify-content: center;
 
