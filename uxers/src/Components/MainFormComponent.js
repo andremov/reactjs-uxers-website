@@ -173,7 +173,7 @@ export class MainFormComponent extends Component {
                 <div className='half-right'>
                     <div className='title'>
                         <span>Comience con</span>
-                        <span>una función</span>
+                        <span>una función,</span>
                         <span>no con un diseño</span>
                     </div>
                     <div className='subtitle'>
