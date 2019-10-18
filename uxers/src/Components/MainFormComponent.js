@@ -1,21 +1,22 @@
 import React, {Component, Fragment} from 'react';
-import "../../Style/Start.scss";
-import {LogoComponent} from "../LogoComponent";
-import {HamburgerButton} from "../HamburgerButton";
-import {MenuComponent} from "../MenuComponent";
-import {PagingComponent} from "../PagingComponent";
-import foto1 from "../../assets/foto1.jpg";
-import foto2 from "../../assets/foto2.jpg";
-import foto3 from "../../assets/foto3.jpg";
-import foto4 from "../../assets/foto4.jpg";
-import {NavDisplayComponent} from "../NavDisplayComponent";
+import "../Style/Start.scss";
+import {LogoComponent} from "./LogoComponent";
+import {HamburgerButton} from "./HamburgerButton";
+import {MenuComponent} from "./MenuComponent";
+import {PagingComponent} from "./PagingComponent";
+import foto1 from "../assets/foto1.jpg";
+import foto2 from "../assets/foto2.jpg";
+import foto3 from "../assets/foto3.jpg";
+import foto4 from "../assets/foto4.jpg";
+import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Link} from "react-router-dom";
+import {Footer} from "./Footer";
 
-export class MainStartComponent extends Component {
+export class MainFormComponent extends Component {
 
     state = {
-        menuShown : false,
-        screen : 1
+        menuShown: false,
+        screen: 1
     };
 
     changePage = (newPage) => {
@@ -30,7 +31,7 @@ export class MainStartComponent extends Component {
     openBurger = () => {
         const {menuShown} = this.state;
         this.setState({
-            menuShown : !menuShown
+            menuShown: !menuShown
         })
     };
 
@@ -39,38 +40,42 @@ export class MainStartComponent extends Component {
 
         return (
             <Fragment>
-                <LogoComponent shortLogo={menuShown} />
+                <LogoComponent shortLogo={menuShown}/>
 
-                <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger} />
+                <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
-                    menuShown?
-                    <MenuComponent currentNav={1}/>
-                    :
+                    menuShown ?
+                        <MenuComponent currentNav={2}/>
+                        :
+                        <Fragment>
                         <div className='purple-bkg'>
                             <div className='screen-index'>
-                                <span>{'0'+screen}</span>
+                                <span>{'0' + screen}</span>
                             </div>
 
                             <div className='content'>
-                                {screen === 1?
+                                {screen === 1 ?
                                     this.getPage01()
                                     :
-                                    screen === 2?
+                                    screen === 2 ?
                                         this.getPage02()
                                         :
-                                        screen === 3?
-                                        this.getPage03()
-                                        :
-                                            screen === 4?
+                                        screen === 3 ?
+                                            this.getPage03()
+                                            :
+                                            screen === 4 ?
                                                 this.getPage04()
                                                 :
-                                                ''}
+                                                ''}}
+                                </div>
                             </div>
-                        </div>
+                            <PagingComponent currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                        </Fragment>
                 }
-                <NavDisplayComponent currentScreen={screen} />
-                <PagingComponent currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                <NavDisplayComponent currentScreen={screen}/>
+
+                <Footer currentNav={'Diseño Forma'}/>
 
             </Fragment>
         );
@@ -84,7 +89,7 @@ export class MainStartComponent extends Component {
                 </div>
 
                 <div className='item img'>
-                    <img src={foto1} alt='Fotito toda chevere' />
+                    <img src={foto1} alt='Fotito toda chevere'/>
                 </div>
 
                 <div className='item descrip'>
@@ -130,7 +135,7 @@ export class MainStartComponent extends Component {
                 </div>
 
                 <div className='item img'>
-                    <img src={foto2} alt='Fotito toda chevere' />
+                    <img src={foto2} alt='Fotito toda chevere'/>
                 </div>
 
                 <div className='item title'>
@@ -148,7 +153,7 @@ export class MainStartComponent extends Component {
                 </div>
 
                 <div className='item img'>
-                    <img src={foto3} alt='Fotito toda chevere' />
+                    <img src={foto3} alt='Fotito toda chevere'/>
                 </div>
 
                 <div className='item descrip'>
@@ -193,7 +198,7 @@ export class MainStartComponent extends Component {
                 </div>
 
                 <div className='item img'>
-                    <img src={foto4} alt='Fotito toda chevere' />
+                    <img src={foto4} alt='Fotito toda chevere'/>
                 </div>
 
                 <div className='item title'>

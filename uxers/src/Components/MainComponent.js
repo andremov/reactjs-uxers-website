@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
-import {MainStartComponent} from "./Start/MainStartComponent";
-import {MainFormComponent} from "./FormDesign/MainFormComponent";
+import {MainStartComponent} from "./MainStartComponent";
+import {MainFormComponent} from "./MainFormComponent";
 import {MainStyleComponent} from "./StyleDesign/MainStyleComponent";
 import {MainProgrammingComponent} from "./Programming/MainProgrammingComponent";
 import {Route, BrowserRouter as Router} from "react-router-dom";
