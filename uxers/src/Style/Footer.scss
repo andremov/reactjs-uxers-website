@@ -3,11 +3,26 @@
   color: white;
 
   .top-half {
-    background-color: #490e67;
     width: 100vw;
     height: 50vh;
     display: flex;
     flex-direction: row;
+
+    &.purple {
+      background-color: #490e67;
+    }
+
+    &.blue {
+      background-color: #00b1cb;
+    }
+
+    &.orange {
+      background-color: #ed7931;
+    }
+
+    &.red {
+      background-color: #e53951;
+    }
 
     .name {
       margin-right: 3vw;

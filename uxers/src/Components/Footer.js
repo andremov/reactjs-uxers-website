@@ -1,9 +1,21 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import '../Style/Footer.scss';
 import logoFull from "../assets/logo-simple.png";
 import slogan from "../assets/slogan.png";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
+
+const colors = [
+    'blue',
+    'orange',
+    'red'
+];
+
+const names = [
+  'Diseño Forma',
+    'Diseño Estilo',
+    'Programación'
+];
 
 export class Footer extends Component {
     state = {
@@ -26,15 +38,14 @@ export class Footer extends Component {
         }
     }
 
-
     render() {
         const {screenName} = this.state;
 
         return (
             <div className='footer'>
-                <div className='top-half'>
+                <div className={'top-half ' + colors[screenName]}>
                     <div className='name'>
-                        {screenName}
+                        {names[screenName]}
                     </div>
 
                     <div className='main-block'>
