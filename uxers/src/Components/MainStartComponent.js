@@ -161,9 +161,9 @@ export class MainStartComponent extends Component {
                         <span>Con pasión</span>
                     </div>
                     <div className='subtitle'>
-                        <span>Te ayudamos a desarrollarte</span>
-                        <span>en la tecnología de tu</span>
-                        <span>preferencia.</span>
+                        <span>Crea páginas web efectivas y</span>
+                        <span>fáciles de usar mejorando la</span>
+                        <span>experiencia de los usuarios.</span>
                     </div>
                     <div className='link'>
                         <Link to='/estilo'>Explorar cursos</Link>
