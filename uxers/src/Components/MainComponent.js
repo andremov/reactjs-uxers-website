@@ -5,7 +5,7 @@ import {MainStyleComponent} from "./StyleDesign/MainStyleComponent";
 import {MainProgrammingComponent} from "./Programming/MainProgrammingComponent";
 import {LoadComponent} from "./LoadComponent";
 
-export const VER_NUM = 'v1.1.2';
+export const VER_NUM = 'v1.2.0';
 
 export class MainComponent extends Component {
 
