@@ -57,24 +57,25 @@ export class MainFormComponent extends Component {
 
                 {
                     menuShown ?
-                        <MenuComponent currentNav={2}/>
-                        :
-                        <Fragment>
-                            {screen === 1 ?
-                                this.getPage01()
+                    <MenuComponent currentNav={2}/>
+                    :
+                    <Fragment>
+                        {screen === 1 ?
+                            this.getPage01()
+                            :
+                            screen === 2 ?
+                                this.getPage02()
                                 :
-                                screen === 2 ?
-                                    this.getPage02()
+                                screen === 3 ?
+                                    this.getPage03()
                                     :
-                                    screen === 3 ?
-                                        this.getPage03()
+                                    screen === 4 ?
+                                        this.getPage04()
                                         :
-                                        screen === 4 ?
-                                            this.getPage04()
-                                            :
-                                            ''}}
-                            <PagingComponent dark={screen === 2 || screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
-                        </Fragment>
+                                        ''
+                        }
+                        <PagingComponent dark={screen === 2 || screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                    </Fragment>
                 }
                 <NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>
 
