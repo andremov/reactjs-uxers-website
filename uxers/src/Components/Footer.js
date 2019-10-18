@@ -12,7 +12,7 @@ const colors = [
 ];
 
 const names = [
-  'Diseño Forma',
+    'Diseño Forma',
     'Diseño Estilo',
     'Programación'
 ];
@@ -43,9 +43,9 @@ export class Footer extends Component {
 
         return (
             <div className='footer'>
-                <div className={'top-half ' + colors[screenName]}>
+                <div className={'top-half ' + colors[screenName-1]}>
                     <div className='name'>
-                        {names[screenName]}
+                        {names[screenName-1]}
                     </div>
 
                     <div className='main-block'>

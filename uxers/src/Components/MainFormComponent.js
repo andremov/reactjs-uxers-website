@@ -187,7 +187,7 @@ export class MainFormComponent extends Component {
 
     getPage03() {
         return (
-            <div className='form-screen-3'>
+            <div className='form-screen-3 blue-bkg'>
 
                 <div className='screen-title'>
                     <span>Diseño Forma</span>
@@ -202,7 +202,7 @@ export class MainFormComponent extends Component {
                     </div>
                 </div>
 
-                <div className='item img'>
+                <div className='img'>
                     <img src={foto2} alt='Fotito toda chevere'/>
                 </div>
             </div>
@@ -211,37 +211,19 @@ export class MainFormComponent extends Component {
 
     getPage04() {
         return (
-            <Fragment>
-                <div className='item descrip'>
-                    <div className='title pan-right'>
-                        <span>de nivel</span>
-                        <span>Subiendo</span>
+            <div className='form-screen-4'>
+                <div className='grid'>
+                    <div className='left'>
+                        <div className='top'>
+                            <img className='left-img-left' src={foto3} alt='Fotito toda chevere'/>
+                            <img className='left-img-right' src={foto4} alt='Fotito toda chevere'/>
+                        </div>
+                        <img className='left-img-bottom' src={foto6} alt='Fotito toda chevere'/>
                     </div>
-                    <div className='subtitle pan-right'>
-                        <span>Domina los lenguajes de</span>
-                        <span>código, herramientas,</span>
-                        <span>arquitectura, bases de</span>
-                        <span>datos y más.</span>
-                    </div>
-                    <div className='link pan-right'>
-                        <Link to='/programacion'>Explorar cursos</Link>
-                    </div>
-                    <div className='bar pan-right'>
-                    </div>
-                </div>
 
-                <div className='item img'>
-
-                    <img src={foto3} alt='Fotito toda chevere'/>
-                    <img src={foto4} alt='Fotito toda chevere'/>
-                    <img src={foto5} alt='Fotito toda chevere'/>
-                    <img src={foto6} alt='Fotito toda chevere'/>
+                    <img className='img-right' src={foto5} alt='Fotito toda chevere'/>
                 </div>
-
-                <div className='item title'>
-                    <span>Programación</span>
-                </div>
-            </Fragment>
+            </div>
         );
     }
 
