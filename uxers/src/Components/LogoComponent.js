@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logoFull from "../assets/logo-full.png";
 import logoShort from "../assets/logo-short.png";
+import '../Style/Doodads.scss';
 
 export class LogoComponent extends Component {
 
@@ -29,11 +30,11 @@ export class LogoComponent extends Component {
 
         if (!data) {
             return (
-                <img className='logo' src={logoFull} alt='logo'/>
+                <img className='main-logo' src={logoFull} alt='logo'/>
             );
         } else {
             return (
-                <img className='logo short' src={logoShort} alt='logo'/>
+                <img className='main-logo short' src={logoShort} alt='logo'/>
             );
         }
     }

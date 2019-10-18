@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../Style/Doodads.scss';
 
 export class PagingComponent extends Component {
 

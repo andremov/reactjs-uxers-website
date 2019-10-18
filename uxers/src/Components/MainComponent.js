@@ -6,16 +6,12 @@ import {MainProgrammingComponent} from "./Programming/MainProgrammingComponent";
 import {Route, BrowserRouter as Router} from "react-router-dom";
 import {LoadComponent} from "./LoadComponent";
 
-export const VER_NUM = 'v1.2.0';
 
 export class MainComponent extends Component {
 
     render() {
         return (
             <Fragment>
-                <div className='version'>
-                    {VER_NUM}
-                </div>
 
                 {/*<LoadComponent />*/}
 
