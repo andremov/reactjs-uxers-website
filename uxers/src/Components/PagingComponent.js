@@ -33,6 +33,10 @@ export class PagingComponent extends Component {
         }
     }
 
+    sendPageRequest = (newPage) => {
+        this.props.changePage(newPage+1);
+    };
+
     render() {
         const {data, max} = this.state;
         let junk = [];
@@ -42,7 +46,7 @@ export class PagingComponent extends Component {
         return (
             <div className='item paging'>
                 {junk.map(item => {return(
-                    <div key={junk.indexOf(item)} className={'dot'+(data-1 === junk.indexOf(item)? ' sel' : '')}>
+                    <div key={junk.indexOf(item)} onClick={e => this.sendPageRequest(junk.indexOf(item))}className={'dot'+(data-1 === junk.indexOf(item)? ' sel' : '')}>
 
                     </div>
                 )})}

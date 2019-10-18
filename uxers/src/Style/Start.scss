@@ -17,15 +17,20 @@
   -webkit-text-stroke-color: white;
 }
 
-.info {
+.content {
+  //background-color: #282c34;
+  margin: auto;
+  transform: translate(-5%,0);
+  width: 70vw;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   color: white;
 
   .item {
     &.title {
-      margin-left: 15vw;
       margin-right: 3vw;
+      margin-left: 3vw;
       writing-mode: vertical-rl;
       font-size: 2em;
       font-weight: bold;
@@ -40,47 +45,69 @@
       }
     }
 
-    &.paging {
-      width: 20vw;
-    }
-
     &.descrip {
+      white-space:nowrap;
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
+      width: 25vw;
 
       .title {
-        margin-left: -5vw;
-        margin-top: -1vw;
         font-size: 8em;
         font-weight: bold;
         display: flex;
         line-height: 1;
-        flex-direction: column;
+        height: 26vh;
+        //width: 30vw;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+
         margin-bottom: 5vh;
+        transform: translate(-20%,0%);
+
+        &.pan-right {
+          text-align: right;
+          transform: translate(10%,0%);
+        }
       }
 
       .subtitle {
         margin-left: 2vw;
+        margin-right: 2vw;
         display: flex;
         flex-direction: column;
         font-size: 2em;
-   }
+
+        &.pan-right {
+          text-align: right;
+        }
+      }
 
       .link {
         margin-left: 2vw;
+        margin-right: 2vw;
         margin-top: 2vh;
         padding-bottom: 1vh;
         color: deepskyblue;
         font-size: 1.75em;
+
+        &.pan-right {
+          text-align: right;
+        }
       }
 
       .bar {
         margin-left: 2vw;
+        margin-right: 2vw;
         width: 25%;
         border-style: solid;
         border-width: 0;
         border-bottom-color: deepskyblue;
         border-bottom-width: 5px;
+
+        &.pan-right {
+          align-self: flex-end;
+        }
       }
     }
   }

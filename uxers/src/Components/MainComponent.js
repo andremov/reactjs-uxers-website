@@ -1,10 +1,9 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {MainStartComponent} from "./Start/MainStartComponent";
 import {MainFormComponent} from "./FormDesign/MainFormComponent";
 import {MainStyleComponent} from "./StyleDesign/MainStyleComponent";
 import {MainProgrammingComponent} from "./Programming/MainProgrammingComponent";
 import {LoadComponent} from "./LoadComponent";
-import {NavDisplayComponent} from "./NavDisplayComponent";
 
 export const VER_NUM = 'v1.1.2';
 
@@ -34,7 +33,7 @@ export class MainComponent extends Component {
         const {screen} = this.state;
 
         return (
-            <div>
+            <Fragment>
                 <div className='version'>
                     {VER_NUM}
                 </div>
@@ -46,15 +45,9 @@ export class MainComponent extends Component {
                         screen === 3? <MainProgrammingComponent /> :
                         <LoadComponent />
                 }
-                {
-                    screen >= 0?
-                        <NavDisplayComponent currentScreen={screen+1} />
-                        :
-                        ''
-                }
 
 
-            </div>
+            </Fragment>
         );
     }
 }
