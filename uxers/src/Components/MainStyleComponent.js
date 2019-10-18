@@ -12,11 +12,12 @@ import foto4 from "../assets/foto8.jpg";
 import foto5 from "../assets/foto9.jpg";
 import foto6 from "../assets/foto10.jpg";
 import {NavDisplayComponent} from "./NavDisplayComponent";
+import {Link} from "react-router-dom";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 
-export class MainFormComponent extends Component {
+export class MainStyleComponent extends Component {
 
     state = {
         menuShown: false,
@@ -56,25 +57,25 @@ export class MainFormComponent extends Component {
 
                 {
                     menuShown ?
-                    <MenuComponent currentNav={2}/>
-                    :
-                    <Fragment>
-                        {screen === 1 ?
-                            this.getPage01()
-                            :
-                            screen === 2 ?
-                                this.getPage02()
+                        <MenuComponent currentNav={2}/>
+                        :
+                        <Fragment>
+                            {screen === 1 ?
+                                this.getPage01()
                                 :
-                                screen === 3 ?
-                                    this.getPage03()
+                                screen === 2 ?
+                                    this.getPage02()
                                     :
-                                    screen === 4 ?
-                                        this.getPage04()
+                                    screen === 3 ?
+                                        this.getPage03()
                                         :
-                                        ''
-                        }
-                        <PagingComponent dark={screen === 2 || screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
-                    </Fragment>
+                                        screen === 4 ?
+                                            this.getPage04()
+                                            :
+                                            ''
+                            }
+                            <PagingComponent dark={screen === 2 || screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                        </Fragment>
                 }
                 <NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>
 
