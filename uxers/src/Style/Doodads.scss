@@ -6,13 +6,13 @@
   line-height: 0.9;
   border-radius: 10px;
   color: white;
-  position: absolute;
+  position: fixed;
   right: 1%;
   bottom: 1%;
 }
 
 .main-logo {
-  position: absolute;
+  position: fixed;
   width: 140px;
   top: 5vh;
   left: 5vw;
@@ -56,7 +56,7 @@
 }
 
 .burger-btn {
-  position: absolute;
+  position: fixed;
   width: 100px;
   top: 5vh;
   right: 5vw;
