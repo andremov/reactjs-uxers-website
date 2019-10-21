@@ -14,16 +14,7 @@ import {Link} from "react-router-dom";
 export class MainStartComponent extends Component {
 
     state = {
-        menuShown : false,
-        screen : 1
-    };
-
-    changePage = (newPage) => {
-        if (this.state.screen !== newPage) {
-            this.setState({
-                screen: newPage
-            });
-        }
+        menuShown : false
     };
 
     componentDidMount() {
@@ -41,7 +32,7 @@ export class MainStartComponent extends Component {
     };
 
     render() {
-        const {menuShown, screen} = this.state;
+        const {menuShown} = this.state;
 
         return (
             <Fragment>
@@ -56,31 +47,47 @@ export class MainStartComponent extends Component {
                         <Fragment>
                             <div className='start-screen purple-bkg'>
                                 <div className='screen-index'>
-                                    <span>{'0'+screen}</span>
+                                    <span>01</span>
                                 </div>
 
                                 <div className='content'>
-                                    {
-                                    (screen === 1 ?
-                                        this.getPage01()
-                                        :
-                                        screen === 2 ?
-                                            this.getPage02()
-                                            :
-                                            screen === 3 ?
-                                                this.getPage03()
-                                                :
-                                                screen === 4 ?
-                                                    this.getPage04()
-                                                    :
-                                                    '')
-                                    }
+                                        {this.getPage01()}
                                 </div>
                             </div>
-                            <PagingComponent colorSwitch={false} dark={false} currentPage={screen} maxPage={4} changePage={this.changePage}/>
+
+                            <div className='start-screen purple-bkg'>
+                                <div className='screen-index'>
+                                    <span>02</span>
+                                </div>
+
+                                <div className='content'>
+                                    {this.getPage02()}
+                                </div>
+                            </div>
+
+                            <div className='start-screen purple-bkg'>
+                                <div className='screen-index'>
+                                    <span>03</span>
+                                </div>
+
+                                <div className='content'>
+                                    {this.getPage03()}
+                                </div>
+                            </div>
+
+                            <div className='start-screen purple-bkg'>
+                                <div className='screen-index'>
+                                    <span>04</span>
+                                </div>
+
+                                <div className='content'>
+                                    {this.getPage04()}
+                                </div>
+                            </div>
+                            {/*<PagingComponent colorSwitch={false} dark={false} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
                         </Fragment>
                 }
-                <NavDisplayComponent colored={false} currentScreen={screen} />
+                {/*<NavDisplayComponent colored={false} currentScreen={screen} />*/}
 
             </Fragment>
         );
