@@ -60,24 +60,14 @@ export class MainStyleComponent extends Component {
                         <MenuComponent currentNav={3}/>
                         :
                         <Fragment>
-                            {screen === 1 ?
-                                this.getPage01()
-                                :
-                                screen === 2 ?
-                                    this.getPage02()
-                                    :
-                                    screen === 3 ?
-                                        this.getPage03()
-                                        :
-                                        screen === 4 ?
-                                            this.getPage04()
-                                            :
-                                            ''
-                            }
-                            <PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>
+                            {this.getPage01()}
+                            {this.getPage02()}
+                            {this.getPage03()}
+                            {this.getPage04()}
+                            {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
                         </Fragment>
                 }
-                <NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>
+                {/*<NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>*/}
 
                 <Footer currentNav={1}/>
 
