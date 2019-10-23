@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   color: white;
+  overflow: hidden;
 }
 
 .form-screen-1 {
@@ -10,18 +11,20 @@
   flex-direction: row;
 
   .half-left {
-    height: 100vh;
-    overflow: hidden;
+    //height: 100vh;
+    //overflow: hidden;
     width: 50vw;
+    height: 45vw;
 
     img {
-      height: 101vh;
+      width: 35vw;
+      //height: 101vh;
     }
   }
 
   .half-right {
     padding-top: 15%;
-    height: 100vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
 
@@ -151,6 +154,7 @@
 .form-screen-3 {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   .screen-title {
     width: 0;
@@ -165,11 +169,12 @@
   }
 
   .img {
-    position: absolute;
+    //position: absolute;
 
-    transform: translate(-50%, -50%);
-    top: 50vh;
-    left: 50vw;
+    //transform: translate(-50%, -50%);
+    //top: 50vh;
+    //left: 50vw;
+    margin: auto;
 
     img {
       width: 40vw;
@@ -177,11 +182,13 @@
   }
 
   .text {
-    position: absolute;
+    //position: absolute;
     font-weight: bold;
-    transform: translate(0%, -50%);
-    top: 50vh;
-    left: 16vw;
+    transform: translate(15vw, 0%);
+    //top: 50vh;
+    //left: 16vw;
+    white-space: nowrap;
+    width: 0;
     z-index: 1;
 
     .top {

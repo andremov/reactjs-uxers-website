@@ -58,6 +58,7 @@ export class MainProgrammingComponent extends Component {
                             {this.getPage02()}
                             {this.getPage03()}
                             {this.getPage04()}
+
                             {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
                         </Fragment>
                 }
