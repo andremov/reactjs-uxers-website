@@ -67,7 +67,7 @@ export class MainStyleComponent extends Component {
                             {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
                         </Fragment>
                 }
-                {/*<NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>*/}
+
 
                 <Footer currentNav={1}/>
 
@@ -77,151 +77,163 @@ export class MainStyleComponent extends Component {
 
     getPage01() {
         return (
-            <div className='orange-bkg style-screen-1'>
-                <div className='half-left img'>
-                    <img src={foto1} alt='Fotito toda chevere'/>
-                </div>
+            <div className='orange-bkg'>
+                <div className='style-screen-1'>
+                    <div className='half-left img'>
+                        <img src={foto1} alt='Fotito toda chevere'/>
+                    </div>
 
-                <div className='half-right'>
+                    <div className='half-right'>
 
-                    <div className='overbite'>
-                        <div className='line'>
-                            <div className='circle'>
+                        <div className='overbite'>
+                            <div className='line'>
+                                <div className='circle'>
+                                </div>
+                            </div>
+                            <div className='index'>
+                                03
                             </div>
                         </div>
-                        <div className='index'>
-                            03
-                        </div>
-                    </div>
 
-                    <div className='title-block'>
-                        <div className='screen-name'>
-                            Diseño Estilo
-                        </div>
-                        <div className='title'>
-                            <span>Con pasión</span>
-                            <span>diseñamos</span>
-                        </div>
-                        <div className='icons'>
-                            <img src={facebook} alt='facebook'/>
-                            <img src={instagram} alt='instagram'/>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='video-pop-up'>
-                    <div className='top'>
-                        <div className='action'>
-                            <span>Ver</span>
-                            <span>video</span>
-                        </div>
-                        <div className='line'>
-                            <div className='circle'>
+                        <div className='title-block'>
+                            <div className='screen-name'>
+                                Diseño Estilo
+                            </div>
+                            <div className='title'>
+                                <span>Con pasión</span>
+                                <span>diseñamos</span>
+                            </div>
+                            <div className='icons'>
+                                <img src={facebook} alt='facebook'/>
+                                <img src={instagram} alt='instagram'/>
                             </div>
                         </div>
                     </div>
-                    <div className='img'>
-                        <img src={video} alt='Fotito toda chevere'/>
+
+                    <div className='video-pop-up'>
+                        <div className='top'>
+                            <div className='action'>
+                                <span>Ver</span>
+                                <span>video</span>
+                            </div>
+                            <div className='line'>
+                                <div className='circle'>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='img'>
+                            <img src={video} alt='Fotito toda chevere'/>
+                        </div>
                     </div>
                 </div>
-
+                <NavDisplayComponent colored={false} currentScreen={1}/>
             </div>
         );
     }
 
     getPage02() {
         return (
-            <div className='style-screen-2'>
+            <div className='white-bkg'>
+                <div className='style-screen-2'>
 
-                <div className='screen-title'>
-                    <span>Diseño Estilo</span>
-                </div>
-
-                <div className='half-left'>
-                    <div className='title'>
-                        <span>Comience con</span>
-                        <span>una función,</span>
-                        <span>no con un diseño</span>
+                    <div className='screen-title'>
+                        <span>Diseño Estilo</span>
                     </div>
-                    <div className='subtitle'>
-                        <span>Cuando comienzas el diseño para una nueva idea</span>
-                        <span>de aplicación, ¿qué diseñas primero?</span>
+
+                    <div className='half-left'>
+                        <div className='title'>
+                            <span>Comience con</span>
+                            <span>una función,</span>
+                            <span>no con un diseño</span>
+                        </div>
+                        <div className='subtitle'>
+                            <span>Cuando comienzas el diseño para una nueva idea</span>
+                            <span>de aplicación, ¿qué diseñas primero?</span>
+                        </div>
                     </div>
+
+                    <img className='half-right' src={foto2} alt='Fotito toda chevere'/>
+
                 </div>
-
-
-                <img className='half-right' src={foto2} alt='Fotito toda chevere'/>
+                <NavDisplayComponent colored={true} currentScreen={2}/>
             </div>
         );
     }
 
     getPage03() {
         return (
-            <div className='style-screen-3 orange-bkg'>
+            <div className='orange-bkg'>
+                <div className='style-screen-3'>
 
-                <div className='screen-title'>
-                    <span>Diseño Estilo</span>
-                </div>
-
-                <div className='half-left'>
-                    <div className='quarter'>
-                        <div className='title'>
-                            Entregables
-                        </div>
-                        <span>Archivos descargables</span>
-                        <span>Video</span>
+                    <div className='screen-title'>
+                        <span>Diseño Estilo</span>
                     </div>
 
-                    <div className='quarter'>
-                        <div className='title'>
-                            Contenido
+                    <div className='half-left'>
+                        <div className='quarter'>
+                            <div className='title'>
+                                Entregables
+                            </div>
+                            <span>Archivos descargables</span>
+                            <span>Video</span>
                         </div>
-                        <span>Función</span>
-                        <span>Jerarquía</span>
-                        <span>Fondos</span>
-                        <span>Balance y contraste</span>
-                        <span>Diseño y espaciado</span>
-                        <span>Dimensionamiento</span>
-                        <span>Diseño de texto</span>
-                        <span>Fuentes</span>
+
+                        <div className='quarter'>
+                            <div className='title'>
+                                Contenido
+                            </div>
+                            <span>Función</span>
+                            <span>Jerarquía</span>
+                            <span>Fondos</span>
+                            <span>Balance y contraste</span>
+                            <span>Diseño y espaciado</span>
+                            <span>Dimensionamiento</span>
+                            <span>Diseño de texto</span>
+                            <span>Fuentes</span>
+                        </div>
                     </div>
-                </div>
 
-                {/*<div className='text'>*/}
-                {/*    <div className='top'>*/}
-                {/*        Mira abajo*/}
-                {/*    </div>*/}
-                {/*    <div className='bottom'>*/}
-                {/*        Temas disponibles*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                    {/*<div className='text'>*/}
+                    {/*    <div className='top'>*/}
+                    {/*        Mira abajo*/}
+                    {/*    </div>*/}
+                    {/*    <div className='bottom'>*/}
+                    {/*        Temas disponibles*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
-                <div className='img'>
-                    <img src={foto3} alt='Fotito toda chevere'/>
+                    <div className='img'>
+                        <img src={foto3} alt='Fotito toda chevere'/>
+                    </div>
+
                 </div>
+                <NavDisplayComponent colored={false} currentScreen={3}/>
             </div>
         );
     }
 
     getPage04() {
         return (
-            <div className='style-screen-4'>
+            <div className='white-bkg'>
+                <div className='style-screen-4'>
 
-                <div className='screen-title'>
-                    <span>Diseño Estilo</span>
-                </div>
+                    {/*<div className='screen-title'>*/}
+                    {/*    <span>Diseño Estilo</span>*/}
+                    {/*</div>*/}
 
-                <div className='grid'>
-                    <img className='img-left' src={foto6} alt='Fotito toda chevere'/>
-                    <div className='right'>
-                        <img className='right-img-top' src={foto7} alt='Fotito toda chevere'/>
-                        <div className='bottom'>
-                            <img className='right-img-left' src={foto4} alt='Fotito toda chevere'/>
-                            <img className='right-img-right' src={foto5} alt='Fotito toda chevere'/>
+                    <div className='grid'>
+                        <img className='img-left' src={foto6} alt='Fotito toda chevere'/>
+                        <div className='right'>
+                            <img className='right-img-top' src={foto7} alt='Fotito toda chevere'/>
+                            <div className='bottom'>
+                                <img className='right-img-left' src={foto4} alt='Fotito toda chevere'/>
+                                <img className='right-img-right' src={foto5} alt='Fotito toda chevere'/>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+
+                <NavDisplayComponent colored={true} currentScreen={4}/>
             </div>
         );
     }

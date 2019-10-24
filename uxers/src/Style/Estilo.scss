@@ -3,25 +3,36 @@
   width: 100vw;
   height: 100vh;
   color: white;
+  overflow: hidden;
+}
+
+.white-bkg {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  overflow: hidden;
 }
 
 .style-screen-1 {
   display: flex;
   flex-direction: row;
+  //overflow: hidden;
 
   .half-left {
-    height: 100vh;
-    overflow: hidden;
+    height: 90vh;
+    //overflow: hidden;
     width: 50vw;
 
     img {
-      height: 101vh;
+      //height: 101vh;
+      width: 39vw
     }
   }
 
   .half-right {
     padding-top: 15%;
-    height: 100vh;
+    //height: 100vh;
     display: flex;
     flex-direction: row;
 
@@ -84,7 +95,7 @@
 
 .style-screen-2 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
 
@@ -130,21 +141,22 @@
 
 .style-screen-3 {
   display: flex;
+  height: 90vh;
   flex-direction: row;
+  align-items: center;
 
 
   .half-left {
-    position: absolute;
-
     display: flex;
     flex-direction: row;
     font-size: 1.7em;
-    transform: translate(0%,-50%);
-    left: 15vw;
-    top: 50vh;
+    width: 0;
+    white-space: nowrap;
     z-index: 1;
+    transform: translate(14vw,0);
 
     .quarter{
+      //height: ;
       display: flex;
       flex-direction: column;
 
@@ -155,6 +167,7 @@
         font-weight: bold;
         margin-bottom: 1vh;
       }
+
       span {
         margin-bottom: 0.5vh;
       }
@@ -175,11 +188,7 @@
   }
 
   .img {
-    position: absolute;
-
-    transform: translate(-50%, -50%);
-    top: 50vh;
-    left: 50vw;
+    margin: auto;
 
     img {
       width: 40vw;
@@ -189,7 +198,7 @@
 
 .style-screen-4 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
