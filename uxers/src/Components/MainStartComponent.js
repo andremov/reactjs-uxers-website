@@ -18,7 +18,7 @@ export class MainStartComponent extends Component {
     };
 
     componentDidMount() {
-        const imageList = [foto1, foto2, foto3, foto4]
+        const imageList = [foto1, foto2, foto3, foto4];
         imageList.forEach((image) => {
             new Image().src = image
         });

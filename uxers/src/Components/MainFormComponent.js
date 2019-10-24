@@ -31,6 +31,12 @@ export class MainFormComponent extends Component {
         }
     };
 
+    componentDidMount() {
+        const imageList = [video, foto1, foto2, foto3, foto4, foto5, foto6];
+        imageList.forEach((image) => {
+            new Image().src = image
+        });
+    }
 
     openBurger = () => {
         const {menuShown} = this.state;

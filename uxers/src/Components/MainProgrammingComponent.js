@@ -23,6 +23,12 @@ export class MainProgrammingComponent extends Component {
         screen: 1
     };
 
+    componentDidMount() {
+        const imageList = [foto1, foto2, foto3, foto4, foto5, foto6, video];
+        imageList.forEach((image) => {
+            new Image().src = image
+        });
+    }
     changePage = (newPage) => {
         if (this.state.screen !== newPage) {
             this.setState({
@@ -30,7 +36,6 @@ export class MainProgrammingComponent extends Component {
             });
         }
     };
-
 
     openBurger = () => {
         const {menuShown} = this.state;
