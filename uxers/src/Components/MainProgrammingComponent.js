@@ -62,7 +62,7 @@ export class MainProgrammingComponent extends Component {
                             {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
                         </Fragment>
                 }
-                {/*<NavDisplayComponent colored={screen === 2 || screen === 4} currentScreen={screen}/>*/}
+
 
                 <Footer currentNav={3}/>
 
@@ -72,60 +72,63 @@ export class MainProgrammingComponent extends Component {
 
     getPage01() {
         return (
-            <div className='red-bkg prog-screen-1'>
-                <div className='half-left img'>
-                    <img src={foto1} alt='Fotito toda chevere'/>
-                </div>
+            <div className='red-bkg'>
+                <div className='prog-screen-1'>
+                    <div className='half-left img'>
+                        <img src={foto1} alt='Fotito toda chevere'/>
+                    </div>
 
-                <div className='half-right'>
+                    <div className='half-right'>
 
-                    <div className='overbite'>
-                        <div className='line'>
-                            <div className='circle'>
+                        <div className='overbite'>
+                            <div className='line'>
+                                <div className='circle'>
+                                </div>
+                            </div>
+                            <div className='index'>
+                                04
                             </div>
                         </div>
-                        <div className='index'>
-                            04
-                        </div>
-                    </div>
 
-                    <div className='title-block'>
-                        <div className='screen-name'>
-                            Programación
-                        </div>
-                        <div className='title'>
-                            <span>Empezando</span>
-                            <span>desde cero</span>
-                        </div>
-                        <div className='icons'>
-                            <img src={facebook} alt='facebook'/>
-                            <img src={instagram} alt='instagram'/>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='video-pop-up'>
-                    <div className='top'>
-                        <div className='action'>
-                            <span>Ver</span>
-                            <span>video</span>
-                        </div>
-                        <div className='line'>
-                            <div className='circle'>
+                        <div className='title-block'>
+                            <div className='screen-name'>
+                                Programación
+                            </div>
+                            <div className='title'>
+                                <span>Empezando</span>
+                                <span>desde cero</span>
+                            </div>
+                            <div className='icons'>
+                                <img src={facebook} alt='facebook'/>
+                                <img src={instagram} alt='instagram'/>
                             </div>
                         </div>
                     </div>
-                    <div className='img'>
-                        <img src={video} alt='Fotito toda chevere'/>
+
+                    <div className='video-pop-up'>
+                        <div className='top'>
+                            <div className='action'>
+                                <span>Ver</span>
+                                <span>video</span>
+                            </div>
+                            <div className='line'>
+                                <div className='circle'>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='img'>
+                            <img src={video} alt='Fotito toda chevere'/>
+                        </div>
                     </div>
                 </div>
-
+                <NavDisplayComponent colored={false} currentScreen={1}/>
             </div>
         );
     }
 
     getPage02() {
         return (
+            <div className='white-bkg'>
             <div className='prog-screen-2'>
 
                 <div className='screen-title'>
@@ -167,58 +170,66 @@ export class MainProgrammingComponent extends Component {
 
                 <img className='half-right' src={foto2} alt='Fotito toda chevere'/>
             </div>
+            <NavDisplayComponent colored={true} currentScreen={2}/>
+        </div>
         );
     }
 
     getPage03() {
         return (
-            <div className='prog-screen-3 red-bkg'>
+            <div className='red-bkg'>
+                <div className='prog-screen-3'>
 
-                <div className='screen-title'>
-                    <span>Programación</span>
-                </div>
-
-                {/*<div className='text'>*/}
-                {/*    <div className='top'>*/}
-                {/*        Mira abajo*/}
-                {/*    </div>*/}
-                {/*    <div className='bottom'>*/}
-                {/*        Temas disponibles*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-
-                <div className='img'>
-                    <img src={foto3} alt='Fotito toda chevere'/>
-                </div>
-
-                <div className='half-right'>
-                    <div className='title'>
-                        Entregables
+                    <div className='screen-title'>
+                        <span>Programación</span>
                     </div>
-                    <span>Archivos descargables</span>
-                    <span>Video</span>
+
+                    {/*<div className='text'>*/}
+                    {/*    <div className='top'>*/}
+                    {/*        Mira abajo*/}
+                    {/*    </div>*/}
+                    {/*    <div className='bottom'>*/}
+                    {/*        Temas disponibles*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+
+                    <div className='img'>
+                        <img src={foto3} alt='Fotito toda chevere'/>
+                    </div>
+
+                    <div className='half-right'>
+                        <div className='title'>
+                            Entregables
+                        </div>
+                        <span>Archivos descargables</span>
+                        <span>Video</span>
+                    </div>
                 </div>
+                <NavDisplayComponent colored={false} currentScreen={3}/>
             </div>
         );
     }
 
     getPage04() {
         return (
-            <div className='prog-screen-4'>
+            <div className='white-bkg'>
+                <div className='prog-screen-4'>
 
-                <div className='screen-title'>
-                    <span>Programación</span>
-                </div>
-
-                <div className='grid'>
-                    <div className='left'>
-                        <img className='img-top' src={foto4} alt='Fotito toda chevere'/>
-                        <img className='img-bottom' src={foto5} alt='Fotito toda chevere'/>
+                    <div className='screen-title'>
+                        <span>Programación</span>
                     </div>
 
-                    <img className='img-right' src={foto6} alt='Fotito toda chevere'/>
+                    <div className='grid'>
+                        <div className='left'>
+                            <img className='img-top' src={foto4} alt='Fotito toda chevere'/>
+                            <img className='img-bottom' src={foto5} alt='Fotito toda chevere'/>
+                        </div>
 
+                        <img className='img-right' src={foto6} alt='Fotito toda chevere'/>
+
+                    </div>
                 </div>
+                <NavDisplayComponent colored={true} currentScreen={4}/>
             </div>
         );
     }

@@ -3,6 +3,14 @@
   width: 100vw;
   height: 100vh;
   color: white;
+  overflow: hidden;
+}
+
+.white-bkg {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  color: black;
 }
 
 .prog-screen-1 {
@@ -10,18 +18,19 @@
   flex-direction: row;
 
   .half-left {
-    height: 100vh;
-    overflow: hidden;
+    height: 90vh;
+    //overflow: hidden;
     width: 50vw;
 
     img {
-      height: 101vh;
+      //height: 101vh;
+      width: 40vw;
     }
   }
 
   .half-right {
     padding-top: 15%;
-    height: 100vh;
+    //height: 100vh;
     display: flex;
     flex-direction: row;
 
@@ -84,7 +93,7 @@
 
 .prog-screen-2 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
 
@@ -168,6 +177,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 10%;
+  align-items: center;
 
 
   .half-right {
@@ -190,10 +200,11 @@
   }
 
   .screen-title {
-    position: absolute;
-    transform: translate(0,-50%) rotate(180deg);
-    top: 50%;
-    left: 5%;
+    //position: absolute;
+    transform: translate(5vw,0) rotate(180deg);
+    //top: 50%;
+    width: 0;
+    //left: 5%;
     writing-mode: vertical-rl;
 
     font-size: 2em;
@@ -206,16 +217,17 @@
 
 .prog-screen-4 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+  transform: translate(0,10vh);
   display: flex;
   align-items: center;
   justify-content: center;
 
   .screen-title {
-    position: absolute;
+    //position: absolute;
     transform: translate(0,-50%) rotate(180deg);
-    top: 50vh;
-    left: 10vw;
+    //top: 50vh;
+    //left: 10vw;
 
     width: 0;
     margin-left: 0;
