@@ -136,89 +136,99 @@ export class MainFormComponent extends Component {
 
     getPage02() {
         return (
-            <div className='form-screen-2'>
+            <div className='white-bkg'>
+                <div className='form-screen-2'>
 
-                <div className='screen-title'>
-                    <span>Diseño Forma</span>
-                </div>
+                    <div className='screen-title'>
+                        <span>Diseño Forma</span>
+                    </div>
 
-                <div className='half-left'>
-                    <div className='quarter'>
-                        <div className='title'>
-                            Entregables
+                    <div className='half-left'>
+                        <div className='quarter'>
+                            <div className='title'>
+                                Entregables
+                            </div>
+                            <span>Archivos descargables</span>
+                            <span>Video</span>
                         </div>
-                        <span>Archivos descargables</span>
-                        <span>Video</span>
-                    </div>
 
-                    <div className='quarter'>
-                        <div className='title'>
-                            Contenido
+                        <div className='quarter'>
+                            <div className='title'>
+                                Contenido
+                            </div>
+                            <span>Función</span>
+                            <span>Jerarquía</span>
+                            <span>Fondos</span>
+                            <span>Balance y contraste</span>
+                            <span>Diseño y espaciado</span>
+                            <span>Dimensionamiento</span>
+                            <span>Diseño de texto</span>
+                            <span>Fuentes</span>
                         </div>
-                        <span>Función</span>
-                        <span>Jerarquía</span>
-                        <span>Fondos</span>
-                        <span>Balance y contraste</span>
-                        <span>Diseño y espaciado</span>
-                        <span>Dimensionamiento</span>
-                        <span>Diseño de texto</span>
-                        <span>Fuentes</span>
-                    </div>
 
-                </div>
-                <div className='half-right'>
-                    <div className='title'>
-                        <span>Comience con</span>
-                        <span>una función,</span>
-                        <span>no con un diseño</span>
                     </div>
-                    <div className='subtitle'>
-                        <span>Cuando comienzas el diseño para una nueva idea</span>
-                        <span>de aplicación, ¿qué diseñas primero?</span>
+                    <div className='half-right'>
+                        <div className='title'>
+                            <span>Comience con</span>
+                            <span>una función,</span>
+                            <span>no con un diseño</span>
+                        </div>
+                        <div className='subtitle'>
+                            <span>Cuando comienzas el diseño para una nueva idea</span>
+                            <span>de aplicación, ¿qué diseñas primero?</span>
+                        </div>
                     </div>
                 </div>
+
+                <NavDisplayComponent colored={true} currentScreen={2}/>
             </div>
         );
     }
 
     getPage03() {
         return (
-            <div className='form-screen-3 blue-bkg'>
+            <div className='blue-bkg'>
+                <div className='form-screen-3'>
 
-                <div className='screen-title'>
-                    <span>Diseño Forma</span>
-                </div>
-
-                <div className='text'>
-                    <div className='top'>
-                        Mira abajo
+                    <div className='screen-title'>
+                        <span>Diseño Forma</span>
                     </div>
-                    <div className='bottom'>
-                        Temas disponibles
+
+                    <div className='text'>
+                        <div className='top'>
+                            Mira abajo
+                        </div>
+                        <div className='bottom'>
+                            Temas disponibles
+                        </div>
+                    </div>
+
+                    <div className='img'>
+                        <img src={foto2} alt='Fotito toda chevere'/>
                     </div>
                 </div>
-
-                <div className='img'>
-                    <img src={foto2} alt='Fotito toda chevere'/>
-                </div>
+                <NavDisplayComponent colored={false} currentScreen={3}/>
             </div>
         );
     }
 
     getPage04() {
         return (
-            <div className='form-screen-4'>
-                <div className='grid'>
-                    <div className='left'>
-                        <div className='top'>
-                            <img className='left-img-left' src={foto3} alt='Fotito toda chevere'/>
-                            <img className='left-img-right' src={foto4} alt='Fotito toda chevere'/>
+            <div className='white-bkg'>
+                <div className='form-screen-4'>
+                    <div className='grid'>
+                        <div className='left'>
+                            <div className='top'>
+                                <img className='left-img-left' src={foto3} alt='Fotito toda chevere'/>
+                                <img className='left-img-right' src={foto4} alt='Fotito toda chevere'/>
+                            </div>
+                            <img className='left-img-bottom' src={foto6} alt='Fotito toda chevere'/>
                         </div>
-                        <img className='left-img-bottom' src={foto6} alt='Fotito toda chevere'/>
-                    </div>
 
-                    <img className='img-right' src={foto5} alt='Fotito toda chevere'/>
+                        <img className='img-right' src={foto5} alt='Fotito toda chevere'/>
+                    </div>
                 </div>
+                <NavDisplayComponent colored={true} currentScreen={4}/>
             </div>
         );
     }

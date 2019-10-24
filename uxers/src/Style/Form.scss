@@ -6,6 +6,14 @@
   overflow: hidden;
 }
 
+.white-bkg {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  overflow: hidden;
+}
+
 .form-screen-1 {
   display: flex;
   flex-direction: row;
@@ -87,7 +95,7 @@
 
 .form-screen-2 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
 
@@ -152,6 +160,7 @@
 }
 
 .form-screen-3 {
+  height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -204,10 +213,11 @@
 
 .form-screen-4 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translate(0,10vh);
 
   .grid {
     width: 60vw;
