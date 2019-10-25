@@ -1,23 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "499171cc80fbfc5f6b99b402abe86143",
+    "revision": "000bd64d274e1108cd8c5712483b0556",
     "url": "/index.html"
   },
   {
-    "revision": "5611b8fc139708cd7626",
-    "url": "/static/css/main.8107ef10.chunk.css"
+    "revision": "94db840717fbdb61fad7",
+    "url": "/static/css/main.01e232d8.chunk.css"
   },
   {
     "revision": "9e11304a5403c2ec41dd",
     "url": "/static/js/2.40a014c8.chunk.js"
   },
   {
-    "revision": "5611b8fc139708cd7626",
-    "url": "/static/js/main.4381900b.chunk.js"
+    "revision": "94db840717fbdb61fad7",
+    "url": "/static/js/main.ffa95aac.chunk.js"
   },
   {
     "revision": "791341e9627036faf9d6",
     "url": "/static/js/runtime-main.1fd6a666.js"
+  },
+  {
+    "revision": "1025a6e0fb0fa86f17f57cc82a6b9756",
+    "url": "/static/media/OpenSans-Bold.1025a6e0.ttf"
+  },
+  {
+    "revision": "3a8113737b373d5bccd6f71d91408d16",
+    "url": "/static/media/OpenSans-BoldItalic.3a811373.ttf"
+  },
+  {
+    "revision": "f6238deb7f40a7a03134c11fb63ad387",
+    "url": "/static/media/OpenSans-Italic.f6238deb.ttf"
+  },
+  {
+    "revision": "3ed9575dcc488c3e3a5bd66620bdf5a4",
+    "url": "/static/media/OpenSans-Regular.3ed9575d.ttf"
   },
   {
     "revision": "f67d409ec7b6b4c2fca055c519ccd3e4",
