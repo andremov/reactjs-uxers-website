@@ -4,6 +4,7 @@ import logoFull from "../assets/logo-simple.png";
 import slogan from "../assets/slogan.png";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
+import {Button} from "./Button";
 
 const colors = [
     'blue',
@@ -56,9 +57,7 @@ export class Footer extends Component {
                             <span>Construye un hermoso</span>
                             <span>sitio web, visualmente</span>
                         </div>
-                        <div className='download'>
-                            Descarga
-                        </div>
+                        <Button />
                     </div>
                 </div>
                 <div className='bottom-half'>

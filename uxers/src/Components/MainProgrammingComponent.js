@@ -135,49 +135,49 @@ export class MainProgrammingComponent extends Component {
     getPage02() {
         return (
             <div className='white-bkg'>
-            <div className='prog-screen-2 content-size'>
+                <div className='prog-screen-2 content-size'>
 
-                <div className='screen-title'>
-                    <span>Programación</span>
-                </div>
-
-                <div className='half-left'>
-                    <div className='top'>
-                        <div className='title'>
-                            <span>Comience con</span>
-                            <span>una función,</span>
-                            <span>no con un diseño</span>
-                        </div>
-                        <div className='subtitle'>
-                            <span>Cuando comienzas el diseño para una nueva idea</span>
-                            <span>de aplicación, ¿qué diseñas primero?</span>
-                        </div>
+                    <div className='screen-title'>
+                        <span>Programación</span>
                     </div>
 
-                    <div className='bottom'>
-                        <div className='left'>
+                    <div className='half-left'>
+                        <div className='top'>
                             <div className='title'>
-                                Contenido
+                                <span>Comience con</span>
+                                <span>una función,</span>
+                                <span>no con un diseño</span>
                             </div>
-                            <span>Función</span>
-                            <span>Jerarquía</span>
-                            <span>Fondos</span>
-                            <span>Balance y contraste</span>
+                            <div className='subtitle'>
+                                <span>Cuando comienzas el diseño para una nueva idea</span>
+                                <span>de aplicación, ¿qué diseñas primero?</span>
+                            </div>
                         </div>
-                        <div className='right'>
-                            <span>Diseño y espaciado</span>
-                            <span>Dimensionamiento</span>
-                            <span>Diseño de texto</span>
-                            <span>Fuentes</span>
+
+                        <div className='bottom'>
+                            <div className='left'>
+                                <div className='title'>
+                                    Contenido
+                                </div>
+                                <span>Función</span>
+                                <span>Jerarquía</span>
+                                <span>Fondos</span>
+                                <span>Balance y contraste</span>
+                            </div>
+                            <div className='right'>
+                                <span>Diseño y espaciado</span>
+                                <span>Dimensionamiento</span>
+                                <span>Diseño de texto</span>
+                                <span>Fuentes</span>
+                            </div>
                         </div>
                     </div>
+
+
+                    <img className='half-right' src={foto2} alt='Fotito toda chevere'/>
                 </div>
-
-
-                <img className='half-right' src={foto2} alt='Fotito toda chevere'/>
+                <NavDisplayComponent colored={true} currentScreen={2}/>
             </div>
-            <NavDisplayComponent colored={true} currentScreen={2}/>
-        </div>
         );
     }
 
