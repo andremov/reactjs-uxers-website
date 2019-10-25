@@ -94,28 +94,14 @@
 }
 
 .form-screen-2 {
-  width: 100vw;
-  height: 90vh;
   display: flex;
   flex-direction: row;
 
-  .screen-title {
-    width: 5vw;
-    margin-right: 3vw;
-    margin-left: 3vw;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-    transform: rotate(180deg);
-  }
-
   .half-left {
-    width: 30vw;
+    width: 50vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     font-size: 1.5em;
     padding-top: 30vh;
 
@@ -160,29 +146,11 @@
 }
 
 .form-screen-3 {
-  height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  .screen-title {
-    width: 0;
-    margin-left: 3vw;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-    transform: rotate(180deg);
-  }
-
   .img {
-    //position: absolute;
-
-    //transform: translate(-50%, -50%);
-    //top: 50vh;
-    //left: 50vw;
     margin: auto;
 
     img {
@@ -191,11 +159,8 @@
   }
 
   .text {
-    //position: absolute;
     font-weight: bold;
-    transform: translate(15vw, 0%);
-    //top: 50vh;
-    //left: 16vw;
+    transform: translate(15vw, 0);
     white-space: nowrap;
     width: 0;
     z-index: 1;
@@ -212,12 +177,9 @@
 }
 
 .form-screen-4 {
-  width: 100vw;
-  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(0,10vh);
 
   .grid {
     width: 60vw;

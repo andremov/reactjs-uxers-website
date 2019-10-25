@@ -84,7 +84,7 @@ export class MainStyleComponent extends Component {
     getPage01() {
         return (
             <div className='orange-bkg'>
-                <div className='style-screen-1'>
+                <div className='style-screen-1 content-size'>
                     <div className='half-left img'>
                         <img src={foto1} alt='Fotito toda chevere'/>
                     </div>
@@ -140,7 +140,7 @@ export class MainStyleComponent extends Component {
     getPage02() {
         return (
             <div className='white-bkg'>
-                <div className='style-screen-2'>
+                <div className='style-screen-2 content-size'>
 
                     <div className='screen-title'>
                         <span>Diseño Estilo</span>
@@ -169,7 +169,7 @@ export class MainStyleComponent extends Component {
     getPage03() {
         return (
             <div className='orange-bkg'>
-                <div className='style-screen-3'>
+                <div className='style-screen-3 content-size'>
 
                     <div className='screen-title'>
                         <span>Diseño Estilo</span>
@@ -221,11 +221,11 @@ export class MainStyleComponent extends Component {
     getPage04() {
         return (
             <div className='white-bkg'>
-                <div className='style-screen-4'>
+                <div className='style-screen-4 content-size moved'>
 
-                    {/*<div className='screen-title'>*/}
-                    {/*    <span>Diseño Estilo</span>*/}
-                    {/*</div>*/}
+                    <div className='screen-title'>
+                        <span>Diseño Estilo</span>
+                    </div>
 
                     <div className='grid'>
                         <img className='img-left' src={foto6} alt='Fotito toda chevere'/>

@@ -32,7 +32,6 @@
 
   .half-right {
     padding-top: 15%;
-    //height: 100vh;
     display: flex;
     flex-direction: row;
 
@@ -94,23 +93,8 @@
 }
 
 .style-screen-2 {
-  width: 100vw;
-  height: 90vh;
   display: flex;
   flex-direction: row;
-
-  .screen-title {
-    width: 5vw;
-    margin-right: 3vw;
-    margin-left: 3vw;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-    transform: rotate(180deg);
-  }
 
   .half-left {
     width: 50vw;
@@ -141,7 +125,6 @@
 
 .style-screen-3 {
   display: flex;
-  height: 90vh;
   flex-direction: row;
   align-items: center;
 
@@ -156,7 +139,6 @@
     transform: translate(14vw,0);
 
     .quarter{
-      //height: ;
       display: flex;
       flex-direction: column;
 
@@ -175,18 +157,6 @@
 
   }
 
-  .screen-title {
-    width: 0;
-    margin-left: 3vw;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-    transform: rotate(180deg);
-  }
-
   .img {
     margin: auto;
 
@@ -197,27 +167,9 @@
 }
 
 .style-screen-4 {
-  width: 100vw;
-  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .screen-title {
-    position: absolute;
-    transform: translate(0,-50%) rotate(180deg);
-    top: 50vh;
-    left: 10vw;
-
-    width: 0;
-    margin-left: 0;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-  }
 
   .grid {
     width: 60vw;

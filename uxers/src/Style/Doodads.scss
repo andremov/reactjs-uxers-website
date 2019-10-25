@@ -17,6 +17,8 @@
   top: 5vh;
   left: 5vw;
   z-index: 1;
+  //background-color: blue;
+  mix-blend-mode: difference;
 
   &.short {
     width: 40px;
@@ -73,6 +75,7 @@
     font-size: 1.75em;
     font-weight: bold;
     color: #f1f2f2;
+    //mix-blend-mode: difference;
   }
 
   .icon {
@@ -82,13 +85,9 @@
 }
 
 .nav-display {
-  //position: absolute;
-  //transform: translate(-50%,0);
-  //left: 50%;
   margin: auto;
-  width: 10vw;
+  width: 100%;
   height: 10vh;
-  //bottom: 5vh;
   color: white;
   font-weight: bold;
   display: flex;
@@ -120,7 +119,6 @@
     }
   }
 }
-
 
 .video-pop-up{
   position: absolute;
@@ -164,3 +162,29 @@
   }
 }
 
+.screen-title {
+  transform: translate(5vw,0) rotate(180deg);
+  width: 0;
+  writing-mode: vertical-rl;
+
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+
+  &.dark {
+    color: black;
+  }
+
+  &.white {
+    color: white;
+  }
+}
+
+.content-size {
+  width: 100vw;
+  height: 90vh;
+
+  &.moved {
+    transform: translate(0,10vh);
+  }
+}

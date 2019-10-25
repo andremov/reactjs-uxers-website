@@ -92,23 +92,8 @@
 }
 
 .prog-screen-2 {
-  width: 100vw;
-  height: 90vh;
   display: flex;
   flex-direction: row;
-
-  .screen-title {
-    width: 5vw;
-    margin-right: 3vw;
-    margin-left: 3vw;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-    transform: rotate(180deg);
-  }
 
   .half-left {
     width: 50vw;
@@ -176,7 +161,6 @@
 .prog-screen-3 {
   display: flex;
   flex-direction: row;
-  padding-top: 10%;
   align-items: center;
 
 
@@ -199,45 +183,12 @@
 
   }
 
-  .screen-title {
-    //position: absolute;
-    transform: translate(5vw,0) rotate(180deg);
-    //top: 50%;
-    width: 0;
-    //left: 5%;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-  }
-
 }
 
 .prog-screen-4 {
-  width: 100vw;
-  height: 90vh;
-  transform: translate(0,10vh);
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .screen-title {
-    //position: absolute;
-    transform: translate(0,-50%) rotate(180deg);
-    //top: 50vh;
-    //left: 10vw;
-
-    width: 0;
-    margin-left: 0;
-    writing-mode: vertical-rl;
-
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-
-  }
 
   .grid {
     width: 60vw;

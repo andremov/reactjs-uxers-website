@@ -100,7 +100,7 @@ export class MainFormComponent extends Component {
     getPage01() {
         return (
             <div className='blue-bkg'>
-                <div className=' form-screen-1'>
+                <div className=' form-screen-1 content-size'>
                     <div className='half-left img'>
                         <img src={foto1} alt='Fotito toda chevere'/>
                     </div>
@@ -143,9 +143,9 @@ export class MainFormComponent extends Component {
     getPage02() {
         return (
             <div className='white-bkg'>
-                <div className='form-screen-2'>
+                <div className='form-screen-2 content-size'>
 
-                    <div className='screen-title'>
+                    <div className='screen-title dark'>
                         <span>Diseño Forma</span>
                     </div>
 
@@ -194,9 +194,9 @@ export class MainFormComponent extends Component {
     getPage03() {
         return (
             <div className='blue-bkg'>
-                <div className='form-screen-3'>
+                <div className='form-screen-3 content-size'>
 
-                    <div className='screen-title'>
+                    <div className='screen-title white'>
                         <span>Diseño Forma</span>
                     </div>
 
@@ -221,7 +221,13 @@ export class MainFormComponent extends Component {
     getPage04() {
         return (
             <div className='white-bkg'>
-                <div className='form-screen-4'>
+
+                <div className='form-screen-4 content-size moved'>
+
+                    <div className='screen-title dark'>
+                        <span>Diseño Forma</span>
+                    </div>
+
                     <div className='grid'>
                         <div className='left'>
                             <div className='top'>

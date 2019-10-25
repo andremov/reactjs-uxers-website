@@ -78,7 +78,7 @@ export class MainProgrammingComponent extends Component {
     getPage01() {
         return (
             <div className='red-bkg'>
-                <div className='prog-screen-1'>
+                <div className='prog-screen-1 content-size'>
                     <div className='half-left img'>
                         <img src={foto1} alt='Fotito toda chevere'/>
                     </div>
@@ -134,7 +134,7 @@ export class MainProgrammingComponent extends Component {
     getPage02() {
         return (
             <div className='white-bkg'>
-            <div className='prog-screen-2'>
+            <div className='prog-screen-2 content-size'>
 
                 <div className='screen-title'>
                     <span>Programación</span>
@@ -183,7 +183,7 @@ export class MainProgrammingComponent extends Component {
     getPage03() {
         return (
             <div className='red-bkg'>
-                <div className='prog-screen-3'>
+                <div className='prog-screen-3 content-size moved'>
 
                     <div className='screen-title'>
                         <span>Programación</span>
@@ -218,7 +218,7 @@ export class MainProgrammingComponent extends Component {
     getPage04() {
         return (
             <div className='white-bkg'>
-                <div className='prog-screen-4'>
+                <div className='prog-screen-4 content-size moved'>
 
                     <div className='screen-title'>
                         <span>Programación</span>
