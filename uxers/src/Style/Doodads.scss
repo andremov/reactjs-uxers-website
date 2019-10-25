@@ -16,8 +16,9 @@
   width: 140px;
   top: 5vh;
   left: 5vw;
-  z-index: 1;
+  z-index: 2;
   //background-color: blue;
+  filter: grayscale(100%);
   mix-blend-mode: difference;
 
   &.short {
@@ -67,7 +68,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 2;
 
   .text {
     margin-right: 10px;

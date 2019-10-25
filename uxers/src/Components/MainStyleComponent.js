@@ -21,15 +21,6 @@ export class MainStyleComponent extends Component {
 
     state = {
         menuShown: false,
-        screen: 1
-    };
-
-    changePage = (newPage) => {
-        if (this.state.screen !== newPage) {
-            this.setState({
-                screen: newPage
-            });
-        }
     };
 
     componentDidMount() {
@@ -47,35 +38,49 @@ export class MainStyleComponent extends Component {
     };
 
     render() {
-        const {menuShown, screen} = this.state;
+        const {menuShown} = this.state;
 
         return (
             <Fragment>
 
-                {screen === 1 ?
-                    <Fragment>
-                        <LogoComponent shortLogo={menuShown}/>
+                <LogoComponent shortLogo={menuShown}/>
 
-                        <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
-                    </Fragment>
-                    : ''
-                }
+                <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
                     menuShown ?
                         <MenuComponent currentNav={3}/>
                         :
-                        <Fragment>
-                            {this.getPage01()}
-                            {this.getPage02()}
-                            {this.getPage03()}
-                            {this.getPage04()}
-                            {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
-                        </Fragment>
+                        ''
                 }
 
+                <Fragment>
 
-                <Footer currentNav={1}/>
+                    <div className='video-pop-up'>
+                        <div className='top'>
+                            <div className='action'>
+                                <span>Ver</span>
+                                <span>video</span>
+                            </div>
+                            <div className='line'>
+                                <div className='circle'>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='img'>
+                            <img src={video} alt='Fotito toda chevere'/>
+                        </div>
+                    </div>
+
+                    {this.getPage01()}
+                    {this.getPage02()}
+                    {this.getPage03()}
+                    {this.getPage04()}
+                    <Footer currentNav={1}/>
+
+                    {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
+                </Fragment>
+
 
             </Fragment>
         );
@@ -113,22 +118,6 @@ export class MainStyleComponent extends Component {
                                 <img src={facebook} alt='facebook'/>
                                 <img src={instagram} alt='instagram'/>
                             </div>
-                        </div>
-                    </div>
-
-                    <div className='video-pop-up'>
-                        <div className='top'>
-                            <div className='action'>
-                                <span>Ver</span>
-                                <span>video</span>
-                            </div>
-                            <div className='line'>
-                                <div className='circle'>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='img'>
-                            <img src={video} alt='Fotito toda chevere'/>
                         </div>
                     </div>
                 </div>

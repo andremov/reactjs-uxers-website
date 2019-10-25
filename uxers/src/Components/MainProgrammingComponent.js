@@ -58,18 +58,35 @@ export class MainProgrammingComponent extends Component {
                     menuShown ?
                         <MenuComponent currentNav={4}/>
                         :
-                        <Fragment>
-                            {this.getPage01()}
-                            {this.getPage02()}
-                            {this.getPage03()}
-                            {this.getPage04()}
-
-                            {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
-                        </Fragment>
+                        ''
                 }
 
+                <Fragment>
 
-                <Footer currentNav={3}/>
+                    <div className='video-pop-up'>
+                        <div className='top'>
+                            <div className='action'>
+                                <span>Ver</span>
+                                <span>video</span>
+                            </div>
+                            <div className='line'>
+                                <div className='circle'>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='img'>
+                            <img src={video} alt='Fotito toda chevere'/>
+                        </div>
+                    </div>
+
+                    {this.getPage01()}
+                    {this.getPage02()}
+                    {this.getPage03()}
+                    {this.getPage04()}
+                    <Footer currentNav={3}/>
+
+                    {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
+                </Fragment>
 
             </Fragment>
         );
@@ -107,22 +124,6 @@ export class MainProgrammingComponent extends Component {
                                 <img src={facebook} alt='facebook'/>
                                 <img src={instagram} alt='instagram'/>
                             </div>
-                        </div>
-                    </div>
-
-                    <div className='video-pop-up'>
-                        <div className='top'>
-                            <div className='action'>
-                                <span>Ver</span>
-                                <span>video</span>
-                            </div>
-                            <div className='line'>
-                                <div className='circle'>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='img'>
-                            <img src={video} alt='Fotito toda chevere'/>
                         </div>
                     </div>
                 </div>

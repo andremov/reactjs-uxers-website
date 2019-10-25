@@ -6,10 +6,11 @@
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  z-index: 1;
 }
 
 .main {
-
   padding-top: 15vw;
   width: 100vw;
   height: 40vh;
