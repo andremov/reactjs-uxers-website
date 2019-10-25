@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31dd2e0cb2c03d1b67b33be1ef895ecf",
+    "revision": "d56dd4b4d06e39c260280b23fdcff337",
     "url": "/index.html"
   },
   {
-    "revision": "acfb8c33729cd1ae4628",
-    "url": "/static/css/main.03d2e4eb.chunk.css"
+    "revision": "f857ac4fc9f221a3eefb",
+    "url": "/static/css/main.7b1d2a12.chunk.css"
   },
   {
     "revision": "9e11304a5403c2ec41dd",
     "url": "/static/js/2.40a014c8.chunk.js"
   },
   {
-    "revision": "acfb8c33729cd1ae4628",
-    "url": "/static/js/main.cb1a30e6.chunk.js"
+    "revision": "f857ac4fc9f221a3eefb",
+    "url": "/static/js/main.d2f05d6e.chunk.js"
   },
   {
     "revision": "791341e9627036faf9d6",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3ed9575dcc488c3e3a5bd66620bdf5a4",
     "url": "/static/media/OpenSans-Regular.3ed9575d.ttf"
+  },
+  {
+    "revision": "5b7f75f9897d4645447f6df8802bcbee",
+    "url": "/static/media/cursor-circle.5b7f75f9.svg"
   },
   {
     "revision": "f67d409ec7b6b4c2fca055c519ccd3e4",
