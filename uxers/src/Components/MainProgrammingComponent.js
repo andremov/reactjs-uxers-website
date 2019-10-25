@@ -3,7 +3,7 @@ import "../Style/Program.scss";
 import {LogoComponent} from "./LogoComponent";
 import {HamburgerButton} from "./HamburgerButton";
 import {MenuComponent} from "./MenuComponent";
-import {PagingComponent} from "./PagingComponent";
+// import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
 import foto1 from "../assets/foto18.png";
 import foto2 from "../assets/foto19.jpg";
@@ -45,7 +45,7 @@ export class MainProgrammingComponent extends Component {
     };
 
     render() {
-        const {menuShown, screen} = this.state;
+        const {menuShown} = this.state;
 
         return (
             <Fragment>
@@ -184,7 +184,7 @@ export class MainProgrammingComponent extends Component {
     getPage03() {
         return (
             <div className='red-bkg'>
-                <div className='prog-screen-3 content-size moved'>
+                <div className='prog-screen-3 content-size'>
 
                     <div className='screen-title'>
                         <span>Programación</span>
@@ -219,6 +219,7 @@ export class MainProgrammingComponent extends Component {
     getPage04() {
         return (
             <div className='white-bkg'>
+
                 <div className='prog-screen-4 content-size moved'>
 
                     <div className='screen-title'>

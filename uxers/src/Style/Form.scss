@@ -21,29 +21,28 @@
   .half-left {
     //height: 100vh;
     //overflow: hidden;
-    width: 50vw;
+    //width: 50vw;
+    min-width: 50vw;
     height: 45vw;
 
     img {
-      width: 35vw;
-      //height: 101vh;
+      width: 680px;
     }
   }
 
   .half-right {
     padding-top: 15%;
-    height: 30vh;
     display: flex;
     flex-direction: row;
 
     .overbite {
-      transform: translate(-10%,-5%);
+      transform: translate(-10%, -5%);
       width: .5vw;
       font-weight: bold;
       font-size: 1.2em;
 
       .index {
-        transform: translate(-100%,0);
+        transform: translate(-100%, 0);
       }
 
       .line {
@@ -58,7 +57,7 @@
           border-radius: 100%;
           width: 10px;
           height: 10px;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -96,6 +95,7 @@
 .form-screen-2 {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   .half-left {
     width: 50vw;
@@ -103,7 +103,7 @@
     flex-direction: row;
     justify-content: center;
     font-size: 1.5em;
-    padding-top: 30vh;
+    //padding-top: 30vh;
 
 
     .quarter{
@@ -125,7 +125,7 @@
 
   .half-right {
     width: 50vw;
-    padding-top: 15%;
+    //padding-top: 15%;
 
     .title {
       display: flex;
@@ -155,6 +155,7 @@
 
     img {
       width: 40vw;
+      min-width: 600px;
     }
   }
 
@@ -169,19 +170,22 @@
       font-size: 2.5em;
       line-height: 1;
     }
+
     .bottom {
       font-size: 5em;
       transform: translate(0,-20%);
     }
+
   }
 }
 
 .form-screen-4 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  //align-items: center;
+  //justify-content: center;
 
   .grid {
+    margin: auto;
     width: 60vw;
     display: flex;
     flex-direction: row;

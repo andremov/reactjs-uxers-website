@@ -25,7 +25,7 @@
 body {
   margin: 0;
   font-family: "Open Sans", serif;
-  font-size: .65vw;
+  font-size: calc(8px + .2vw);
   cursor: url("../assets/cursor-circle.svg"), auto;
 }
 

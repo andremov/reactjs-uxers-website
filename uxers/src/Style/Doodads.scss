@@ -69,11 +69,12 @@
   flex-direction: row;
   justify-content: flex-end;
   z-index: 3;
+  //mix-blend-mode: difference;
 
   .text {
     margin-right: 10px;
     margin-top: 12px;
-    font-size: 1.75em;
+    font-size: 22px;
     font-weight: bold;
     color: #f1f2f2;
     //mix-blend-mode: difference;
@@ -94,6 +95,7 @@
   display: flex;
   justify-content: center;
   z-index: 1;
+
   &.colored {
     color: #ed7931;
   }
@@ -115,7 +117,7 @@
 
     .max {
       height: 0;
-      margin-top: 2vh;
+      margin-top: 1vw;
       font-size: 1.75em;
     }
   }
@@ -131,7 +133,7 @@
   .top {
     display: flex;
     flex-direction: row;
-    height: 60px;
+    //height: 60px;
 
     .action {
       font-weight: bold;
@@ -146,8 +148,8 @@
     .line {
       border: white 1px solid;
       width: 0;
-      height: 50px;
-      margin-bottom: 5vh;
+      height: calc(1.5em * 2.5);
+      //margin-bottom: 1px;
 
       .circle {
         background-color: white;
@@ -164,7 +166,7 @@
 }
 
 .screen-title {
-  transform: translate(5vw,0) rotate(180deg);
+  transform: translate(2vw,0) rotate(180deg);
   width: 0;
   writing-mode: vertical-rl;
 
@@ -187,5 +189,139 @@
 
   &.moved {
     transform: translate(0,10vh);
+  }
+}
+
+.btn {
+  overflow: hidden;
+  width: 10vw;
+  border: 3px solid white;
+  border-radius: 10px;
+
+  .download {
+    //overflow: hidden;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: 0.5s;
+
+    .text {
+      z-index: 1;
+      //mix-blend-mode: difference;
+    }
+
+    //&:hover {
+    //  transform: scale(1.2);
+    //}
+  }
+
+  .ripple-effect {
+
+    //display: inline-block;
+    //position: relative;
+    //overflow: hidden;
+    //cursor: pointer;
+    //vertical-align: middle;
+    //user-select: none;
+    //z-index: 1;
+    //border:1px solid transparent;
+    //background-size: 0 0;
+    //background: rgb(255, 255, 255);
+
+    .ripple {
+      display: block;
+      //position: absolute;
+      width: 0;
+      height: 0;
+      border-radius: 100%;
+      background: rgb(255, 255, 255);
+      transform: scale(0);
+      pointer-events: none;
+    }
+
+    &.animated {
+      animation: ripple 0.6s cubic-bezier(.165,.85,.45,1);
+      animation-fill-mode: forwards;
+    }
+
+    .animated-back {
+      animation: rippleback 0.6s cubic-bezier(.165,.85,.45,1);
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes ripple {
+      0% {
+        //opacity: 1;
+        //transform: scale(0);
+        background-size: 0;
+      }
+      100% {
+        //opacity: 0;
+        //transform: scale(.5);
+        background-size: 200%;
+      }
+    }
+    @keyframes rippleback {
+      0% {
+        //opacity: 1;
+        //transform: scale(0.5);
+        background-size: 200%;
+      }
+      100% {
+        //opacity: 0;
+        //transform: scale(0);
+        background-size: 0;
+      }
+    }
+
+    &.ripple-dark {
+      .ripple {
+        background: rgb(0, 0, 0) !important;
+      }
+    }
+
+    &.ripple-red {
+      .ripple {
+        background: rgb(244, 67, 54) !important;
+      }
+    }
+
+    &.ripple-orange {
+      .ripple {
+        background: rgb(255, 152, 0) !important;
+      }
+    }
+
+    &.ripple-yellow {
+      .ripple {
+        background: rgb(255, 235, 59) !important;
+      }
+    }
+
+    &.ripple-green {
+      .ripple {
+        background: rgb(76, 175, 80) !important;
+      }
+    }
+
+    &.ripple-purple {
+      .ripple {
+        background: rgb(156, 39, 176) !important;
+      }
+    }
+
+    &.ripple-teal {
+      .ripple {
+        background: rgb(0, 150, 136) !important;
+      }
+    }
+
+    &.ripple-pink {
+      .ripple {
+        background: rgb(233, 30, 99) !important;
+      }
+    }
   }
 }

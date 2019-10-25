@@ -20,13 +20,11 @@
   //overflow: hidden;
 
   .half-left {
-    height: 90vh;
-    //overflow: hidden;
-    width: 50vw;
+    min-width: 50vw;
+    height: 45vw;
 
     img {
-      //height: 101vh;
-      width: 39vw
+      width: 720px;
     }
   }
 
@@ -95,11 +93,12 @@
 .style-screen-2 {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   .half-left {
     width: 50vw;
-    padding-top: 15%;
-    padding-left: 10%;
+    //padding-top: 15%;
+    padding-left: 20vw;
 
     .title {
       display: flex;
@@ -119,7 +118,12 @@
 
   .half-right {
     //transform: translate(0,2%)  scale(1.2);
+    width: 40vw;
     transform: translate(0,2%);
+
+    img {
+      width: inherit;
+    }
   }
 
 }
@@ -163,16 +167,18 @@
 
     img {
       width: 40vw;
+      min-width: 600px;
     }
   }
 }
 
 .style-screen-4 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  //align-items: center;
+  //justify-content: center;
 
   .grid {
+    margin: auto;
     width: 60vw;
     display: flex;
     flex-direction: row;

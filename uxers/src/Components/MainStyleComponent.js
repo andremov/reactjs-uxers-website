@@ -3,7 +3,7 @@ import "../Style/Estilo.scss";
 import {LogoComponent} from "./LogoComponent";
 import {HamburgerButton} from "./HamburgerButton";
 import {MenuComponent} from "./MenuComponent";
-import {PagingComponent} from "./PagingComponent";
+// import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
 import foto1 from "../assets/foto11.png";
 import foto2 from "../assets/foto12.jpg";
@@ -146,9 +146,9 @@ export class MainStyleComponent extends Component {
                             <span>de aplicación, ¿qué diseñas primero?</span>
                         </div>
                     </div>
-
-                    <img className='half-right' src={foto2} alt='Fotito toda chevere'/>
-
+                    <div className='half-right'>
+                        <img src={foto2} alt='Fotito toda chevere'/>
+                    </div>
                 </div>
                 <NavDisplayComponent colored={true} currentScreen={2}/>
             </div>

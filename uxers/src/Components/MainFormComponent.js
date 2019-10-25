@@ -3,7 +3,7 @@ import "../Style/Form.scss";
 import {LogoComponent} from "./LogoComponent";
 import {HamburgerButton} from "./HamburgerButton";
 import {MenuComponent} from "./MenuComponent";
-import {PagingComponent} from "./PagingComponent";
+// import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
 import foto1 from "../assets/foto5.png";
 import foto2 from "../assets/foto6.jpg";
@@ -43,7 +43,6 @@ export class MainFormComponent extends Component {
             <Fragment>
 
                 <LogoComponent shortLogo={menuShown}/>
-
                 <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
@@ -52,7 +51,6 @@ export class MainFormComponent extends Component {
                         :
                         ''
                 }
-
 
                 <Fragment>
 

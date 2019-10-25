@@ -4,7 +4,7 @@ import {MainFormComponent} from "./MainFormComponent";
 import {MainStyleComponent} from "./MainStyleComponent";
 import {MainProgrammingComponent} from "./MainProgrammingComponent";
 import {Route, BrowserRouter as Router} from "react-router-dom";
-import {LoadComponent} from "./LoadComponent";
+// import {LoadComponent} from "./LoadComponent";
 import {VersionComponent} from "./VersionComponent";
 
 
