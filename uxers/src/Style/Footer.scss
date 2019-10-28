@@ -2,9 +2,9 @@
 .footer {
   color: white;
 
-  .top-half {
+  .download-section {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
 
@@ -57,13 +57,13 @@
     }
   }
 
-  .bottom-half {
+  .contact-section {
     background-image: url('../assets/menu-bkg.jpg');
     background-position: top left;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

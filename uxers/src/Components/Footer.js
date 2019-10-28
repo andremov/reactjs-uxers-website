@@ -44,7 +44,7 @@ export class Footer extends Component {
 
         return (
             <div className='footer'>
-                <div className={'top-half ' + colors[screenName-1]}>
+                <div className={'download-section ' + colors[screenName-1]}>
                     <div className='name'>
                         {names[screenName-1]}
                     </div>
@@ -60,7 +60,7 @@ export class Footer extends Component {
                         <Button />
                     </div>
                 </div>
-                <div className='bottom-half'>
+                <div className='contact-section'>
 
                     <div className='main-block'>
                         <img className='logo' src={logoFull} alt='logo'/>

@@ -3,16 +3,19 @@ import React, {Component} from 'react';
 export class NavDisplayComponent extends Component {
     state = {
         data : -1,
+        max : -1,
         colored : false
     };
 
     componentDidUpdate() {
         this.updateNavItem(this.props.currentScreen);
+        this.updateNavMax(this.props.lastScreen);
         this.updateColor(this.props.colored);
     }
 
     componentDidMount() {
         this.updateNavItem(this.props.currentScreen);
+        this.updateNavMax(this.props.lastScreen);
         this.updateColor(this.props.colored);
     }
 
@@ -32,8 +35,16 @@ export class NavDisplayComponent extends Component {
         }
     }
 
+    updateNavMax(newState) {
+        if (this.state.max !== newState) {
+            this.setState({
+                max: newState
+            });
+        }
+    }
+
     render() {
-        const {data, colored} = this.state;
+        const {data, max, colored} = this.state;
         return (
             <div className={'nav-display' + (colored? ' colored' : '')}>
                 <div className='item'>
@@ -44,7 +55,7 @@ export class NavDisplayComponent extends Component {
                         /
                     </div>
                     <div className='max'>
-                        04
+                        {'0'+max}
                     </div>
                 </div>
             </div>

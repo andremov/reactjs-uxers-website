@@ -3,10 +3,6 @@ import "../Style/Start.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import foto1 from "../assets/foto1.jpg";
-import foto2 from "../assets/foto2.jpg";
-import foto3 from "../assets/foto3.jpg";
-import foto4 from "../assets/foto4.jpg";
 import bkg1 from "../assets/start-01.png";
 import bkg2 from "../assets/start-02.png";
 import bkg3 from "../assets/start-03.png";
@@ -22,13 +18,6 @@ export class ScreenStart extends Component {
     state = {
         menuShown : false
     };
-
-    componentDidMount() {
-        const imageList = [foto1, foto2, foto3, foto4];
-        imageList.forEach((image) => {
-            new Image().src = image
-        });
-    }
 
     openBurger = () => {
         const {menuShown} = this.state;
@@ -184,7 +173,7 @@ export class ScreenStart extends Component {
             <Fragment>
                 <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen purple product'>
 
-                    <div className='content flex-col gray half'>
+                    <div className='content flex-col'>
                         <div className='subtitle'>
                             Diseño Estilo
                         </div>

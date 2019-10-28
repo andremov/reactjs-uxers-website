@@ -19,7 +19,7 @@
   z-index: 3;
   //background-color: blue;
   filter: grayscale(100%);
-  mix-blend-mode: difference;
+  //mix-blend-mode: difference;
 
   &.short {
     width: 40px;
@@ -166,8 +166,10 @@
 }
 
 .screen-title {
-  transform: translate(2vw,0) rotate(180deg);
+  transform: translate(2vw,calc(-50% + 50vh)) rotate(180deg);
   width: 0;
+  height: 0;
+  white-space: nowrap;
   writing-mode: vertical-rl;
 
   font-size: 2em;
