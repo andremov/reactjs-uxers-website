@@ -230,7 +230,7 @@ export class ScreenProgram extends Component {
 
                     </div>
                 </div>
-                <NavDisplayComponent colored={true} currentScreen={5}/>
+                <NavDisplayComponent colored={true} currentScreen={5} lastScreen={5}/>
             </div>
         );
     }

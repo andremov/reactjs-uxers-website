@@ -208,7 +208,7 @@ export class ScreenStart extends Component {
     getPage06() {
         return (
             <Fragment>
-                <div style={{backgroundImage : 'url('+bkg6+')'}} className='screen purple product'>
+                <div style={{backgroundImage : 'url('+bkg6+')'}} className='screen purple product bkg-bot'>
 
                     <div className='content flex-col'>
                         <div className='subtitle'>
