@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 import {ScreenStart} from "./ScreenStart";
 import {ScreenForm} from "./ScreenForm";
 import {ScreenStyle} from "./ScreenStyle";
-import {MainProgrammingComponent} from "./MainProgrammingComponent";
+import {ScreenProgram} from "./ScreenProgram";
 import {Route, BrowserRouter as Router} from "react-router-dom";
 // import {LoadComponent} from "./LoadComponent";
 import "../Style/Screen.scss";
@@ -28,7 +28,7 @@ export class Main extends Component {
                         <ScreenStyle />
                     </Route>
                     <Route path='/programacion'>
-                        <MainProgrammingComponent />
+                        <ScreenProgram />
                     </Route>
                 </Router>
 

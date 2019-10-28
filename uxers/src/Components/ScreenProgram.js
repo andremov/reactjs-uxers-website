@@ -1,28 +1,45 @@
 import React, {Component, Fragment} from 'react';
-import "../Style/Product.scss";
+import "../Style/Program.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
+// import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
-import foto3 from "../assets/foto7.jpg";
-import foto4 from "../assets/foto8.jpg";
-import foto5 from "../assets/foto9.jpg";
-import foto6 from "../assets/foto10.jpg";
-import bkg1 from "../assets/forma-01.png";
-import bkg2 from "../assets/forma-02.png";
-import bkg3 from "../assets/forma-03.png";
-import bkg4 from "../assets/forma-04.png";
-import bkg5 from "../assets/forma-05.png";
+import foto1 from "../assets/foto18.png";
+import foto2 from "../assets/foto19.jpg";
+import foto3 from "../assets/foto20.jpg";
+import foto4 from "../assets/foto21.jpg";
+import foto5 from "../assets/foto22.jpg";
+import foto6 from "../assets/foto23.jpg";
+import bkg1 from "../assets/program-01.png";
+import bkg2 from "../assets/program-02.png";
+import bkg3 from "../assets/program-03.png";
+import bkg4 from "../assets/program-04.png";
+import bkg5 from "../assets/program-05.png";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import {VideoPopUp} from "./VideoPopUp";
 
-export class ScreenForm extends Component {
+export class ScreenProgram extends Component {
 
     state = {
-        menuShown: false,
+        menuShown: false
+    };
+
+    componentDidMount() {
+        // const imageList = [foto1, foto2, foto3, foto4, foto5, foto6, video];
+        // imageList.forEach((image) => {
+        //     new Image().src = image
+        // });
+    }
+    changePage = (newPage) => {
+        if (this.state.screen !== newPage) {
+            this.setState({
+                screen: newPage
+            });
+        }
     };
 
     openBurger = () => {
@@ -39,11 +56,12 @@ export class ScreenForm extends Component {
             <Fragment>
 
                 <LogoComponent shortLogo={menuShown}/>
+
                 <MenuButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
                     menuShown ?
-                        <ScreenMenu currentNav={2}/>
+                        <ScreenMenu currentNav={4}/>
                         :
                         ''
                 }
@@ -57,10 +75,10 @@ export class ScreenForm extends Component {
                     {this.getPage03()}
                     {this.getPage04()}
                     {this.getPage05()}
+                    <Footer currentNav={3}/>
 
-                    <Footer currentNav={1}/>
+                    {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
                 </Fragment>
-
 
             </Fragment>
         );
@@ -68,7 +86,7 @@ export class ScreenForm extends Component {
 
     getPage01() {
         return (
-            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen first-page blue bkg-bot'>
+            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen first-page red bkg-bot'>
 
                 <div className='content flex-col'>
                     <div className='flex-row top-row'>
@@ -76,11 +94,11 @@ export class ScreenForm extends Component {
                             <div className='circle'> </div>
                         </div>
                         <div className='subtitle'>
-                            Diseño Forma
+                            Programación
                         </div>
                     </div>
                     <div className='flex-row'>
-                        <div className='index'>02</div>
+                        <div className='index'>04</div>
                         <div className='title flex-col'>
                             <span>Empezando</span>
                             <span>desde cero</span>
@@ -102,7 +120,7 @@ export class ScreenForm extends Component {
             <div style={{backgroundImage : 'url('+bkg2+')'}} className='screen second-page'>
 
                 <div className='screen-title'>
-                    <span>Diseño Forma</span>
+                    <span>Programación</span>
                 </div>
 
                 <div className='content'>
@@ -132,7 +150,7 @@ export class ScreenForm extends Component {
             <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen third-page'>
 
                 <div className='screen-title'>
-                    <span>Diseño Forma</span>
+                    <span>Programación</span>
                 </div>
 
                 <div className='content'>
@@ -176,10 +194,10 @@ export class ScreenForm extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen blue fourth-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen red fourth-page'>
 
                 <div className='screen-title'>
-                    <span>Diseño Forma</span>
+                    <span>Programación</span>
                 </div>
 
                 <div className='content flex-col'>
@@ -197,25 +215,22 @@ export class ScreenForm extends Component {
         return (
             <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen fifth-page'>
 
-                <div className='screen-title dark'>
-                    <span>Diseño Forma</span>
+                <div className='screen-title'>
+                    <span>Programación</span>
                 </div>
 
                 <div className='content'>
-                    <div className='grid-forma'>
+                    <div className='grid-program'>
                         <div className='left'>
-                            <div className='top'>
-                                <img className='left-img-left' src={foto3} alt='Fotito toda chevere'/>
-                                <img className='left-img-right' src={foto4} alt='Fotito toda chevere'/>
-                            </div>
-                            <img className='left-img-bottom' src={foto6} alt='Fotito toda chevere'/>
+                            <img className='img-top' src={foto4} alt='Fotito toda chevere'/>
+                            <img className='img-bottom' src={foto5} alt='Fotito toda chevere'/>
                         </div>
 
-                        <img className='img-right' src={foto5} alt='Fotito toda chevere'/>
+                        <img className='img-right' src={foto6} alt='Fotito toda chevere'/>
+
                     </div>
                 </div>
-
-                <NavDisplayComponent colored={true} currentScreen={5} lastScreen={5} />
+                <NavDisplayComponent colored={true} currentScreen={5}/>
             </div>
         );
     }

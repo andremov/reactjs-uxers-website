@@ -214,6 +214,37 @@
 
     }
 
+    .grid-program {
+      margin: auto;
+      width: 60vw;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      transform: translate(0,-10%)  scale(1.2);
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2vw;
+
+        .img-top {
+          width: 25vw;
+          margin-bottom: 2vh;
+        }
+        .img-bottom {
+          width: 25vw;
+        }
+
+      }
+
+      .img-right {
+        margin-right: 2vw;
+        //margin-top: 25.5vh;
+        width: 40%;
+        height: 40%;
+      }
+
+    }
   }
 }
 
