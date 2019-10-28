@@ -1,13 +1,8 @@
 import React, {Component, Fragment} from 'react';
-import "../Style/Program.scss";
+import "../Style/Product.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-// import {PagingComponent} from "./PagingComponent";
-import video from "../assets/fotovideo.png";
-import foto1 from "../assets/foto18.png";
-import foto2 from "../assets/foto19.jpg";
-import foto3 from "../assets/foto20.jpg";
 import foto4 from "../assets/foto21.jpg";
 import foto5 from "../assets/foto22.jpg";
 import foto6 from "../assets/foto23.jpg";
@@ -28,12 +23,6 @@ export class ScreenProgram extends Component {
         menuShown: false
     };
 
-    componentDidMount() {
-        // const imageList = [foto1, foto2, foto3, foto4, foto5, foto6, video];
-        // imageList.forEach((image) => {
-        //     new Image().src = image
-        // });
-    }
     changePage = (newPage) => {
         if (this.state.screen !== newPage) {
             this.setState({
@@ -86,7 +75,7 @@ export class ScreenProgram extends Component {
 
     getPage01() {
         return (
-            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen first-page red bkg-bot'>
+            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen start-page red bkg-bot'>
 
                 <div className='content flex-col'>
                     <div className='flex-row top-row'>
@@ -117,7 +106,7 @@ export class ScreenProgram extends Component {
 
     getPage02() {
         return (
-            <div style={{backgroundImage : 'url('+bkg2+')'}} className='screen second-page'>
+            <div style={{backgroundImage : 'url('+bkg2+')'}} className='screen download-action-page'>
 
                 <div className='screen-title'>
                     <span>Programación</span>
@@ -147,7 +136,7 @@ export class ScreenProgram extends Component {
 
     getPage03() {
         return (
-            <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen third-page'>
+            <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen resources-page'>
 
                 <div className='screen-title'>
                     <span>Programación</span>
@@ -194,7 +183,7 @@ export class ScreenProgram extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen red fourth-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen red available-page'>
 
                 <div className='screen-title'>
                     <span>Programación</span>
@@ -213,7 +202,7 @@ export class ScreenProgram extends Component {
 
     getPage05() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen fifth-page'>
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen grid-page'>
 
                 <div className='screen-title'>
                     <span>Programación</span>

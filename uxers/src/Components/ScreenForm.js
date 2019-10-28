@@ -3,7 +3,6 @@ import "../Style/Product.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import video from "../assets/fotovideo.png";
 import foto3 from "../assets/foto7.jpg";
 import foto4 from "../assets/foto8.jpg";
 import foto5 from "../assets/foto9.jpg";
@@ -68,7 +67,7 @@ export class ScreenForm extends Component {
 
     getPage01() {
         return (
-            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen first-page blue bkg-bot'>
+            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen start-page blue bkg-bot'>
 
                 <div className='content flex-col'>
                     <div className='flex-row top-row'>
@@ -99,7 +98,7 @@ export class ScreenForm extends Component {
 
     getPage02() {
         return (
-            <div style={{backgroundImage : 'url('+bkg2+')'}} className='screen second-page'>
+            <div style={{backgroundImage : 'url('+bkg2+')'}} className='screen download-action-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Forma</span>
@@ -129,7 +128,7 @@ export class ScreenForm extends Component {
 
     getPage03() {
         return (
-            <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen third-page'>
+            <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen resources-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Forma</span>
@@ -176,7 +175,7 @@ export class ScreenForm extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen blue fourth-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen blue available-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Forma</span>
@@ -195,7 +194,7 @@ export class ScreenForm extends Component {
 
     getPage05() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen fifth-page'>
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen grid-page'>
 
                 <div className='screen-title dark'>
                     <span>Diseño Forma</span>

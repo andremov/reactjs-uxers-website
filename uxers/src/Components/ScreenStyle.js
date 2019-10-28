@@ -68,7 +68,7 @@ export class ScreenStyle extends Component {
 
     getPage01() {
         return (
-            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen first-page orange bkg-bot'>
+            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen start-page orange bkg-bot'>
 
                 <div className='content flex-col'>
                     <div className='flex-row top-row'>
@@ -100,7 +100,7 @@ export class ScreenStyle extends Component {
 
     getPage02() {
         return (
-            <div style={{backgroundImage : 'url('+bkg2+')'}} className='screen second-page'>
+            <div style={{backgroundImage : 'url('+bkg2+')'}} className='screen download-action-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Estilo</span>
@@ -130,7 +130,7 @@ export class ScreenStyle extends Component {
 
     getPage03() {
         return (
-            <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen third-page'>
+            <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen resources-page'>
 
                 <div className='content'>
 
@@ -173,7 +173,7 @@ export class ScreenStyle extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen orange fourth-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen orange available-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Estilo</span>
@@ -192,7 +192,7 @@ export class ScreenStyle extends Component {
 
     getPage05() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen fifth-page'>
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen grid-page'>
 
                     <div className='screen-title'>
                         <span>Diseño Estilo</span>
