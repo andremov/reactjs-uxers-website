@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {ScreenStart} from "./ScreenStart";
-import {MainFormComponent} from "./MainFormComponent";
+import {ScreenForm} from "./ScreenForm";
 import {ScreenStyle} from "./ScreenStyle";
 import {MainProgrammingComponent} from "./MainProgrammingComponent";
 import {Route, BrowserRouter as Router} from "react-router-dom";
@@ -22,7 +22,7 @@ export class Main extends Component {
                         <ScreenStart />
                     </Route>
                     <Route path='/forma'>
-                        <MainFormComponent />
+                        <ScreenForm />
                     </Route>
                     <Route path='/estilo'>
                         <ScreenStyle />

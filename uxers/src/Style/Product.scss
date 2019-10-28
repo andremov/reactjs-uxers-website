@@ -142,7 +142,7 @@
   .content {
     padding-top: 12%;
 
-    .grid {
+    .grid-estilo {
       margin: auto;
       width: 60vw;
       display: flex;
@@ -177,6 +177,43 @@
       }
 
     }
+
+    .grid-forma {
+      margin: auto;
+      width: 60vw;
+      display: flex;
+      flex-direction: row;
+      transform: translate(0,-10%)  scale(0.9);
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2vw;
+
+        .top {
+
+          .left-img-left {
+            width: 15vw;
+            margin-right: 2vw;
+            margin-bottom: 2vw;
+          }
+          .left-img-right {
+            width: 15vw;
+            margin-bottom: 2vw;
+          }
+        }
+
+        .left-img-bottom {
+          width: 32vw;
+        }
+      }
+      .img-right {
+        width: 30%;
+        height: 30%;
+      }
+
+    }
+
   }
 }
 

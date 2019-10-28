@@ -3,22 +3,22 @@ import "../Style/Product.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import foto4 from "../assets/foto14.jpg";
-import foto5 from "../assets/foto15.jpg";
-import foto6 from "../assets/foto16.jpg";
-import foto7 from "../assets/foto17.jpg";
-import bkg1 from "../assets/estilo-01.png";
-import bkg2 from "../assets/estilo-02.png";
-import bkg3 from "../assets/estilo-03.png";
-import bkg4 from "../assets/estilo-04.png";
-import bkg5 from "../assets/estilo-05.png";
+import video from "../assets/fotovideo.png";
+import foto3 from "../assets/foto7.jpg";
+import foto4 from "../assets/foto8.jpg";
+import foto5 from "../assets/foto9.jpg";
+import foto6 from "../assets/foto10.jpg";
+import bkg1 from "../assets/forma-01.png";
+import bkg2 from "../assets/forma-02.png";
+import bkg3 from "../assets/forma-03.png";
+import bkg4 from "../assets/forma-04.png";
+import bkg5 from "../assets/forma-05.png";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
-import {VideoPopUp} from "./VideoPopUp";
 
-export class ScreenStyle extends Component {
+export class ScreenForm extends Component {
 
     state = {
         menuShown: false,
@@ -38,27 +38,40 @@ export class ScreenStyle extends Component {
             <Fragment>
 
                 <LogoComponent shortLogo={menuShown}/>
-
                 <MenuButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
                     menuShown ?
-                        <ScreenMenu currentNav={3}/>
+                        <ScreenMenu currentNav={2}/>
                         :
                         ''
                 }
 
                 <Fragment>
-                    <VideoPopUp />
+
+                    <div className='video-pop-up'>
+                        <div className='top'>
+                            <div className='action'>
+                                <span>Ver</span>
+                                <span>video</span>
+                            </div>
+                            <div className='line'>
+                                <div className='circle'>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='img'>
+                            <img src={video} alt='Fotito toda chevere'/>
+                        </div>
+                    </div>
 
                     {this.getPage01()}
                     {this.getPage02()}
                     {this.getPage03()}
                     {this.getPage04()}
                     {this.getPage05()}
-                    <Footer currentNav={2}/>
 
-                    {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
+                    <Footer currentNav={1}/>
                 </Fragment>
 
 
@@ -68,7 +81,7 @@ export class ScreenStyle extends Component {
 
     getPage01() {
         return (
-            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen first-page orange bkg-bot'>
+            <div style={{backgroundImage : 'url('+bkg1+')'}} className='screen first-page blue bkg-bot'>
 
                 <div className='content flex-col'>
                     <div className='flex-row top-row'>
@@ -76,14 +89,14 @@ export class ScreenStyle extends Component {
                             <div className='circle'> </div>
                         </div>
                         <div className='subtitle'>
-                            Diseño Estilo
+                            Diseño Forma
                         </div>
                     </div>
                     <div className='flex-row'>
                         <div className='index'>01</div>
                         <div className='title flex-col'>
-                            <span>Con pasión</span>
-                            <span>diseñamos</span>
+                            <span>Empezando</span>
+                            <span>desde cero</span>
                         </div>
                     </div>
                     <div className='icons'>
@@ -93,7 +106,6 @@ export class ScreenStyle extends Component {
                 </div>
 
                 <NavDisplayComponent colored={false} currentScreen={1} lastScreen={5} />
-
             </div>
         );
     }
@@ -131,6 +143,10 @@ export class ScreenStyle extends Component {
     getPage03() {
         return (
             <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen third-page'>
+
+                <div className='screen-title'>
+                    <span>Diseño Estilo</span>
+                </div>
 
                 <div className='content'>
 
@@ -173,7 +189,7 @@ export class ScreenStyle extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen orange fourth-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen blue fourth-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Estilo</span>
@@ -194,22 +210,23 @@ export class ScreenStyle extends Component {
         return (
             <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen fifth-page'>
 
-                    <div className='screen-title'>
-                        <span>Diseño Estilo</span>
-                    </div>
+                <div className='screen-title dark'>
+                    <span>Diseño Forma</span>
+                </div>
 
-                    <div className='content'>
-                        <div className='grid-estilo'>
-                            <img className='img-left' src={foto6} alt='Fotito toda chevere'/>
-                            <div className='right'>
-                                <img className='right-img-top' src={foto7} alt='Fotito toda chevere'/>
-                                <div className='bottom'>
-                                    <img className='right-img-left' src={foto4} alt='Fotito toda chevere'/>
-                                    <img className='right-img-right' src={foto5} alt='Fotito toda chevere'/>
-                                </div>
+                <div className='content'>
+                    <div className='grid-forma'>
+                        <div className='left'>
+                            <div className='top'>
+                                <img className='left-img-left' src={foto3} alt='Fotito toda chevere'/>
+                                <img className='left-img-right' src={foto4} alt='Fotito toda chevere'/>
                             </div>
+                            <img className='left-img-bottom' src={foto6} alt='Fotito toda chevere'/>
                         </div>
+
+                        <img className='img-right' src={foto5} alt='Fotito toda chevere'/>
                     </div>
+                </div>
 
                 <NavDisplayComponent colored={true} currentScreen={5} lastScreen={5} />
             </div>
