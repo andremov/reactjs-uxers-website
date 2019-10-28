@@ -1,14 +1,15 @@
 import React, {Component, Fragment} from 'react';
-import {MainStartComponent} from "./MainStartComponent";
+import {ScreenStart} from "./ScreenStart";
 import {MainFormComponent} from "./MainFormComponent";
 import {MainStyleComponent} from "./MainStyleComponent";
 import {MainProgrammingComponent} from "./MainProgrammingComponent";
 import {Route, BrowserRouter as Router} from "react-router-dom";
 // import {LoadComponent} from "./LoadComponent";
+import "../Style/Screen.scss";
 import {VersionComponent} from "./VersionComponent";
 
 
-export class MainComponent extends Component {
+export class Main extends Component {
 
     render() {
         return (
@@ -18,7 +19,7 @@ export class MainComponent extends Component {
 
                 <Router>
                     <Route exact path='/' >
-                        <MainStartComponent />
+                        <ScreenStart />
                     </Route>
                     <Route path='/forma'>
                         <MainFormComponent />

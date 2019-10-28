@@ -1,0 +1,54 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  .content {
+    height: 90vh;
+    box-sizing: border-box;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.bkg-top {
+  background-position: top left;
+}
+
+.bkg-bot {
+  background-position: bottom left;
+}
+
+.purple {
+  background-color: #490e67;
+  color: white;
+}
+
+.orange {
+  background-color: #ed7931;
+  color: white;
+}
+
+.blue {
+  background-color: #00b1cb;
+  color: white;
+}
+
+.red {
+  background-color: #e53951;
+  color: white;
+}
+
+.gray {
+  background-color: #808285;
+  color: white;
+}

@@ -4,7 +4,7 @@ import instagram from "../assets/instagram.svg";
 import '../Style/Menu.scss'
 import {Link} from "react-router-dom";
 
-export class MenuComponent extends Component {
+export class ScreenMenu extends Component {
 
     state = {
         currentNav : 1

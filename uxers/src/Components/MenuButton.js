@@ -3,7 +3,7 @@ import burgerOpen from "../assets/burger-open-btn.png";
 import burgerClose from "../assets/burger-close-btn.png";
 import '../Style/Doodads.scss';
 
-export class HamburgerButton extends Component {
+export class MenuButton extends Component {
 
     state = {
       data : false

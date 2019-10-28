@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import "../Style/Form.scss";
 import {LogoComponent} from "./LogoComponent";
-import {HamburgerButton} from "./HamburgerButton";
-import {MenuComponent} from "./MenuComponent";
+import {MenuButton} from "./MenuButton";
+import {ScreenMenu} from "./ScreenMenu";
 // import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
 import foto1 from "../assets/foto5.png";
@@ -43,11 +43,11 @@ export class MainFormComponent extends Component {
             <Fragment>
 
                 <LogoComponent shortLogo={menuShown}/>
-                <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
+                <MenuButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
                     menuShown ?
-                        <MenuComponent currentNav={2}/>
+                        <ScreenMenu currentNav={2}/>
                         :
                         ''
                 }

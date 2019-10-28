@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import "../Style/Estilo.scss";
 import {LogoComponent} from "./LogoComponent";
-import {HamburgerButton} from "./HamburgerButton";
-import {MenuComponent} from "./MenuComponent";
+import {MenuButton} from "./MenuButton";
+import {ScreenMenu} from "./ScreenMenu";
 // import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
 import foto1 from "../assets/foto11.png";
@@ -45,11 +45,11 @@ export class MainStyleComponent extends Component {
 
                 <LogoComponent shortLogo={menuShown}/>
 
-                <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
+                <MenuButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
                     menuShown ?
-                        <MenuComponent currentNav={3}/>
+                        <ScreenMenu currentNav={3}/>
                         :
                         ''
                 }

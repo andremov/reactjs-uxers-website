@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import "../Style/Program.scss";
 import {LogoComponent} from "./LogoComponent";
-import {HamburgerButton} from "./HamburgerButton";
-import {MenuComponent} from "./MenuComponent";
+import {MenuButton} from "./MenuButton";
+import {ScreenMenu} from "./ScreenMenu";
 // import {PagingComponent} from "./PagingComponent";
 import video from "../assets/fotovideo.png";
 import foto1 from "../assets/foto18.png";
@@ -52,11 +52,11 @@ export class MainProgrammingComponent extends Component {
 
                 <LogoComponent shortLogo={menuShown}/>
 
-                <HamburgerButton inMenu={menuShown} clickedBtn={this.openBurger}/>
+                <MenuButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
                 {
                     menuShown ?
-                        <MenuComponent currentNav={4}/>
+                        <ScreenMenu currentNav={4}/>
                         :
                         ''
                 }
