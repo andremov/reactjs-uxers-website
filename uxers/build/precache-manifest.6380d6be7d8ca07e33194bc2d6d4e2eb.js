@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1645145ff442e06c9d204e589798cdad",
+    "revision": "1f38dff9046ce1875a6fd72a6e0d8ad7",
     "url": "/index.html"
   },
   {
-    "revision": "cc089d6072345b11eeb7",
-    "url": "/static/css/main.207d2e1b.chunk.css"
+    "revision": "6603309bb85871f0ed51",
+    "url": "/static/css/main.834bbe67.chunk.css"
   },
   {
     "revision": "513f7ec6105d5917c775",
     "url": "/static/js/2.54cf7f03.chunk.js"
   },
   {
-    "revision": "cc089d6072345b11eeb7",
+    "revision": "6603309bb85871f0ed51",
     "url": "/static/js/main.925bccf1.chunk.js"
   },
   {
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3ed9575dcc488c3e3a5bd66620bdf5a4",
     "url": "/static/media/OpenSans-Regular.3ed9575d.ttf"
-  },
-  {
-    "revision": "5b7f75f9897d4645447f6df8802bcbee",
-    "url": "/static/media/cursor-circle.5b7f75f9.svg"
   },
   {
     "revision": "ae45c645931f4a65e203a68ad3508adc",
