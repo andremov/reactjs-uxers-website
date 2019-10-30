@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b454177.chunk.css",
-    "main.js": "/static/js/main.83012b5e.chunk.js",
-    "main.js.map": "/static/js/main.83012b5e.chunk.js.map",
+    "main.css": "/static/css/main.2f6bee85.chunk.css",
+    "main.js": "/static/js/main.a3b3a3cb.chunk.js",
+    "main.js.map": "/static/js/main.a3b3a3cb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1fd6a666.js",
     "runtime-main.js.map": "/static/js/runtime-main.1fd6a666.js.map",
-    "static/js/2.54cf7f03.chunk.js": "/static/js/2.54cf7f03.chunk.js",
-    "static/js/2.54cf7f03.chunk.js.map": "/static/js/2.54cf7f03.chunk.js.map",
+    "static/js/2.f2b8ac22.chunk.js": "/static/js/2.f2b8ac22.chunk.js",
+    "static/js/2.f2b8ac22.chunk.js.map": "/static/js/2.f2b8ac22.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0a85c98849f5e238bf6cb31285eb81a3.js": "/precache-manifest.0a85c98849f5e238bf6cb31285eb81a3.js",
+    "precache-manifest.86d6092dfd58c04ef8b07fd73bbf3ef9.js": "/precache-manifest.86d6092dfd58c04ef8b07fd73bbf3ef9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0b454177.chunk.css.map": "/static/css/main.0b454177.chunk.css.map",
+    "static/css/main.2f6bee85.chunk.css.map": "/static/css/main.2f6bee85.chunk.css.map",
     "static/media/index.css": "/static/media/OpenSans-Regular.3ed9575d.ttf",
     "static/media/estilo-01.png": "/static/media/estilo-01.ae45c645.png",
     "static/media/estilo-02.png": "/static/media/estilo-02.81da8560.png",
@@ -37,6 +37,10 @@
     "static/media/fotovideo.png": "/static/media/fotovideo.ed449874.png",
     "static/media/instagram.svg": "/static/media/instagram.1ef61047.svg",
     "static/media/Footer.scss": "/static/media/menu-bkg.bda69f9d.jpg",
+    "static/media/mobile-estilo.png": "/static/media/mobile-estilo.b0b1089d.png",
+    "static/media/mobile-forma.png": "/static/media/mobile-forma.bfd22052.png",
+    "static/media/mobile-program.png": "/static/media/mobile-program.2c96eabc.png",
+    "static/media/mobile-start.png": "/static/media/mobile-start.fdb83709.png",
     "static/media/program-01.png": "/static/media/program-01.880e3afd.png",
     "static/media/program-02.png": "/static/media/program-02.8eddcc9c.png",
     "static/media/program-03.png": "/static/media/program-03.8eddcc9c.png",
@@ -52,8 +56,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1fd6a666.js",
-    "static/js/2.54cf7f03.chunk.js",
-    "static/css/main.0b454177.chunk.css",
-    "static/js/main.83012b5e.chunk.js"
+    "static/js/2.f2b8ac22.chunk.js",
+    "static/css/main.2f6bee85.chunk.css",
+    "static/js/main.a3b3a3cb.chunk.js"
   ]
 }
