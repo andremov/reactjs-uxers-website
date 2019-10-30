@@ -60,8 +60,8 @@ export class Footer extends Component {
                         <Button />
                     </div>
                 </div>
-                <div className='contact-section'>
 
+                <div className='contact-section'>
                     <div className='main-block'>
                         <img className='logo' src={logoFull} alt='logo'/>
                         <img className='slogan' src={slogan} alt='slogan'/>

@@ -11,6 +11,7 @@ import bkg2 from "../assets/program-02.png";
 import bkg3 from "../assets/program-03.png";
 import bkg4 from "../assets/program-04.png";
 import bkg5 from "../assets/program-05.png";
+import mobile from "../assets/mobile-program.png";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
@@ -59,11 +60,19 @@ export class ScreenProgram extends Component {
 
                     <VideoPopUp />
 
-                    {this.getPage01()}
-                    {this.getPage02()}
-                    {this.getPage03()}
-                    {this.getPage04()}
-                    {this.getPage05()}
+                    {
+                        window.innerWidth < 768 ?
+                            this.getMobile()
+                            :
+                            <Fragment>
+                                {this.getPage01()}
+                                {this.getPage02()}
+                                {this.getPage03()}
+                                {this.getPage04()}
+                                {this.getPage05()}
+                            </Fragment>
+                    }
+
                     <Footer currentNav={3}/>
 
                     {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
@@ -71,6 +80,14 @@ export class ScreenProgram extends Component {
 
             </Fragment>
         );
+    }
+
+    getMobile() {
+        return (
+            <div style={{backgroundImage : 'url('+mobile+')'}} className='mobile product short'>
+
+            </div>
+        )
     }
 
     getPage01() {
@@ -89,8 +106,8 @@ export class ScreenProgram extends Component {
                     <div className='flex-row'>
                         <div className='index'>04</div>
                         <div className='title flex-col'>
-                            <span>Empezando</span>
-                            <span>desde cero</span>
+                            <span>Subiendo</span>
+                            <span>de nivel</span>
                         </div>
                     </div>
                     <div className='icons'>

@@ -12,6 +12,7 @@ import bkg2 from "../assets/estilo-02.png";
 import bkg3 from "../assets/estilo-03.png";
 import bkg4 from "../assets/estilo-04.png";
 import bkg5 from "../assets/estilo-05.png";
+import mobile from "../assets/mobile-estilo.png";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
@@ -51,11 +52,19 @@ export class ScreenStyle extends Component {
                 <Fragment>
                     <VideoPopUp />
 
-                    {this.getPage01()}
-                    {this.getPage02()}
-                    {this.getPage03()}
-                    {this.getPage04()}
-                    {this.getPage05()}
+                    {
+                        window.innerWidth < 768 ?
+                            this.getMobile()
+                            :
+                            <Fragment>
+                                {this.getPage01()}
+                                {this.getPage02()}
+                                {this.getPage03()}
+                                {this.getPage04()}
+                                {this.getPage05()}
+                            </Fragment>
+                    }
+
                     <Footer currentNav={2}/>
 
                     {/*<PagingComponent colorSwitch={true} dark={screen === 4} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
@@ -64,6 +73,14 @@ export class ScreenStyle extends Component {
 
             </Fragment>
         );
+    }
+
+    getMobile() {
+        return (
+            <div style={{backgroundImage : 'url('+mobile+')'}} className='mobile product'>
+
+            </div>
+        )
     }
 
     getPage01() {

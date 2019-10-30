@@ -10,6 +10,7 @@ import bkg4 from "../assets/start-04.png";
 import bkg5 from "../assets/start-05.png";
 import bkg6 from "../assets/start-06.png";
 import bkg7 from "../assets/start-07.png";
+import mobile from "../assets/mobile-start.png";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Link} from "react-router-dom";
 
@@ -41,13 +42,20 @@ export class ScreenStart extends Component {
                     :
                         <Fragment>
 
-                            {this.getPage01()}
-                            {this.getPage02()}
-                            {this.getPage03()}
-                            {this.getPage04()}
-                            {this.getPage05()}
-                            {this.getPage06()}
-                            {this.getPage07()}
+                            {
+                                window.innerWidth < 768 ?
+                                    this.getMobile()
+                                    :
+                                    <Fragment>
+                                        {this.getPage01()}
+                                        {this.getPage02()}
+                                        {this.getPage03()}
+                                        {this.getPage04()}
+                                        {this.getPage05()}
+                                        {this.getPage06()}
+                                        {this.getPage07()}
+                                    </Fragment>
+                            }
 
                             {/*<PagingComponent colorSwitch={false} dark={false} currentPage={screen} maxPage={4} changePage={this.changePage}/>*/}
                         </Fragment>
@@ -55,6 +63,14 @@ export class ScreenStart extends Component {
 
             </Fragment>
         );
+    }
+
+    getMobile() {
+        return (
+            <div style={{backgroundImage : 'url('+mobile+')'}} className='mobile start'>
+
+            </div>
+        )
     }
 
     getPage01() {

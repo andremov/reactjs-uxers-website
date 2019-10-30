@@ -34,3 +34,9 @@ a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: calc((1vw + 1vh)*0.3);
+  }
+}

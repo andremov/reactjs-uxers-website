@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../Style/Doodads.scss';
-export const VER_NUM = 'DEV-v2.0.1';
+export const VER_NUM = 'DEV-v2.1.0';
 
 export class VersionComponent extends Component {
     render() {

@@ -77,13 +77,9 @@ export class Button extends Component {
         const {rip,style} = this.state;
         return (
             <div className={'btn'}>
-                <div className={'download ripple-effect'}
-                     // onMouseOver={e => {this.doRipple(e)}}
-                     // onMouseLeave={e => {this.mouseLeft(e)}}
-                >
-                    <span style={style} className={"ripple" + (rip? ' animated' : ' animated-back')}> </span>
-                    <span className="text">Descarga</span>
-                </div>
+                {/*<div className={'download'}>*/}
+                    <span>Descarga</span>
+                {/*</div>*/}
             </div>
         );
     }

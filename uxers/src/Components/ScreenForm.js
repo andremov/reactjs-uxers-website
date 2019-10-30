@@ -12,6 +12,7 @@ import bkg2 from "../assets/forma-02.png";
 import bkg3 from "../assets/forma-03.png";
 import bkg4 from "../assets/forma-04.png";
 import bkg5 from "../assets/forma-05.png";
+import mobile from "../assets/mobile-forma.png";
 import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
@@ -51,11 +52,18 @@ export class ScreenForm extends Component {
 
                     <VideoPopUp />
 
-                    {this.getPage01()}
-                    {this.getPage02()}
-                    {this.getPage03()}
-                    {this.getPage04()}
-                    {this.getPage05()}
+                    {
+                        window.innerWidth < 768 ?
+                            this.getMobile()
+                            :
+                        <Fragment>
+                            {this.getPage01()}
+                            {this.getPage02()}
+                            {this.getPage03()}
+                            {this.getPage04()}
+                            {this.getPage05()}
+                        </Fragment>
+                    }
 
                     <Footer currentNav={1}/>
                 </Fragment>
@@ -63,6 +71,14 @@ export class ScreenForm extends Component {
 
             </Fragment>
         );
+    }
+
+    getMobile() {
+        return (
+        <div style={{backgroundImage : 'url('+mobile+')'}} className='mobile product'>
+
+        </div>
+        )
     }
 
     getPage01() {
