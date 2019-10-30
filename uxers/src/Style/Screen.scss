@@ -1,12 +1,12 @@
 .screen {
   width: 100vw;
-  height: 100vh;
+  height: calc(100*0.5625vw);
   background-repeat: no-repeat;
   background-size: 100% auto;
   overflow: hidden;
 
   .content {
-    height: 90vh;
+    height: calc(90*0.5625vw);
     box-sizing: border-box;
   }
 }

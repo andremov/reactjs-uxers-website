@@ -14,7 +14,7 @@
 .main-logo {
   position: fixed;
   width: 140px;
-  top: 5vh;
+  top: calc(5*0.5625vw);
   left: 5vw;
   z-index: 3;
   //background-color: blue;
@@ -29,7 +29,7 @@
 .paging {
   position: absolute;
   right: 7vw;
-  height: 20vh;
+  height: calc(20*0.5625vw);
   transform: translate(0,-50%);
   top: 50%;
   display: flex;
@@ -62,7 +62,7 @@
 .burger-btn {
   position: fixed;
   width: 100px;
-  top: 5vh;
+  top: calc(5*0.5625vw);
   right: 5vw;
 
   display: flex;
@@ -89,7 +89,7 @@
 .nav-display {
   margin: auto;
   width: 100%;
-  height: 10vh;
+  height: calc(10*0.5625vw);
   color: white;
   font-weight: bold;
   display: flex;
@@ -125,7 +125,7 @@
 
 .video-pop-up{
   position: absolute;
-  bottom: 10vh;
+  top: calc(60 * 0.5625vw);
   right: 0;
   display: flex;
   flex-direction: column;
@@ -160,6 +160,7 @@
       }
     }
   }
+
   .img img{
     width: 15vw;
   }
@@ -182,15 +183,6 @@
 
   &.white {
     color: white;
-  }
-}
-
-.content-size {
-  width: 100vw;
-  height: 90vh;
-
-  &.moved {
-    transform: translate(0,10vh);
   }
 }
 
