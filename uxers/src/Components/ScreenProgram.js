@@ -24,6 +24,10 @@ export class ScreenProgram extends Component {
         menuShown: false
     };
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     changePage = (newPage) => {
         if (this.state.screen !== newPage) {
             this.setState({

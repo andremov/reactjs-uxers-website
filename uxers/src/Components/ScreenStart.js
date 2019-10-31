@@ -20,6 +20,10 @@ export class ScreenStart extends Component {
         menuShown : false
     };
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     openBurger = () => {
         const {menuShown} = this.state;
         this.setState({
