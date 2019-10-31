@@ -48,12 +48,15 @@ export class ScreenStart extends Component {
         ;
 
         imageList.forEach((image) => {
-            let img = new Image();
+
+            const img = new Image();
             img.src = image;
-            img.onloadend = this.increaseLoadedImgs
+            // img.onloadend =  this.increaseLoadedImgs;
+            img.onload = this.increaseLoadedImgs();
 
+            return;
         });
-
+        console.log('end calls')
         // this.props.doneLoading(false);
         // this.setState({
         //     loaded : true

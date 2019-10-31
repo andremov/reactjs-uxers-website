@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.19772f4c.chunk.css",
-    "main.js": "/static/js/main.dde7d369.chunk.js",
-    "main.js.map": "/static/js/main.dde7d369.chunk.js.map",
+    "main.js": "/static/js/main.a1019f38.chunk.js",
+    "main.js.map": "/static/js/main.a1019f38.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1fd6a666.js",
     "runtime-main.js.map": "/static/js/runtime-main.1fd6a666.js.map",
     "static/js/2.0eb04457.chunk.js": "/static/js/2.0eb04457.chunk.js",
     "static/js/2.0eb04457.chunk.js.map": "/static/js/2.0eb04457.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.846c50ebead0fe2dc85562e2d035a9b6.js": "/precache-manifest.846c50ebead0fe2dc85562e2d035a9b6.js",
+    "precache-manifest.d8d6ab20db887130d23e0365f2d45ac5.js": "/precache-manifest.d8d6ab20db887130d23e0365f2d45ac5.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.19772f4c.chunk.css.map": "/static/css/main.19772f4c.chunk.css.map",
     "static/media/index.css": "/static/media/OpenSans-Regular.3ed9575d.ttf",
@@ -58,6 +58,6 @@
     "static/js/runtime-main.1fd6a666.js",
     "static/js/2.0eb04457.chunk.js",
     "static/css/main.19772f4c.chunk.css",
-    "static/js/main.dde7d369.chunk.js"
+    "static/js/main.a1019f38.chunk.js"
   ]
 }
