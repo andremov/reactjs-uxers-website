@@ -99,7 +99,7 @@ export class ScreenStyle extends Component {
                         </div>
                     </div>
                     <div className='flex-row'>
-                        <div className='index'>01</div>
+                        <div className='index'>02</div>
                         <div className='title flex-col'>
                             <span>Con pasión</span>
                             <span>diseñamos</span>
