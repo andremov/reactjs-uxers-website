@@ -113,7 +113,7 @@ export class ScreenStyle extends Component {
                     </div>
                 </div>
 
-                <NavDisplayComponent colored={false} currentScreen={1} lastScreen={5} />
+                {/*<NavDisplayComponent colored={false} currentScreen={1} lastScreen={5} />*/}
 
             </div>
         );
@@ -143,7 +143,7 @@ export class ScreenStyle extends Component {
                     </div>
                 </div>
 
-                <NavDisplayComponent colored={true} currentScreen={2} lastScreen={5} />
+                {/*<NavDisplayComponent colored={true} currentScreen={2} lastScreen={5} />*/}
 
             </div>
         );
@@ -187,7 +187,7 @@ export class ScreenStyle extends Component {
                     </div>
                 </div>
 
-                <NavDisplayComponent colored={true} currentScreen={3} lastScreen={5} />
+                {/*<NavDisplayComponent colored={true} currentScreen={3} lastScreen={5} />*/}
             </div>
         );
     }
@@ -206,7 +206,7 @@ export class ScreenStyle extends Component {
                     </div>
                 </div>
 
-                <NavDisplayComponent colored={false} currentScreen={4} lastScreen={5} />
+                {/*<NavDisplayComponent colored={false} currentScreen={4} lastScreen={5} />*/}
             </div>
         );
     }
@@ -232,7 +232,7 @@ export class ScreenStyle extends Component {
                         </div>
                     </div>
 
-                <NavDisplayComponent colored={true} currentScreen={5} lastScreen={5} />
+                {/*<NavDisplayComponent colored={true} currentScreen={5} lastScreen={5} />*/}
             </div>
         );
     }

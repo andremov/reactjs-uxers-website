@@ -91,7 +91,7 @@ export class ScreenStart extends Component {
                         </div>
                     </div>
 
-                    <NavDisplayComponent colored={false} currentScreen={1} lastScreen={7} />
+                    {/*<NavDisplayComponent colored={false} currentScreen={1} lastScreen={7} />*/}
 
                 </div>
             </Fragment>
@@ -121,7 +121,7 @@ export class ScreenStart extends Component {
                         </div>
                     </div>
 
-                    <NavDisplayComponent colored={false} currentScreen={2} lastScreen={7} />
+                    {/*<NavDisplayComponent colored={false} currentScreen={2} lastScreen={7} />*/}
 
                 </div>
             </Fragment>
@@ -143,7 +143,7 @@ export class ScreenStart extends Component {
                         </div>
                     </div>
 
-                    <NavDisplayComponent colored={false} currentScreen={3} lastScreen={7} />
+                    {/*<NavDisplayComponent colored={false} currentScreen={3} lastScreen={7} />*/}
 
                 </div>
             </Fragment>
@@ -181,7 +181,7 @@ export class ScreenStart extends Component {
                         </div>
                     </div>
 
-                    <NavDisplayComponent colored={false} currentScreen={4} lastScreen={7} />
+                    {/*<NavDisplayComponent colored={false} currentScreen={4} lastScreen={7} />*/}
 
                 </div>
             </Fragment>
@@ -218,7 +218,7 @@ export class ScreenStart extends Component {
                         </div>
                     </div>
 
-                    <NavDisplayComponent colored={false} currentScreen={5} lastScreen={7} />
+                    {/*<NavDisplayComponent colored={false} currentScreen={5} lastScreen={7} />*/}
 
                 </div>
             </Fragment>
@@ -255,7 +255,7 @@ export class ScreenStart extends Component {
                         </div>
                     </div>
 
-                    <NavDisplayComponent colored={false} currentScreen={6} lastScreen={7} />
+                    {/*<NavDisplayComponent colored={false} currentScreen={6} lastScreen={7} />*/}
 
                 </div>
             </Fragment>
@@ -302,7 +302,7 @@ export class ScreenStart extends Component {
                         </div>
                     </div>
 
-                    <NavDisplayComponent colored={false} currentScreen={7} lastScreen={7}/>
+                    {/*<NavDisplayComponent colored={false} currentScreen={7} lastScreen={7}/>*/}
 
                 </div>
             </Fragment>
