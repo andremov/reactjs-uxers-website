@@ -18,7 +18,7 @@ export class ScreenStart extends Component {
     state = {
         menuShown: false,
         mobile : false,
-        loaded : false
+        loaded : 0
     };
 
     componentDidUpdate() {
@@ -50,11 +50,24 @@ export class ScreenStart extends Component {
         imageList.forEach((image) => {
             let img = new Image();
             img.src = image;
+            img.onloadend = this.increaseLoadedImgs
+
         });
 
-        this.props.doneLoading(false);
+        // this.props.doneLoading(false);
+        // this.setState({
+        //     loaded : true
+        // });
+    };
+
+    increaseLoadedImgs = () => {
+        const {loaded, mobile} = this.state;
+        const totalImgs = mobile ? 1 : 7;
+
+        this.props.doneLoading(loaded+1 >= totalImgs);
+        console.log('loaded count >' + loaded);
         this.setState({
-            loaded : true
+            loadedImgs : loaded+1
         });
     };
 
