@@ -1,19 +1,19 @@
 import React, {Component, Fragment} from 'react';
-import "../Style/Product.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import foto3 from "../assets/foto7.jpg";
-import foto4 from "../assets/foto8.jpg";
-import foto5 from "../assets/foto9.jpg";
-import foto6 from "../assets/foto10.jpg";
+import img1 from "../assets/foto7.jpg";
+import img2 from "../assets/foto8.jpg";
+import img3 from "../assets/foto9.jpg";
+import img4 from "../assets/foto10.jpg";
+
 import bkg1 from "../assets/forma-01.png";
 import bkg2 from "../assets/forma-02.png";
 import bkg3 from "../assets/forma-03.png";
 import bkg4 from "../assets/forma-04.png";
 import bkg5 from "../assets/forma-05.png";
+
 import mobile from "../assets/mobile-forma.png";
-import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
@@ -23,10 +23,55 @@ export class ScreenForm extends Component {
 
     state = {
         menuShown: false,
+        mobile : false,
+        loaded : false
     };
 
+    increaseLoadedImgs = () => {
+        const {loadedImgs,mobile} = this.state;
+        const totalImgs = mobile ? 1 : 9;
+        this.props.doneLoading(loadedImgs+1 >= totalImgs);
+        console.log('loaded count >' + loadedImgs);
+        this.setState({
+            loadedImgs : loadedImgs+1
+        });
+    };
+
+    componentDidUpdate() {
+        this.updateMobileState(this.props.isMobile);
+    }
+
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        this.updateMobileState(this.props.isMobile);
+
+        this.loadImages();
+    }
+
+    loadImages = () => {
+        let imageList = this.props.isMobile ?
+            [mobile]
+            :
+            [img1, img2, img3, img4, bkg1, bkg2, bkg3, bkg4, bkg5]
+        ;
+
+        imageList.forEach((image) => {
+            let img = new Image();
+            img.src = image;
+        });
+
+        this.props.doneLoading(false);
+        this.setState({
+            loaded : true
+        });
+    };
+
+    updateMobileState(newState) {
+        if (this.state.mobile !== newState) {
+            this.setState({
+                mobile: newState
+            });
+        }
     }
 
     openBurger = () => {
@@ -37,7 +82,7 @@ export class ScreenForm extends Component {
     };
 
     render() {
-        const {menuShown} = this.state;
+        const {menuShown, mobile} = this.state;
 
         return (
             <Fragment>
@@ -57,7 +102,7 @@ export class ScreenForm extends Component {
                     <VideoPopUp />
 
                     {
-                        window.innerWidth < 768 ?
+                        mobile ?
                             this.getMobile()
                             :
                         <Fragment>
@@ -224,13 +269,14 @@ export class ScreenForm extends Component {
                     <div className='grid-forma'>
                         <div className='left'>
                             <div className='top'>
-                                <img className='left-img-left' src={foto3} alt='Fotito toda chevere'/>
-                                <img className='left-img-right' src={foto4} alt='Fotito toda chevere'/>
+                                <img className='left-img-left' src={img1} alt='Grid Element # 1' />
+
+                                <img className='left-img-right' src={img2} alt='Grid Element # 2' />
                             </div>
-                            <img className='left-img-bottom' src={foto6} alt='Fotito toda chevere'/>
+                            <img className='left-img-bottom' src={img4} alt='Grid Element # 4' />
                         </div>
 
-                        <img className='img-right' src={foto5} alt='Fotito toda chevere'/>
+                        <img className='img-right' src={img3} alt='Grid Element # 3' />
                     </div>
                 </div>
 

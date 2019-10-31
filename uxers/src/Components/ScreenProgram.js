@@ -12,7 +12,6 @@ import bkg3 from "../assets/program-03.png";
 import bkg4 from "../assets/program-04.png";
 import bkg5 from "../assets/program-05.png";
 import mobile from "../assets/mobile-program.png";
-import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";

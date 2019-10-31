@@ -11,7 +11,6 @@ import bkg5 from "../assets/start-05.png";
 import bkg6 from "../assets/start-06.png";
 import bkg7 from "../assets/start-07.png";
 import mobile from "../assets/mobile-start.png";
-import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Link} from "react-router-dom";
 
 export class ScreenStart extends Component {

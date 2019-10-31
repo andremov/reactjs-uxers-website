@@ -1,5 +1,4 @@
 import React, {Component, Fragment} from 'react';
-import "../Style/Product.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
@@ -13,7 +12,6 @@ import bkg3 from "../assets/estilo-03.png";
 import bkg4 from "../assets/estilo-04.png";
 import bkg5 from "../assets/estilo-05.png";
 import mobile from "../assets/mobile-estilo.png";
-import {NavDisplayComponent} from "./NavDisplayComponent";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
