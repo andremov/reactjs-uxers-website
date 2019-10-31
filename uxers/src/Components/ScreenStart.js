@@ -16,12 +16,47 @@ import {Link} from "react-router-dom";
 export class ScreenStart extends Component {
 
     state = {
-        menuShown : false
+        menuShown: false,
+        mobile : false,
+        loaded : false
     };
 
-    componentDidMount() {
-        window.scrollTo(0, 0)
+    componentDidUpdate() {
+        this.updateMobileState(this.props.isMobile);
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+        this.updateMobileState(this.props.isMobile);
+
+        this.loadImages();
+    }
+
+    updateMobileState(newState) {
+        if (this.state.mobile !== newState) {
+            this.setState({
+                mobile: newState
+            });
+        }
+    }
+
+    loadImages = () => {
+        let imageList = this.props.isMobile ?
+            [mobile]
+            :
+            [bkg1, bkg2, bkg3, bkg4, bkg5, bkg6, bkg7]
+        ;
+
+        imageList.forEach((image) => {
+            let img = new Image();
+            img.src = image;
+        });
+
+        this.props.doneLoading(false);
+        this.setState({
+            loaded : true
+        });
+    };
 
     openBurger = () => {
         const {menuShown} = this.state;
@@ -31,7 +66,7 @@ export class ScreenStart extends Component {
     };
 
     render() {
-        const {menuShown} = this.state;
+        const {menuShown, mobile} = this.state;
 
         return (
             <Fragment>
@@ -46,7 +81,7 @@ export class ScreenStart extends Component {
                         <Fragment>
 
                             {
-                                window.innerWidth < 768 ?
+                                mobile ?
                                     this.getMobile()
                                     :
                                     <Fragment>
