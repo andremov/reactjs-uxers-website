@@ -21,6 +21,13 @@ export class ScreenStart extends Component {
         loaded : 0
     };
 
+
+    constructor(props, context) {
+        super(props, context);
+
+        // this.increaseLoadedImgs = this.increaseLoadedImgs.bind(this);
+    }
+
     componentDidUpdate() {
         this.updateMobileState(this.props.isMobile);
     }
@@ -54,8 +61,8 @@ export class ScreenStart extends Component {
             // img.onloadend =  this.increaseLoadedImgs;
             img.onload = this.increaseLoadedImgs();
 
-            return;
         });
+
         console.log('end calls')
         // this.props.doneLoading(false);
         // this.setState({
@@ -70,7 +77,7 @@ export class ScreenStart extends Component {
         this.props.doneLoading(loaded+1 >= totalImgs);
         console.log('loaded count >' + loaded);
         this.setState({
-            loadedImgs : loaded+1
+            loaded : loaded+1
         });
     };
 
