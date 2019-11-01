@@ -3,14 +3,25 @@ import "../Style/Product.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import foto4 from "../assets/foto21.jpg";
-import foto5 from "../assets/foto22.jpg";
-import foto6 from "../assets/foto23.jpg";
-import bkg1 from "../assets/program-01.png";
-import bkg2 from "../assets/program-02.png";
-import bkg3 from "../assets/program-03.png";
-import bkg4 from "../assets/program-04.png";
-import bkg5 from "../assets/program-05.png";
+
+import sym_art from "../assets/symbol-art.png";
+import sym_book from "../assets/symbol-book.png";
+import sym_mail from "../assets/symbol-mail.png";
+import sym_text from "../assets/symbol-text.png";
+import sym_video from "../assets/symbol-video.png";
+import sym_code from "../assets/symbol-code.png";
+
+import grid1 from "../assets/grid/foto21.jpg";
+import grid2 from "../assets/grid/foto22.jpg";
+import grid3 from "../assets/grid/foto23.jpg";
+
+import bkg1 from "../assets/bkgs/program-01.png";
+import bkg2 from "../assets/bkgs/program-02.png";
+import bkg3 from "../assets/bkgs/program-03.png";
+import bkg4 from "../assets/bkgs/program-04.png";
+import bkg5 from "../assets/bkgs/program-05.png";
+import bkg6 from "../assets/bkgs/program-06.png";
+
 import mobile from "../assets/mobile-program.png";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
@@ -20,11 +31,46 @@ import {VideoPopUp} from "./VideoPopUp";
 export class ScreenProgram extends Component {
 
     state = {
-        menuShown: false
+        menuShown: false,
+        mobile : false,
+        loaded : false
     };
 
+    componentDidUpdate() {
+        this.updateMobileState(this.props.isMobile);
+    }
+
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        this.updateMobileState(this.props.isMobile);
+
+        this.loadImages();
+    }
+
+    loadImages = () => {
+        let imageList = this.props.isMobile ?
+            [mobile]
+            :
+            [grid1, grid2, grid3, bkg1, bkg2, bkg3, bkg4, bkg5, bkg6]
+        ;
+
+        imageList.forEach((image) => {
+            let img = new Image();
+            img.src = image;
+        });
+
+        this.props.doneLoading(false);
+        this.setState({
+            loaded : true
+        });
+    };
+
+    updateMobileState(newState) {
+        if (this.state.mobile !== newState) {
+            this.setState({
+                mobile: newState
+            });
+        }
     }
 
     changePage = (newPage) => {
@@ -73,6 +119,7 @@ export class ScreenProgram extends Component {
                                 {this.getPage03()}
                                 {this.getPage04()}
                                 {this.getPage05()}
+                                {this.getPage06()}
                             </Fragment>
                     }
 
@@ -158,7 +205,7 @@ export class ScreenProgram extends Component {
         return (
             <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen resources-page'>
 
-                <div className='screen-title'>
+                <div className='screen-title white'>
                     <span>Programación</span>
                 </div>
 
@@ -173,25 +220,36 @@ export class ScreenProgram extends Component {
                         </div>
                     </div>
 
-                    <div className='subcontent'>
-                        <div className='title'>
-                            Contenido
+                    <div className='subcontent flex-row'>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_book} alt='Resource # 1' />
+                            </div>
+                            <span className='desc'>Libro descargable</span>
                         </div>
-
-                        <div className='info flex-row'>
-                            <div className='flex-col'>
-                                <span>Función</span>
-                                <span>Jerarquía</span>
-                                <span>Fondos</span>
-                                <span>Balance y contraste</span>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_video} alt='Resource # 2' />
                             </div>
-
-                            <div className='flex-col'>
-                                <span>Diseño y espaciado</span>
-                                <span>Dimensionamiento</span>
-                                <span>Diseño de texto</span>
-                                <span>Fuentes</span>
+                            <span className='desc'>Video Tutorial</span>
+                        </div>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_mail} alt='Resource # 3' />
                             </div>
+                            <span className='desc'>Galeria de Componentes</span>
+                        </div>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_code} alt='Resource # 4' />
+                            </div>
+                            <span className='desc'>Ejemplos de codigo</span>
                         </div>
                     </div>
                 </div>
@@ -203,7 +261,37 @@ export class ScreenProgram extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen red available-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen book-page'>
+
+                <div className='screen-title'>
+                    <span>Programación</span>
+                </div>
+
+                <div className='content'>
+                    <div className='title'>
+                        Libro
+                    </div>
+                    <div className='subtitle'>
+                        Contenido
+                    </div>
+
+                    <div className='info flex-col'>
+                        <span>Apensar como un programador</span>
+                        <span>Trabaja fluidamente</span>
+                        <span>Estructuras del lenguaje</span>
+                        <span className='extra'>& mas</span>
+                    </div>
+                </div>
+
+
+                {/*<NavDisplayComponent colored={true} currentScreen={3} lastScreen={5} />*/}
+            </div>
+        );
+    }
+
+    getPage05() {
+        return (
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen red available-page'>
 
                 <div className='screen-title'>
                     <span>Programación</span>
@@ -220,9 +308,9 @@ export class ScreenProgram extends Component {
         );
     }
 
-    getPage05() {
+    getPage06() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen grid-page'>
+            <div style={{backgroundImage : 'url('+bkg6+')'}} className='screen grid-page'>
 
                 <div className='screen-title'>
                     <span>Programación</span>
@@ -231,11 +319,11 @@ export class ScreenProgram extends Component {
                 <div className='content'>
                     <div className='grid-program'>
                         <div className='left'>
-                            <img className='img-top' src={foto4} alt='Fotito toda chevere'/>
-                            <img className='img-bottom' src={foto5} alt='Fotito toda chevere'/>
+                            <img className='img-top' src={grid1} alt='Grid Element # 1'/>
+                            <img className='img-bottom' src={grid2} alt='Grid Element # 2'/>
                         </div>
 
-                        <img className='img-right' src={foto6} alt='Fotito toda chevere'/>
+                        <img className='img-right' src={grid3} alt='Grid Element # 3'/>
 
                     </div>
                 </div>

@@ -2,15 +2,25 @@ import React, {Component, Fragment} from 'react';
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import foto4 from "../assets/foto14.jpg";
-import foto5 from "../assets/foto15.jpg";
-import foto6 from "../assets/foto16.jpg";
-import foto7 from "../assets/foto17.jpg";
-import bkg1 from "../assets/estilo-01.png";
-import bkg2 from "../assets/estilo-02.png";
-import bkg3 from "../assets/estilo-03.png";
-import bkg4 from "../assets/estilo-04.png";
-import bkg5 from "../assets/estilo-05.png";
+
+import sym_art from "../assets/symbol-art.png";
+import sym_book from "../assets/symbol-book.png";
+import sym_mail from "../assets/symbol-mail.png";
+import sym_text from "../assets/symbol-text.png";
+import sym_video from "../assets/symbol-video.png";
+
+import grid1 from "../assets/grid/foto7.jpg";
+import grid2 from "../assets/grid/foto8.jpg";
+import grid3 from "../assets/grid/foto9.jpg";
+import grid4 from "../assets/grid/foto10.jpg";
+
+import bkg1 from "../assets/bkgs/estilo-01.png";
+import bkg2 from "../assets/bkgs/estilo-02.png";
+import bkg3 from "../assets/bkgs/estilo-03.png";
+import bkg4 from "../assets/bkgs/estilo-04.png";
+import bkg5 from "../assets/bkgs/estilo-05.png";
+import bkg6 from "../assets/bkgs/estilo-06.png";
+
 import mobile from "../assets/mobile-estilo.png";
 import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
@@ -21,10 +31,45 @@ export class ScreenStyle extends Component {
 
     state = {
         menuShown: false,
+        mobile : false,
+        loaded : false
     };
 
+    componentDidUpdate() {
+        this.updateMobileState(this.props.isMobile);
+    }
+
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        this.updateMobileState(this.props.isMobile);
+
+        this.loadImages();
+    }
+
+    loadImages = () => {
+        let imageList = this.props.isMobile ?
+            [mobile]
+            :
+            [grid1, grid2, grid3, grid4, bkg1, bkg2, bkg3, bkg4, bkg5, bkg6]
+        ;
+
+        imageList.forEach((image) => {
+            let img = new Image();
+            img.src = image;
+        });
+
+        this.props.doneLoading(false);
+        this.setState({
+            loaded : true
+        });
+    };
+
+    updateMobileState(newState) {
+        if (this.state.mobile !== newState) {
+            this.setState({
+                mobile: newState
+            });
+        }
     }
 
     openBurger = () => {
@@ -64,6 +109,7 @@ export class ScreenStyle extends Component {
                                 {this.getPage03()}
                                 {this.getPage04()}
                                 {this.getPage05()}
+                                {this.getPage06()}
                             </Fragment>
                     }
 
@@ -151,6 +197,10 @@ export class ScreenStyle extends Component {
         return (
             <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen resources-page'>
 
+                <div className='screen-title white'>
+                    <span>Diseño Forma</span>
+                </div>
+
                 <div className='content'>
 
                     <div className='header flex-col'>
@@ -162,25 +212,44 @@ export class ScreenStyle extends Component {
                         </div>
                     </div>
 
-                    <div className='subcontent'>
-                        <div className='title'>
-                            Contenido
+                    <div className='subcontent flex-row'>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_book} alt='Resource # 1' />
+                            </div>
+                            <span className='desc'>Libro descargable</span>
                         </div>
-
-                        <div className='info flex-row'>
-                            <div className='flex-col'>
-                                <span>Función</span>
-                                <span>Jerarquía</span>
-                                <span>Fondos</span>
-                                <span>Balance y contraste</span>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_video} alt='Resource # 2' />
                             </div>
-
-                            <div className='flex-col'>
-                                <span>Diseño y espaciado</span>
-                                <span>Dimensionamiento</span>
-                                <span>Diseño de texto</span>
-                                <span>Fuentes</span>
+                            <span className='desc'>Video Tutorial</span>
+                        </div>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_mail} alt='Resource # 3' />
                             </div>
+                            <span className='desc'>Galeria de Componentes</span>
+                        </div>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_text} alt='Resource # 4' />
+                            </div>
+                            <span className='desc'>Recomendación de Tipográfias</span>
+                        </div>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_art} alt='Resource # 5' />
+                            </div>
+                            <span className='desc'>Paleta de Colores</span>
                         </div>
                     </div>
                 </div>
@@ -192,7 +261,33 @@ export class ScreenStyle extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen orange available-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen book-page'>
+
+                <div className='content'>
+                    <div className='title'>
+                        Libro
+                    </div>
+                    <div className='subtitle'>
+                        Contenido
+                    </div>
+
+                    <div className='info flex-col'>
+                        <span>Función</span>
+                        <span>Jerarquía</span>
+                        <span>Fondos</span>
+                        <span>Balance y Contraste</span>
+                        <span className='extra'>& mas</span>
+                    </div>
+                </div>
+
+                {/*<NavDisplayComponent colored={true} currentScreen={3} lastScreen={5} />*/}
+            </div>
+        );
+    }
+
+    getPage05() {
+        return (
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen orange available-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Estilo</span>
@@ -209,9 +304,9 @@ export class ScreenStyle extends Component {
         );
     }
 
-    getPage05() {
+    getPage06() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen grid-page'>
+            <div style={{backgroundImage : 'url('+bkg6+')'}} className='screen grid-page'>
 
                     <div className='screen-title'>
                         <span>Diseño Estilo</span>
@@ -219,12 +314,12 @@ export class ScreenStyle extends Component {
 
                     <div className='content'>
                         <div className='grid-estilo'>
-                            <img className='img-left' src={foto6} alt='Fotito toda chevere'/>
+                            <img className='img-left' src={grid3} alt='Grid Element # 1'/>
                             <div className='right'>
-                                <img className='right-img-top' src={foto7} alt='Fotito toda chevere'/>
+                                <img className='right-img-top' src={grid4} alt='Grid Element # 2'/>
                                 <div className='bottom'>
-                                    <img className='right-img-left' src={foto4} alt='Fotito toda chevere'/>
-                                    <img className='right-img-right' src={foto5} alt='Fotito toda chevere'/>
+                                    <img className='right-img-left' src={grid1} alt='Grid Element # 3'/>
+                                    <img className='right-img-right' src={grid2} alt='Grid Element # 4'/>
                                 </div>
                             </div>
                         </div>

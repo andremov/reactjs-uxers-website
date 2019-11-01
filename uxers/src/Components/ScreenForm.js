@@ -2,16 +2,24 @@ import React, {Component, Fragment} from 'react';
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import img1 from "../assets/foto7.jpg";
-import img2 from "../assets/foto8.jpg";
-import img3 from "../assets/foto9.jpg";
-import img4 from "../assets/foto10.jpg";
 
-import bkg1 from "../assets/forma-01.png";
-import bkg2 from "../assets/forma-02.png";
-import bkg3 from "../assets/forma-03.png";
-import bkg4 from "../assets/forma-04.png";
-import bkg5 from "../assets/forma-05.png";
+import sym_art from "../assets/symbol-art.png";
+import sym_book from "../assets/symbol-book.png";
+import sym_mail from "../assets/symbol-mail.png";
+import sym_text from "../assets/symbol-text.png";
+import sym_video from "../assets/symbol-video.png";
+
+import grid1 from "../assets/grid/foto14.jpg";
+import grid2 from "../assets/grid/foto15.jpg";
+import grid3 from "../assets/grid/foto16.jpg";
+import grid4 from "../assets/grid/foto17.jpg";
+
+import bkg1 from "../assets/bkgs/forma-01.png";
+import bkg2 from "../assets/bkgs/forma-02.png";
+import bkg3 from "../assets/bkgs/forma-03.png";
+import bkg4 from "../assets/bkgs/forma-04.png";
+import bkg5 from "../assets/bkgs/forma-05.png";
+import bkg6 from "../assets/bkgs/forma-06.png";
 
 import mobile from "../assets/mobile-forma.png";
 import {Footer} from "./Footer";
@@ -52,7 +60,7 @@ export class ScreenForm extends Component {
         let imageList = this.props.isMobile ?
             [mobile]
             :
-            [img1, img2, img3, img4, bkg1, bkg2, bkg3, bkg4, bkg5]
+            [grid1, grid2, grid3, grid4, bkg1, bkg2, bkg3, bkg4, bkg5, bkg6]
         ;
 
         imageList.forEach((image) => {
@@ -111,6 +119,7 @@ export class ScreenForm extends Component {
                             {this.getPage03()}
                             {this.getPage04()}
                             {this.getPage05()}
+                            {this.getPage06()}
                         </Fragment>
                     }
 
@@ -195,7 +204,7 @@ export class ScreenForm extends Component {
         return (
             <div style={{backgroundImage : 'url('+bkg3+')'}} className='screen resources-page'>
 
-                <div className='screen-title'>
+                <div className='screen-title white'>
                     <span>Diseño Forma</span>
                 </div>
 
@@ -210,25 +219,28 @@ export class ScreenForm extends Component {
                         </div>
                     </div>
 
-                    <div className='subcontent'>
-                        <div className='title'>
-                            Contenido
+                    <div className='subcontent flex-row'>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_book} alt='Resource # 1' />
+                            </div>
+                            <span className='desc'>Libro descargable</span>
                         </div>
-
-                        <div className='info flex-row'>
-                            <div className='flex-col'>
-                                <span>Función</span>
-                                <span>Jerarquía</span>
-                                <span>Fondos</span>
-                                <span>Balance y contraste</span>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_video} alt='Resource # 2' />
                             </div>
-
-                            <div className='flex-col'>
-                                <span>Diseño y espaciado</span>
-                                <span>Dimensionamiento</span>
-                                <span>Diseño de texto</span>
-                                <span>Fuentes</span>
+                            <span className='desc'>Video Tutorial</span>
+                        </div>
+                        <div className='split'>
+                        </div>
+                        <div className='item flex-col'>
+                            <div className='pic-wrapper flex-col'>
+                                <img className='pic' src={sym_mail} alt='Resource # 3' />
                             </div>
+                            <span className='desc'>Galeria de Componentes</span>
                         </div>
                     </div>
                 </div>
@@ -240,7 +252,37 @@ export class ScreenForm extends Component {
 
     getPage04() {
         return (
-            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen blue available-page'>
+            <div style={{backgroundImage : 'url('+bkg4+')'}} className='screen book-page'>
+
+                <div className='screen-title'>
+                    <span>Diseño Forma</span>
+                </div>
+
+                <div className='content'>
+                    <div className='title'>
+                        Libro
+                    </div>
+                    <div className='subtitle'>
+                        Contenido
+                    </div>
+
+                    <div className='info flex-col'>
+                        <span>Usa buena fuente</span>
+                        <span>Usa buenos bordes</span>
+                        <span>No confíes solo en el color</span>
+                        <span>Piensa fuera de la caja</span>
+                        <span className='extra'>& mas</span>
+                    </div>
+                </div>
+
+                {/*<NavDisplayComponent colored={true} currentScreen={3} lastScreen={5} />*/}
+            </div>
+        );
+    }
+
+    getPage05() {
+        return (
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen blue available-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Forma</span>
@@ -257,9 +299,9 @@ export class ScreenForm extends Component {
         );
     }
 
-    getPage05() {
+    getPage06() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen grid-page'>
+            <div style={{backgroundImage : 'url('+bkg6+')'}} className='screen grid-page'>
 
                 <div className='screen-title dark'>
                     <span>Diseño Forma</span>
@@ -269,14 +311,14 @@ export class ScreenForm extends Component {
                     <div className='grid-forma'>
                         <div className='left'>
                             <div className='top'>
-                                <img className='left-img-left' src={img1} alt='Grid Element # 1' />
+                                <img className='left-img-left' src={grid1} alt='Grid Element # 1' />
 
-                                <img className='left-img-right' src={img2} alt='Grid Element # 2' />
+                                <img className='left-img-right' src={grid2} alt='Grid Element # 2' />
                             </div>
-                            <img className='left-img-bottom' src={img4} alt='Grid Element # 4' />
+                            <img className='left-img-bottom' src={grid4} alt='Grid Element # 4' />
                         </div>
 
-                        <img className='img-right' src={img3} alt='Grid Element # 3' />
+                        <img className='img-right' src={grid3} alt='Grid Element # 3' />
                     </div>
                 </div>
 

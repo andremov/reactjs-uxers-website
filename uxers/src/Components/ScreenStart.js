@@ -3,13 +3,15 @@ import "../Style/Start.scss";
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
-import bkg1 from "../assets/start-01.png";
-import bkg2 from "../assets/start-02.png";
-import bkg3 from "../assets/start-03.png";
-import bkg4 from "../assets/start-04.png";
-import bkg5 from "../assets/start-05.png";
-import bkg6 from "../assets/start-06.png";
-import bkg7 from "../assets/start-07.png";
+
+import bkg1 from "../assets/bkgs/start-01.png";
+import bkg2 from "../assets/bkgs/start-02.png";
+import bkg3 from "../assets/bkgs/start-03.png";
+import bkg4 from "../assets/bkgs/start-04.png";
+import bkg5 from "../assets/bkgs/start-05.png";
+import bkg6 from "../assets/bkgs/start-06.png";
+import bkg7 from "../assets/bkgs/start-07.png";
+
 import mobile from "../assets/mobile-start.png";
 import {Link} from "react-router-dom";
 

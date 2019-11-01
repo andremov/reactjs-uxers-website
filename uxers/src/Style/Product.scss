@@ -90,9 +90,10 @@
 
 .resources-page {
   .header {
-    padding-top: 1%;
+    padding-top: 10%;
     align-items: center;
     margin: auto;
+    color: white;
 
     .title {
       font-size: 5em;
@@ -106,22 +107,79 @@
   }
 
   .subcontent {
+    margin-top: 20%;
+    align-items: flex-start;
+    justify-content: center;
+
+    .item {
+      width: 10vw;
+      justify-content: center;
+      align-items: center;
+
+      .pic-wrapper {
+        height: 10vw;
+        justify-content: center;
+        align-items: center;
+
+        .pic {
+          width: 7vw;
+          margin-bottom: 50%;
+        }
+      }
+
+      .desc {
+        font-size: 1.5em;
+      }
+    }
+
+    .split {
+      width: 5px;
+      height: 13vw;
+      background-color: orange;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  }
+}
+
+.book-page {
+
+  .content {
     width: 50vw;
-    margin-left: 50%;
+    margin-left: 60%;
     margin-top: 10%;
 
     .title {
       font-weight: bold;
-      font-size: 2em;
+      font-size: 4em;
+      margin-bottom: 0;
+      line-height: 1;
+   }
+
+    .subtitle {
+      opacity: 0.5;
+      //font-weight: bold;
+      font-size: 1.75em;
       margin-bottom: 2%;
     }
 
     .info {
-      font-weight: bold;
-      * {
-        width: 8vw;
-        margin-bottom: 5%;
-        margin-right: 5%;
+      //font-weight: bold;
+      font-size: 1.5em;
+
+      .extra {
+        margin-left: 0;
+        color: orange;
+        font-weight: bold;
+        width: fit-content;
+        border-bottom: 2px solid orange;
+      }
+
+      span {
+        margin-left: 5%;
+        //width: 8vw;
+        margin-bottom: 2%;
+        //margin-right: 5%;
       }
     }
   }
