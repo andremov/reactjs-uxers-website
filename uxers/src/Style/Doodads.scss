@@ -19,10 +19,12 @@
   left: 5vw;
   z-index: 3;
   //background-color: blue;
-  filter: grayscale(100%);
+  //filter: grayscale(100%);
+  filter: invert(1);
   //mix-blend-mode: difference;
 
   &.short {
+    filter: invert(0);
     width: 40px;
   }
 }
@@ -68,16 +70,16 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  align-items: center;
   z-index: 3;
   //mix-blend-mode: difference;
 
   .text {
     margin-right: 10px;
-    margin-top: 12px;
+    //margin-top: 12px;
     font-size: 22px;
     font-weight: bold;
-    color: #f1f2f2;
+    //color: #f1f2f2;
     //mix-blend-mode: difference;
   }
 

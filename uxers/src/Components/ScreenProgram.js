@@ -289,7 +289,7 @@ export class ScreenProgram extends Component {
 
     getPage05() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen red available-page'>
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen available-page'>
 
                 <div className='screen-title'>
                     <span>Programación</span>

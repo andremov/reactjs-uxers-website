@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.02659fe3.chunk.css",
-    "main.js": "/static/js/main.21645b82.chunk.js",
-    "main.js.map": "/static/js/main.21645b82.chunk.js.map",
+    "main.css": "/static/css/main.20dfe6d7.chunk.css",
+    "main.js": "/static/js/main.484210f4.chunk.js",
+    "main.js.map": "/static/js/main.484210f4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1fd6a666.js",
     "runtime-main.js.map": "/static/js/runtime-main.1fd6a666.js.map",
     "static/js/2.7265e9ce.chunk.js": "/static/js/2.7265e9ce.chunk.js",
     "static/js/2.7265e9ce.chunk.js.map": "/static/js/2.7265e9ce.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.967df765b3a28aa34ca55a0f2c21b5f5.js": "/precache-manifest.967df765b3a28aa34ca55a0f2c21b5f5.js",
+    "precache-manifest.4dcc9df56cc546932c661693cabafa34.js": "/precache-manifest.4dcc9df56cc546932c661693cabafa34.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.02659fe3.chunk.css.map": "/static/css/main.02659fe3.chunk.css.map",
+    "static/css/main.20dfe6d7.chunk.css.map": "/static/css/main.20dfe6d7.chunk.css.map",
     "static/media/index.css": "/static/media/OpenSans-Regular.3ed9575d.ttf",
     "static/media/estilo-01.png": "/static/media/estilo-01.ae45c645.png",
     "static/media/estilo-02.png": "/static/media/estilo-02.81da8560.png",
@@ -60,7 +60,7 @@
   "entrypoints": [
     "static/js/runtime-main.1fd6a666.js",
     "static/js/2.7265e9ce.chunk.js",
-    "static/css/main.02659fe3.chunk.css",
-    "static/js/main.21645b82.chunk.js"
+    "static/css/main.20dfe6d7.chunk.css",
+    "static/js/main.484210f4.chunk.js"
   ]
 }

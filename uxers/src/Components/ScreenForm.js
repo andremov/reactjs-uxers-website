@@ -280,7 +280,7 @@ export class ScreenForm extends Component {
 
     getPage05() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen blue available-page'>
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen available-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Forma</span>
