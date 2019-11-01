@@ -98,15 +98,34 @@
     flex-direction: column;
 
     .half {
-      width: 100%;
+      //width: 100%;
+      margin: auto;
+      height: 50vh;
+
+      &.info {
+        transform: scale(2.5);
+
+        .icons {
+          img {
+            transform: scale(0.5);
+          }
+        }
+      }
 
       &.navtable {
-        transform: translate(-50%,0);
-        margin-left: 75%;
-        margin-top: 50%;
+        //transform: translate(-50%,0);
+        //margin-left: 75%;
+        //margin-top: 50%;
+        margin-top: 20vh;
 
         .navitem {
           margin-top: 5%;
+          .index {
+            font-size: 4em;
+          }
+          .name {
+            font-size: 8em;
+          }
         }
       }
     }

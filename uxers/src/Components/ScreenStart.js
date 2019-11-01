@@ -23,13 +23,6 @@ export class ScreenStart extends Component {
         loaded : 0
     };
 
-
-    constructor(props, context) {
-        super(props, context);
-
-        // this.increaseLoadedImgs = this.increaseLoadedImgs.bind(this);
-    }
-
     componentDidUpdate() {
         this.updateMobileState(this.props.isMobile);
     }
@@ -235,9 +228,9 @@ export class ScreenStart extends Component {
                             <span>específicas.</span>
                         </div>
 
-                        <div className='link'>
+                        <Link to='/forma' className='link'>
                             <span>Explora</span>
-                        </div>
+                        </Link>
                     </div>
 
                     {/*<NavDisplayComponent colored={false} currentScreen={4} lastScreen={7} />*/}
@@ -272,9 +265,9 @@ export class ScreenStart extends Component {
                             <span>experiencia de los usuarios.</span>
                         </div>
 
-                        <div className='link'>
+                        <Link to='/estilo' className='link'>
                             <span>Explora</span>
-                        </div>
+                        </Link>
                     </div>
 
                     {/*<NavDisplayComponent colored={false} currentScreen={5} lastScreen={7} />*/}
@@ -309,9 +302,9 @@ export class ScreenStart extends Component {
                             <span>de datos y más.</span>
                         </div>
 
-                        <div className='link'>
+                        <Link to='/programacion' className='link'>
                             <span>Explora</span>
-                        </div>
+                        </Link>
                     </div>
 
                     {/*<NavDisplayComponent colored={false} currentScreen={6} lastScreen={7} />*/}

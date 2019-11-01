@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logoFull from "../assets/logo-full.png";
 import logoShort from "../assets/logo-short.png";
 import '../Style/Doodads.scss';
+import {Link} from "react-router-dom";
 
 export class LogoComponent extends Component {
 
@@ -30,11 +31,15 @@ export class LogoComponent extends Component {
 
         if (!data) {
             return (
-                <img className='main-logo' src={logoFull} alt='logo'/>
+                <Link to='/'>
+                    <img className='main-logo' src={logoFull} alt='logo'/>
+                </Link>
             );
         } else {
             return (
-                <img className='main-logo short' src={logoShort} alt='logo'/>
+                <Link to='/'>
+                    <img className='main-logo short' src={logoShort} alt='logo'/>
+                </Link>
             );
         }
     }

@@ -74,7 +74,7 @@ export class Button extends Component {
     }
 
     render() {
-        const {rip,style} = this.state;
+        // const {rip,style} = this.state;
         return (
             <div className={'btn'}>
                 {/*<div className={'download'}>*/}

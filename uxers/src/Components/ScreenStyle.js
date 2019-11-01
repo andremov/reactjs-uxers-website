@@ -297,6 +297,9 @@ export class ScreenStyle extends Component {
                     <div className='title'>
                         Temas disponibles
                     </div>
+                    <div className='subtitle'>
+                        ¡Explora e inspirate!
+                    </div>
                 </div>
 
                 {/*<NavDisplayComponent colored={false} currentScreen={4} lastScreen={5} />*/}

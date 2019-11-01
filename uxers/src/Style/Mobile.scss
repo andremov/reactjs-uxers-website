@@ -1,39 +1,19 @@
 
+
 .mobile {
+  width: 100vw;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 
-  .video-pop-up {
-    top: calc(100vw);
-
-    .top {
-      visibility: hidden;
-    }
-
-    .img img {
-      width: 70vw;
-    }
-  }
-
-  .main-logo {
-    left: 2vw;
-    width: 60px;
+  &.product {
+    height: 1500vw;
 
     &.short {
-      width: 30px;
+      height: 1300vw;
     }
   }
 
-  .burger-btn {
-    &.mobile {
-      top: calc(1 * 0.5625vw);
-      right: 1vw;
-
-      .text {
-        visibility: hidden;
-      }
-
-      .icon {
-        transform: scale(0.75);
-      }
-    }
+  &.start {
+    height: 895vh;
   }
 }

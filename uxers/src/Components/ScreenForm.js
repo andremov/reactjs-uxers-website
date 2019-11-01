@@ -3,10 +3,8 @@ import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
 
-import sym_art from "../assets/symbol-art.png";
 import sym_book from "../assets/symbol-book.png";
 import sym_mail from "../assets/symbol-mail.png";
-import sym_text from "../assets/symbol-text.png";
 import sym_video from "../assets/symbol-video.png";
 
 import grid1 from "../assets/grid/foto14.jpg";
@@ -291,6 +289,9 @@ export class ScreenForm extends Component {
                 <div className='content flex-col'>
                     <div className='title'>
                         Temas disponibles
+                    </div>
+                    <div className='subtitle'>
+                        ¡Explora e inspirate!
                     </div>
                 </div>
 

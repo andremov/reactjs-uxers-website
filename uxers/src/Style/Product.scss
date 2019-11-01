@@ -194,6 +194,12 @@
       font-weight: bold;
       font-size: 5em;
     }
+
+    .subtitle {
+      //font-weight: bold;
+      opacity: 0.75;
+      font-size: 2em;
+    }
   }
 }
 
@@ -304,23 +310,5 @@
       }
 
     }
-  }
-}
-
-.mobile {
-  width: 100vw;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-
-  &.product {
-    height: 780vh;
-
-    &.short {
-      height: 620vh;
-    }
-  }
-
-  &.start {
-    height: 895vh;
   }
 }
