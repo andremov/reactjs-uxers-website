@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bd05d66.chunk.css",
-    "main.js": "/static/js/main.b8746277.chunk.js",
-    "main.js.map": "/static/js/main.b8746277.chunk.js.map",
+    "main.css": "/static/css/main.02659fe3.chunk.css",
+    "main.js": "/static/js/main.21645b82.chunk.js",
+    "main.js.map": "/static/js/main.21645b82.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1fd6a666.js",
     "runtime-main.js.map": "/static/js/runtime-main.1fd6a666.js.map",
-    "static/js/2.b7a2ef6b.chunk.js": "/static/js/2.b7a2ef6b.chunk.js",
-    "static/js/2.b7a2ef6b.chunk.js.map": "/static/js/2.b7a2ef6b.chunk.js.map",
+    "static/js/2.7265e9ce.chunk.js": "/static/js/2.7265e9ce.chunk.js",
+    "static/js/2.7265e9ce.chunk.js.map": "/static/js/2.7265e9ce.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.27f8bf3efa9690f79c6c80a105ad48d9.js": "/precache-manifest.27f8bf3efa9690f79c6c80a105ad48d9.js",
+    "precache-manifest.967df765b3a28aa34ca55a0f2c21b5f5.js": "/precache-manifest.967df765b3a28aa34ca55a0f2c21b5f5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6bd05d66.chunk.css.map": "/static/css/main.6bd05d66.chunk.css.map",
+    "static/css/main.02659fe3.chunk.css.map": "/static/css/main.02659fe3.chunk.css.map",
     "static/media/index.css": "/static/media/OpenSans-Regular.3ed9575d.ttf",
     "static/media/estilo-01.png": "/static/media/estilo-01.ae45c645.png",
     "static/media/estilo-02.png": "/static/media/estilo-02.81da8560.png",
@@ -39,9 +39,9 @@
     "static/media/fotovideo.png": "/static/media/fotovideo.ed449874.png",
     "static/media/instagram.svg": "/static/media/instagram.1ef61047.svg",
     "static/media/Footer.scss": "/static/media/menu-bkg.bda69f9d.jpg",
-    "static/media/mobile-estilo.png": "/static/media/mobile-estilo.b0b1089d.png",
-    "static/media/mobile-forma.png": "/static/media/mobile-forma.bfd22052.png",
-    "static/media/mobile-program.png": "/static/media/mobile-program.2c96eabc.png",
+    "static/media/mobile-estilo.png": "/static/media/mobile-estilo.323aa7b3.png",
+    "static/media/mobile-forma.png": "/static/media/mobile-forma.20be2f70.png",
+    "static/media/mobile-program.png": "/static/media/mobile-program.229ea1c3.png",
     "static/media/mobile-start.png": "/static/media/mobile-start.fdb83709.png",
     "static/media/program-01.png": "/static/media/program-01.880e3afd.png",
     "static/media/program-02.png": "/static/media/program-02.97f83e3b.png",
@@ -59,8 +59,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1fd6a666.js",
-    "static/js/2.b7a2ef6b.chunk.js",
-    "static/css/main.6bd05d66.chunk.css",
-    "static/js/main.b8746277.chunk.js"
+    "static/js/2.7265e9ce.chunk.js",
+    "static/css/main.02659fe3.chunk.css",
+    "static/js/main.21645b82.chunk.js"
   ]
 }
