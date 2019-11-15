@@ -73,8 +73,12 @@ export class Footer extends Component {
                     <div className='bottom-block'>
                         <span>Developed by UXers 2019</span>
                         <div className='icons'>
-                            <img src={facebook} alt='facebook'/>
-                            <img src={instagram} alt='instagram'/>
+                            <a href={'https://www.facebook.com/UXers-111117307011697/'}>
+                                <img src={facebook} alt='facebook'/>
+                            </a>
+                            <a href={'https://www.instagram.com/uxers.web/'}>
+                                <img src={instagram} alt='instagram'/>
+                            </a>
                         </div>
                     </div>
 

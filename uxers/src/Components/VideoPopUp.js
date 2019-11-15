@@ -22,7 +22,7 @@ export class VideoPopUp extends Component {
             );
         */
         return(<Fragment>
-            
+
         </Fragment>)
     }
 

@@ -85,7 +85,7 @@ export class ScreenStyle extends Component {
         return (
             <Fragment>
 
-                <LogoComponent shortLogo={menuShown}/>
+                <LogoComponent shortLogo={menuShown} page={'product'}/>
 
                 <MenuButton inMenu={menuShown} clickedBtn={this.openBurger}/>
 
@@ -152,8 +152,12 @@ export class ScreenStyle extends Component {
                         </div>
                     </div>
                     <div className='icons'>
-                        <img src={facebook} alt='facebook'/>
-                        <img src={instagram} alt='instagram'/>
+                        <a href={'https://www.facebook.com/UXers-111117307011697/'}>
+                            <img src={facebook} alt='facebook'/>
+                        </a>
+                        <a href={'https://www.instagram.com/uxers.web/'}>
+                            <img src={instagram} alt='instagram'/>
+                        </a>
                     </div>
                 </div>
 

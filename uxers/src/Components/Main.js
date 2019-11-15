@@ -35,7 +35,7 @@ export class Main extends Component {
     }
 
     setLoading = (newValue) => {
-        console.log('reporting loading as >' + newValue);
+        // console.log('reporting loading as >' + newValue);
         this.setState({
             loading : newValue
         })
