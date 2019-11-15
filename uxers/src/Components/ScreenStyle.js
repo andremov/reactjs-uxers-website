@@ -174,13 +174,13 @@ export class ScreenStyle extends Component {
                 <div className='content'>
 
                     <div className='title flex-col'>
-                        <span>Comience con</span>
-                        <span>una función,</span>
-                        <span>no con un diseño</span>
+                        <span>Limitas tus</span>
+                        <span>elecciones</span>
                     </div>
                     <div className='subtitle flex-col'>
-                        <span>Cuando comienzas el diseño para una nueva idea</span>
-                        <span>de aplicación, ¿qué diseñas primero?</span>
+                        <span>Tener miles de colores y miles de fuentes</span>
+                        <span>para elegir puede sonar agradable en teoria,</span>
+                        <span>pero en la practica puede ser una maldicion.</span>
                     </div>
                     <div className='link'>
                         <span>Descarga</span>

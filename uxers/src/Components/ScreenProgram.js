@@ -180,13 +180,13 @@ export class ScreenProgram extends Component {
                 <div className='content'>
 
                     <div className='title flex-col'>
-                        <span>Comience con</span>
-                        <span>una función,</span>
-                        <span>no con un diseño</span>
+                        <span>Inspirate</span>
+                        <span>a tu ritmo</span>
                     </div>
                     <div className='subtitle flex-col'>
-                        <span>Cuando comienzas el diseño para una nueva idea</span>
-                        <span>de aplicación, ¿qué diseñas primero?</span>
+                        <span>A lo largo del libro observarás numerosos</span>
+                        <span>ejemplos expicativos. Sin embargo no encontrarás</span>
+                        <span>ejercicios, para asi hacer mas agil su lectura</span>
                     </div>
                     <div className='link'>
                         <span>Descarga</span>
