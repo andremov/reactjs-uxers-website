@@ -57,7 +57,9 @@ export class Footer extends Component {
                             <span>Construye un hermoso</span>
                             <span>sitio web, visualmente</span>
                         </div>
-                        <Button />
+                        <div className='link white'>
+                            <span>Descarga</span>
+                        </div>
                     </div>
                 </div>
 
