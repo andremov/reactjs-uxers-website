@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import logoFull from "../assets/logo-full.png";
-import logoShort from "../assets/logo-short.png";
+import logoFull from "../assets/logo-full.svg";
+import logoShort from "../assets/logo-short.svg";
 import '../Style/Doodads.scss';
 import {Link} from "react-router-dom";
 

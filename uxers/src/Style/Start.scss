@@ -108,19 +108,48 @@
         font-size: 2em;
       }
     }
+
     .subcontent {
-      margin-left: 50%;
       margin-top: 13%;
-      font-size: 1.5em;
-      .item {
-        align-items: center;
-        .box {
-          width: calc(1*0.5625vw);
-          height: 2vw;
-          margin-right: 5%;
-          margin-bottom: 2%;
+
+      &.left-half {
+        width: 50%;
+        font-size: 1.5em;
+
+        .item {
+          align-items: center;
+
+          .box {
+            width: calc(1 * 0.5625vw);
+            height: 2vw;
+            margin-right: 5%;
+            margin-bottom: 2%;
+          }
         }
       }
+
+      &.right-half {
+        flex-wrap: wrap;
+        padding-left: 10%;
+        box-sizing: border-box;
+        width: 50%;
+
+        .card {
+          width: 8vw;
+          height: 11vw;
+          margin-left: 4vw;
+          margin-bottom: 3vw;
+          background-color: #5d3a89;
+          box-shadow: black 5px 5px 15px;
+          border-radius: 10px;
+
+          .pic {
+            transform: scale(0.7);
+            margin-top: 10%;
+          }
+        }
+      }
+
     }
   }
 }

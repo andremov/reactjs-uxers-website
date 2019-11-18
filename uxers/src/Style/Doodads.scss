@@ -19,13 +19,16 @@
   left: 5vw;
   z-index: 3;
   transition: 0.5s;
+  filter: invert(0);
   //background-color: blue;
   //filter: grayscale(100%);
-  filter: invert(1);
   //mix-blend-mode: difference;
 
   &.white {
     filter: invert(0);
+  }
+  &.black {
+    filter: invert(1);
   }
 
   &.short {
@@ -80,6 +83,7 @@
   //mix-blend-mode: difference;
 
   .text {
+    visibility: hidden;
     margin-right: 10px;
     //margin-top: 12px;
     font-size: 22px;
@@ -367,7 +371,7 @@
   border-radius: 5px;
   font-size: 2em;
   font-weight: bold;
-  padding: 0.25% 2%;
+  padding: 2% 5%;
   width: fit-content;
   transition: 0.25s;
 
@@ -378,6 +382,19 @@
     &:hover {
       background-color: white;
       color: black;
+
+      &.orange {
+        color: #f15a29;
+      }
+
+      &.red {
+        color: #e53951;
+      }
+
+      &.blue {
+        color: #00b1cb;
+      }
+
     }
   }
 

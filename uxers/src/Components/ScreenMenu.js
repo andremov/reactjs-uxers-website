@@ -45,10 +45,10 @@ export class ScreenMenu extends Component {
                         </div>
 
                         <div className='icons'>
-                            <a href={'https://www.facebook.com/UXers-111117307011697/'}>
+                            <a href={'https://www.facebook.com/UXers-111117307011697/'} target="_blank">
                                 <img src={facebook} alt='facebook'/>
                             </a>
-                            <a href={'https://www.instagram.com/uxers.web/'}>
+                            <a href={'https://www.instagram.com/uxers.web/'} target="_blank">
                                 <img src={instagram} alt='instagram'/>
                             </a>
                         </div>

@@ -3,9 +3,9 @@ import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
 
-import sym_book from "../assets/symbol-book.png";
-import sym_mail from "../assets/symbol-mail.png";
-import sym_video from "../assets/symbol-video.png";
+import sym_book from "../assets/symbol-book.svg";
+import sym_mail from "../assets/symbol-mail.svg";
+import sym_video from "../assets/symbol-video.svg";
 
 import grid1 from "../assets/grid/foto14.jpg";
 import grid2 from "../assets/grid/foto15.jpg";
@@ -158,10 +158,10 @@ export class ScreenForm extends Component {
                         </div>
                     </div>
                     <div className='icons'>
-                        <a href={'https://www.facebook.com/UXers-111117307011697/'}>
+                        <a href={'https://www.facebook.com/UXers-111117307011697/'} target="_blank">
                             <img src={facebook} alt='facebook'/>
                         </a>
-                        <a href={'https://www.instagram.com/uxers.web/'}>
+                        <a href={'https://www.instagram.com/uxers.web/'} target="_blank">
                             <img src={instagram} alt='instagram'/>
                         </a>
                     </div>
@@ -284,7 +284,7 @@ export class ScreenForm extends Component {
 
     getPage05() {
         return (
-            <div style={{backgroundImage : 'url('+bkg5+')'}} className='screen available-page'>
+            <div style={{backgroundImage : 'url('+bkg5+')'}} className='bkg-bot screen available-page'>
 
                 <div className='screen-title'>
                     <span>Diseño Forma</span>

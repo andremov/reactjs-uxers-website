@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.879 117.838">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ed7930;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <title>Asset 6-SVG</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path class="cls-1" d="M49.526,111.288V40.474s7.64-12.279,25.787-6.548,16.555,11.184,37.566,6.548v70.814s-13.052,6.686-28.334-1.593S57.484,101.419,49.526,111.288Z"/>
+        <path class="cls-1" d="M4,75s5.412,9.551,23.877,10.823,21.649,25.47,21.649,25.47V40.474S45.387,21.191,26.763,15.779,4.955,8.138,4,4Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

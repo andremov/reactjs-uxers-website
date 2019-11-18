@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../Style/Footer.scss';
-import logoFull from "../assets/logo-simple.png";
-import slogan from "../assets/slogan.png";
+import logoFull from "../assets/logo-simple.svg";
+import slogan from "../assets/slogan.svg";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import {Button} from "./Button";
@@ -57,7 +57,7 @@ export class Footer extends Component {
                             <span>Construye un hermoso</span>
                             <span>sitio web, visualmente</span>
                         </div>
-                        <div className='link white'>
+                        <div className={'link white ' + colors[screenName-1]}>
                             <span>Descarga</span>
                         </div>
                     </div>
@@ -73,10 +73,10 @@ export class Footer extends Component {
                     <div className='bottom-block'>
                         <span>Developed by UXers 2019</span>
                         <div className='icons'>
-                            <a href={'https://www.facebook.com/UXers-111117307011697/'}>
+                            <a href={'https://www.facebook.com/UXers-111117307011697/'} target="_blank">
                                 <img src={facebook} alt='facebook'/>
                             </a>
-                            <a href={'https://www.instagram.com/uxers.web/'}>
+                            <a href={'https://www.instagram.com/uxers.web/'} target="_blank">
                                 <img src={instagram} alt='instagram'/>
                             </a>
                         </div>

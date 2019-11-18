@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import burgerOpen from "../assets/burger-open-btn.png";
-import burgerClose from "../assets/burger-close-btn.png";
+import burgerOpen from "../assets/burger-open-btn.svg";
+import burgerClose from "../assets/burger-close-btn.svg";
 import '../Style/Doodads.scss';
 
 export class MenuButton extends Component {

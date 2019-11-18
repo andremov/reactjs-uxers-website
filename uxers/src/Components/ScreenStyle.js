@@ -3,11 +3,11 @@ import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
 
-import sym_art from "../assets/symbol-art.png";
-import sym_book from "../assets/symbol-book.png";
-import sym_mail from "../assets/symbol-mail.png";
-import sym_text from "../assets/symbol-text.png";
-import sym_video from "../assets/symbol-video.png";
+import sym_art from "../assets/symbol-art.svg";
+import sym_book from "../assets/symbol-book.svg";
+import sym_mail from "../assets/symbol-mail.svg";
+import sym_text from "../assets/symbol-text.svg";
+import sym_video from "../assets/symbol-video.svg";
 
 import grid1 from "../assets/grid/foto7.jpg";
 import grid2 from "../assets/grid/foto8.jpg";
@@ -152,10 +152,10 @@ export class ScreenStyle extends Component {
                         </div>
                     </div>
                     <div className='icons'>
-                        <a href={'https://www.facebook.com/UXers-111117307011697/'}>
+                        <a href={'https://www.facebook.com/UXers-111117307011697/'} target="_blank">
                             <img src={facebook} alt='facebook'/>
                         </a>
-                        <a href={'https://www.instagram.com/uxers.web/'}>
+                        <a href={'https://www.instagram.com/uxers.web/'} target="_blank">
                             <img src={instagram} alt='instagram'/>
                         </a>
                     </div>

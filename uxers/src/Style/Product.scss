@@ -59,6 +59,13 @@
 }
 
 .download-action-page {
+
+  &.screen {
+    height: calc(70*0.5625vw);
+    .content {
+      height: calc(60*0.5625vw);
+    }
+  }
   .content {
     width: 50vw;
     margin-left: 50%;
@@ -123,11 +130,11 @@
     }
 
     .split {
-      width: 5px;
+      width: 2px;
       height: 13vw;
-      background-color: orange;
-      margin-left: 1%;
-      margin-right: 1%;
+      background-color: gray;
+      margin-left: 2%;
+      margin-right: 2%;
     }
   }
 }
@@ -176,6 +183,14 @@
 }
 
 .available-page {
+
+  &.screen {
+    height: calc(60*0.5625vw);
+    .content {
+      height: calc(50*0.5625vw);
+    }
+  }
+
   .content {
     align-items: center;
     justify-content: center;

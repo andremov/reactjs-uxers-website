@@ -4,6 +4,12 @@ import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
 
+import sym_book from "../assets/symbol-book.svg";
+import sym_mail from "../assets/symbol-mail.svg";
+import sym_video from "../assets/symbol-video.svg";
+import sym_art from "../assets/symbol-art.svg";
+import sym_text from "../assets/symbol-text.svg";
+
 import bkg1 from "../assets/bkgs/start-01.png";
 import bkg2 from "../assets/bkgs/start-02.png";
 import bkg3 from "../assets/bkgs/start-03.png";
@@ -161,12 +167,12 @@ export class ScreenStart extends Component {
                         </div>
 
                         <div className='info flex-col'>
-                            <span>¡Hola! UXers, Creamos un pro-</span>
-                            <span>yecto que recoge todos los</span>
+                            <span>¡Hola! UXers, Creamos un proyecto</span>
+                            <span>que recoge todos los</span>
                             <span>consejos y trucos sobre</span>
                             <span>diseño y los integramos en un</span>
-                            <span>kit de supervivencia para dise-</span>
-                            <span>ñar para la web.</span>
+                            <span>kit de supervivencia para diseñar</span>
+                            <span>para la web.</span>
                             <span className={'space'}> </span>
                             <span>Trabajando juntos, podemos</span>
                             <span>crear algo mejor.</span>
@@ -329,33 +335,52 @@ export class ScreenStart extends Component {
                                 Para la web
                             </div>
                         </div>
+                        <div className={'flex-row'}>
+                            <div className='subcontent right-half flex-row'>
+                                <div className={'card'}>
+                                    <img className='pic' src={sym_book} alt='Resource # 1' />
+                                </div>
+                                <div className={'card'}>
+                                    <img className='pic' src={sym_mail} alt='Resource # 1' />
+                                </div>
+                                <div className={'card'}>
+                                    <img className='pic' src={sym_video} alt='Resource # 1' />
+                                </div>
+                                <div className={'card'}>
+                                    <img className='pic' src={sym_art} alt='Resource # 1' />
+                                </div>
+                                <div className={'card'}>
+                                    <img className='pic' src={sym_text} alt='Resource # 1' />
+                                </div>
+                            </div>
 
-                        <div className='subcontent flex-col'>
-                            <div className='item flex-row'>
-                                <div className='box purple'> </div>
-                                <span>Libro</span>
-                            </div>
-                            <div className='item flex-row'>
-                                <div className='box blue'> </div>
-                                <span>Tutorial de video</span>
-                            </div>
-                            <div className='item flex-row'>
-                                <div className='box gray'> </div>
-                                <span className=''>Galeria de componentes</span>
-                            </div>
-                            <div className='item flex-row'>
-                                <div className='box red'> </div>
-                                <span>Paleta de colores</span>
-                            </div>
-                            <div className='item flex-row'>
-                                <div className='box orange'> </div>
-                                <span>Recomendaciones de fuentes</span>
+                            <div className='subcontent left-half flex-col'>
+                                <div className='item flex-row'>
+                                    <div className='box purple-other'> </div>
+                                    <span>Libro</span>
+                                </div>
+                                <div className='item flex-row'>
+                                    <div className='box blue'> </div>
+                                    <span>Tutorial de video</span>
+                                </div>
+                                <div className='item flex-row'>
+                                    <div className='box gray'> </div>
+                                    <span className=''>Galeria de componentes</span>
+                                </div>
+                                <div className='item flex-row'>
+                                    <div className='box red'> </div>
+                                    <span>Paleta de colores</span>
+                                </div>
+                                <div className='item flex-row'>
+                                    <div className='box orange'> </div>
+                                    <span>Recomendaciones de fuentes</span>
+                                </div>
                             </div>
                         </div>
+
+                        {/*<NavDisplayComponent colored={false} currentScreen={7} lastScreen={7}/>*/}
+
                     </div>
-
-                    {/*<NavDisplayComponent colored={false} currentScreen={7} lastScreen={7}/>*/}
-
                 </div>
             </Fragment>
         );
