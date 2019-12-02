@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import {LogoComponent} from "./LogoComponent";
 import {MenuButton} from "./MenuButton";
 import {ScreenMenu} from "./ScreenMenu";
+import doc from "../assets/uxres-tomo1.pdf"
 
 import sym_book from "../assets/symbol-book.svg";
 import sym_mail from "../assets/symbol-mail.svg";
@@ -24,6 +25,7 @@ import {Footer} from "./Footer";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import {VideoPopUp} from "./VideoPopUp";
+import {Link} from "react-router-dom";
 
 export class ScreenForm extends Component {
 
@@ -191,9 +193,9 @@ export class ScreenForm extends Component {
                         <span>Cuando comienzas el diseño para una nueva idea</span>
                         <span>de aplicación, ¿qué diseñas primero?</span>
                     </div>
-                    <div className='link'>
+                    <Link to={doc} className='link' target="_blank" download>
                         <span>Descarga</span>
-                    </div>
+                    </Link>
                 </div>
 
                 {/*<NavDisplayComponent colored={true} currentScreen={2} lastScreen={5} />*/}

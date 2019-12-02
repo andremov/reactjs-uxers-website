@@ -5,6 +5,9 @@ import slogan from "../assets/slogan.svg";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import {Button} from "./Button";
+import {Link} from "react-router-dom";
+import docStyle from "../assets/uxres-tomo2.pdf"
+import docProgram from "../assets/uxres-tomo1.pdf"
 
 const colors = [
     'blue',
@@ -41,7 +44,10 @@ export class Footer extends Component {
 
     render() {
         const {screenName} = this.state;
-
+        let doc =  docProgram;
+        if (screenName === names[1]) {
+            doc =  docStyle;
+        }
         return (
             <div className='footer'>
                 <div className={'download-section ' + colors[screenName-1]}>
@@ -57,9 +63,9 @@ export class Footer extends Component {
                             <span>Construye un hermoso</span>
                             <span>sitio web, visualmente</span>
                         </div>
-                        <div className={'link white ' + colors[screenName-1]}>
+                        <Link className={'link white ' + colors[screenName-1]} to={doc} target="_blank" download>
                             <span>Descarga</span>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 

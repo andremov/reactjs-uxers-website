@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b34c24f.chunk.css",
-    "main.js": "/static/js/main.dcf60c52.chunk.js",
-    "main.js.map": "/static/js/main.dcf60c52.chunk.js.map",
+    "main.css": "/static/css/main.ff65e048.chunk.css",
+    "main.js": "/static/js/main.aeb52cf2.chunk.js",
+    "main.js.map": "/static/js/main.aeb52cf2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1fd6a666.js",
     "runtime-main.js.map": "/static/js/runtime-main.1fd6a666.js.map",
-    "static/js/2.563ab3de.chunk.js": "/static/js/2.563ab3de.chunk.js",
-    "static/js/2.563ab3de.chunk.js.map": "/static/js/2.563ab3de.chunk.js.map",
+    "static/js/2.f4db0268.chunk.js": "/static/js/2.f4db0268.chunk.js",
+    "static/js/2.f4db0268.chunk.js.map": "/static/js/2.f4db0268.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ea8022db52be643384bb3d1e36523feb.js": "/precache-manifest.ea8022db52be643384bb3d1e36523feb.js",
+    "precache-manifest.3caeadb179ddb5bcec16123769f19d86.js": "/precache-manifest.3caeadb179ddb5bcec16123769f19d86.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8b34c24f.chunk.css.map": "/static/css/main.8b34c24f.chunk.css.map",
+    "static/css/main.ff65e048.chunk.css.map": "/static/css/main.ff65e048.chunk.css.map",
     "static/media/index.css": "/static/media/OpenSans-Regular.3ed9575d.ttf",
     "static/media/burger-close-btn.svg": "/static/media/burger-close-btn.c2579e5c.svg",
     "static/media/burger-open-btn.svg": "/static/media/burger-open-btn.603fab97.svg",
@@ -66,12 +66,14 @@
     "static/media/symbol-code.svg": "/static/media/symbol-code.a7134430.svg",
     "static/media/symbol-mail.svg": "/static/media/symbol-mail.41abce67.svg",
     "static/media/symbol-text.svg": "/static/media/symbol-text.96674c73.svg",
-    "static/media/symbol-video.svg": "/static/media/symbol-video.4ed722ec.svg"
+    "static/media/symbol-video.svg": "/static/media/symbol-video.4ed722ec.svg",
+    "static/media/uxres-tomo1.pdf": "/static/media/uxres-tomo1.8a9694f2.pdf",
+    "static/media/uxres-tomo2.pdf": "/static/media/uxres-tomo2.0923aacd.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.1fd6a666.js",
-    "static/js/2.563ab3de.chunk.js",
-    "static/css/main.8b34c24f.chunk.css",
-    "static/js/main.dcf60c52.chunk.js"
+    "static/js/2.f4db0268.chunk.js",
+    "static/css/main.ff65e048.chunk.css",
+    "static/js/main.aeb52cf2.chunk.js"
   ]
 }
