@@ -136,7 +136,7 @@ export class ScreenStart extends Component {
                 <Link to='/estilo' style={{position: 'absolute', left: '12%', top: '600%', width: '45%', height: '9%'}}>
                 </Link>
 
-                <Link to='/forma' style={{position: 'absolute', left: '12%', top: '733%', width: '45%', height: '9%'}}>
+                <Link to='/programacion' style={{position: 'absolute', left: '12%', top: '733%', width: '45%', height: '9%'}}>
                 </Link>
             </div>
         )
